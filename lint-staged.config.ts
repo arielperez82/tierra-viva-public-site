@@ -23,6 +23,10 @@ const config: Configuration = {
     `pnpm lint:md:fix ${filenames.join(" ")}`,
     `pnpm lint:format:fix ${filenames.join(" ")}`,
   ],
+  "*.css": (filenames: readonly string[]) => [
+    `pnpm lint:css:fix ${filenames.join(" ")}`,
+    `pnpm lint:format:fix ${filenames.join(" ")}`,
+  ],
 };
 
 export default config;

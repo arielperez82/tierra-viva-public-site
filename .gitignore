@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Test and audit reports (e.g. pnpm lighthouse)
+test-reports/

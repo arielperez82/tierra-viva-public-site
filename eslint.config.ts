@@ -9,7 +9,14 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 const tsconfigRootDir = path.dirname(fileURLToPath(import.meta.url));
 
 export default [
-  { ignores: ["**/dist/**", "**/.astro/**", "**/node_modules/**"] },
+  {
+    ignores: [
+      "**/.astro/**",
+      "**/dist/**",
+      "**/node_modules/**",
+      "**/test-reports/**",
+    ],
+  },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {

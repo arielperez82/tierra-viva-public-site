@@ -1,0 +1,5 @@
+{
+  "port": 4321,
+  "basePath": "/tierra-viva-public-site/",
+  "reportDir": "test-reports"
+}

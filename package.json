@@ -10,14 +10,17 @@
     "check": "astro check",
     "type-check": "tsc --noEmit",
     "astro": "astro",
-    "lint": "pnpm lint:code && pnpm lint:format && pnpm lint:md",
+    "lint": "pnpm lint:code && pnpm lint:format && pnpm lint:md && pnpm lint:css",
     "lint:code": "eslint .",
-    "lint:code:fix": "eslint --fix ",
-    "lint:fix": "eslint --fix ",
+    "lint:code:fix": "eslint --fix .",
+    "lint:fix": "eslint --fix .",
     "lint:format": "NODE_OPTIONS=--experimental-strip-types prettier --check .",
-    "lint:format:fix": "NODE_OPTIONS=--experimental-strip-types prettier --write ",
+    "lint:format:fix": "NODE_OPTIONS=--experimental-strip-types prettier --write .",
     "lint:md": "markdownlint .",
-    "lint:md:fix": "markdownlint --fix "
+    "lint:md:fix": "markdownlint --fix .",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css:fix": "stylelint --fix \"src/**/*.css\"",
+    "lighthouse:audit": "tsx scripts/run-lighthouse.ts"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -39,8 +42,14 @@
     "eslint-plugin-react": "^7.37.5",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
+    "lighthouse": "^12.2.0",
     "markdownlint-cli": "^0.47.0",
     "prettier": "^3.8.1",
+    "start-server-and-test": "^2.0.4",
+    "stylelint": "^17.1.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-tailwindcss": "^1.0.1",
+    "tsx": "^4.19.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0"
   }

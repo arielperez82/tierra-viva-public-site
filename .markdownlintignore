@@ -1,4 +1,5 @@
-node_modules
-dist
 .astro
+dist
+node_modules
 .plan
+test-reports

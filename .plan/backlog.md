@@ -83,20 +83,20 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-0.6 — Stylelint for CSS and styles (Tailwind-aware)
+### TV-0.6 — Stylelint for CSS and styles (Tailwind-aware) - DONE ✅
 
 **Phase:** 0  
 **Description:** Stylelint for all CSS and style files. Config must be Tailwind-aware (e.g. `postcss-lit` or `stylelint-plugin-tailwindcss`) so Tailwind directives and utilities are valid. Ensures style consistency and catches invalid/unknown at-rules and properties on every commit.
 
 **Acceptance criteria:**
 
-- [ ] Stylelint installed; config (e.g. `.stylelintrc.json` or `stylelint.config.js`) with Tailwind compatibility (e.g. `postcss-lit`, or `stylelint-config-standard` + `stylelint-plugin-tailwindcss`).
-- [ ] Config disables rules that conflict with Prettier (e.g. `stylelint-config-prettier`).
-- [ ] `pnpm lint:css` (check) and `pnpm lint:css:fix` (fix) run Stylelint on `src/**/*.css` (and any other style files in use).
-- [ ] Pre-commit runs Stylelint on staged `*.css` (and staged style files) via lint-staged.
-- [ ] README documents the scripts.
+- [x] Stylelint installed; config (e.g. `stylelint.config.ts`) with Tailwind compatibility (e.g. `postcss-lit`, or `stylelint-config-standard` + `stylelint-plugin-tailwindcss`).
+- [x] Config disables rules that conflict with Prettier (e.g. `stylelint-config-prettier`).
+- [x] `pnpm lint:css` (check) and `pnpm lint:css:fix` (fix) run Stylelint on `src/**/*.css` (and any other style files in use).
+- [x] Pre-commit runs Stylelint on staged `*.css` (and staged style files) via lint-staged.
+- [x] README documents the scripts.
 
-**Notes:** Tailwind uses `@tailwind`, `@apply`, and custom at-rules; Stylelint must either understand them (plugin) or allow them (e.g. `postcss-lit` or rule overrides) so the build and lint both pass.
+**Notes:** Tailwind uses `@tailwind`, `@apply`, and custom at-rules; Stylelint must either understand them (plugin) or allow them (e.g. `postcss-lit` or rule overrides) so the build and lint both pass. Implemented with `stylelint-config-standard` + `stylelint-config-tailwindcss`. `stylelint-config-prettier` is not used (incompatible with Stylelint 17); Prettier runs after Stylelint in lint-staged so formatting is consistent.
 
 ---
 
@@ -112,16 +112,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-0.8 — Lighthouse (a11y, SEO, performance)
+### TV-0.8 — Lighthouse (a11y, SEO, performance) - DONE ✅
 
 **Phase:** 0  
 **Description:** Lighthouse script for a11y, SEO, and performance. Runnable via pnpm (e.g. against preview build); optional CI step. Not required on every pre-commit (too slow) but part of the quality toolkit. **CI recommendation:** run `pnpm check` and `pnpm lint` (and optionally `pnpm lint:md`) on push/PR to protect main; optionally add Lighthouse to CI on main or PR.
 
 **Acceptance criteria:**
 
-- [ ] `pnpm lighthouse` (or similar) runs Lighthouse (e.g. against `pnpm preview` or built `dist/`) for a11y, SEO, performance.
-- [ ] Documented in README; optionally run in GitHub Actions on main or PR.
-- [ ] (Recommended) CI job runs `pnpm check` and `pnpm lint` (and optionally `pnpm lint:md`) on push or PR; Lighthouse in CI optional.
+- [x] `pnpm lighthouse` (or similar) runs Lighthouse (e.g. against `pnpm preview` or built `dist/`) for a11y, SEO, performance.
+- [x] Documented in README; optionally run in GitHub Actions on main or PR.
+- [x] (Recommended) CI job runs `pnpm check` and `pnpm lint` (and optionally `pnpm lint:md`) on push or PR; Lighthouse in CI optional.
 - [ ] No critical a11y/SEO/performance regressions before release.
 
 ---
