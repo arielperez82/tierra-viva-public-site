@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --color-tierra-forest: #2e6e30;
+  --color-tierra-forest-dark: #1e4a1f;
+  --color-tierra-lime: #68b62c;
+  --color-tierra-neutral: #262626;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      sans-serif;
+  }
+}

@@ -142,16 +142,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-1.2 — Define Tailwind theme and Tierra Viva design tokens
+### TV-1.2 — Define Tailwind theme and Tierra Viva design tokens - DONE ✅
 
 **Phase:** 1  
 **Description:** Add custom colors (forest, forest-dark, lime, neutral) and any typography/spacing to Tailwind theme. Create or update `src/styles/global.css` with base layer.
 
 **Acceptance criteria:**
 
-- [ ] Theme includes: forest `#2E6E30`, forest-dark `#1E4A1F`, lime `#68B62C`, neutral `#262626`.
-- [ ] Utilities (e.g. `bg-tierra-forest`, `text-tierra-lime`) work in components.
-- [ ] Global base styles (e.g. font, scroll-behavior) applied.
+- [x] Theme includes: forest `#2E6E30`, forest-dark `#1E4A1F`, lime `#68B62C`, neutral `#262626`.
+- [x] Utilities (e.g. `bg-tierra-forest`, `text-tierra-lime`) work in components.
+- [x] Global base styles (e.g. font, scroll-behavior) applied.
 
 ---
 
