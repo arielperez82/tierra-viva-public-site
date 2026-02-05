@@ -42,16 +42,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-0.3 — ESLint (TypeScript, React/JSX, Astro)
+### TV-0.3 — ESLint (TypeScript, React/JSX, Astro) - DONE ✅
 
 **Phase:** 0  
 **Description:** Configure ESLint with TypeScript, React/JSX, and Astro plugins. Flat config (eslint.config.ts). Code lint runs on every pre-commit for staged source files.
 
 **Acceptance criteria:**
 
-- [ ] `eslint.config.ts` (flat config) with `@typescript-eslint`, `eslint-plugin-react`, `eslint-plugin-astro` (and `astro-eslint-parser`).
-- [ ] Type-aware rules for `src/**/*.{ts,tsx}`; React and JSX rules for `**/*.{jsx,tsx}`; Astro rules for `**/*.astro`.
-- [ ] `pnpm lint` (and `pnpm lint:fix`) run ESLint; lint runs in pre-commit for staged code.
+- [x] `eslint.config.ts` (flat config) with `@typescript-eslint`, `eslint-plugin-react`, `eslint-plugin-astro` (and `astro-eslint-parser`).
+- [x] Type-aware rules for `src/**/*.{ts,tsx}`; React and JSX rules for `**/*.{jsx,tsx}`; Astro rules for `**/*.astro`.
+- [x] `pnpm lint` (and `pnpm lint:fix`) run ESLint; lint runs in pre-commit for staged code.
 
 **Notes:** TypeScript ESLint is already in place (from TV-0.2). Remaining: add `eslint-plugin-react`, `eslint-plugin-astro`, `astro-eslint-parser`, and the corresponding rules for React/JSX and Astro.
 

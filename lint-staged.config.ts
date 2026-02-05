@@ -14,8 +14,9 @@ const config: Configuration = {
     `pnpm lint:format:fix ${filenames.join(" ")}`,
   ],
   "*.json": (filenames) => [`pnpm lint:format:fix ${filenames.join(" ")}`],
-  "*.astro": (filenames) => [
+  "*.astro": (filenames: readonly string[]) => [
     "pnpm check",
+    `pnpm lint:fix ${filenames.join(" ")}`,
     `pnpm lint:format:fix ${filenames.join(" ")}`,
   ],
   "*.md": (filenames) => [

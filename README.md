@@ -36,7 +36,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm build`                        | Build your production site to `./dist/`                             |
 | `pnpm preview`                      | Preview your build locally, before deploying                        |
 | `pnpm check` / `pnpm type-check`    | TypeScript validation (`astro check`); runs in pre-commit (Phase 0) |
-| `pnpm lint` / `pnpm lint:fix`       | ESLint (check / fix); runs on staged TS/JS in pre-commit            |
+| `pnpm lint` / `pnpm lint:fix`       | ESLint (check / fix); runs on staged TS/JS/Astro in pre-commit      |
 | `pnpm lint:format` / `...:fix`      | Prettier (check / write); runs on staged files in pre-commit        |
 | `pnpm lint:md` / `pnpm lint:md:fix` | MarkdownLint (check / fix); runs on staged `.md` in pre-commit      |
 | `pnpm astro ...`                    | Run CLI commands like `astro add`, `astro check`                    |
