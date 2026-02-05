@@ -155,17 +155,17 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-1.3 — Create project folder structure and base layout
+### TV-1.3 — Create project folder structure and base layout - DONE ✅
 
 **Phase:** 1  
 **Description:** Add `src/layouts/BaseLayout.astro`, `src/consts.ts`, `src/pages/index.astro` (minimal placeholder). Create `src/components` and `src/components/sections`. Add `public` assets (favicon; optional CNAME).
 
 **Acceptance criteria:**
 
-- [ ] BaseLayout wraps content with `<html>`, `<head>`, `<body>`; imports global CSS.
-- [ ] consts export at least `SITE_TITLE` (or equivalent).
-- [ ] Index page uses BaseLayout and renders a simple placeholder.
-- [ ] Favicon (or SVG) present in `public`.
+- [x] BaseLayout wraps content with `<html>`, `<head>`, `<body>`; imports global CSS.
+- [x] consts export at least `SITE_TITLE` (or equivalent).
+- [x] Index page uses BaseLayout and renders a simple placeholder.
+- [x] Favicon (or SVG) present in `public`.
 
 ---
 

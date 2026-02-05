@@ -59,9 +59,9 @@
    - Custom colors: forest `#2E6E30`, forest-dark `#1E4A1F`, lime `#68B62C`, neutral `#262626`.
    - Optional: typography plugin, `global.css` with `@import tailwind` and base layer.
 
-3. **Project structure** (see technical-spec §2).
+3. **Project structure** (see technical-spec §2). — **Done**
    - Create `src/layouts/BaseLayout.astro`, `src/styles/global.css`, `src/consts.ts`, `src/pages/index.astro` (placeholder).
-   - Add `public/favicon.ico` (or SVG) and optional `public/CNAME` placeholder.
+   - Add `src/components` and `src/components/sections`. Add `public/favicon.ico` (or SVG) and optional `public/CNAME` placeholder.
 
 4. **GitHub Pages workflow**.
    - `.github/workflows/deploy.yml`: checkout → pnpm install → build → upload-pages-artifact → deploy-pages.

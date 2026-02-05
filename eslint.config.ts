@@ -1,6 +1,8 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
+import tsParser from "@typescript-eslint/parser";
+import astroParser from "astro-eslint-parser";
 import tseslint from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
 import eslintPluginAstro from "eslint-plugin-astro";
@@ -52,4 +54,14 @@ export default [
     ...jsxA11y.flatConfigs.recommended,
   },
   ...eslintPluginAstro.configs.recommended,
+  {
+    files: ["**/*.astro"],
+    languageOptions: {
+      parser: astroParser,
+      parserOptions: {
+        parser: tsParser,
+        extraFileExtensions: [".astro"],
+      },
+    },
+  },
 ];
