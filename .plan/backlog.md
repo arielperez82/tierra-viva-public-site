@@ -45,39 +45,41 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 ### TV-0.3 — ESLint (TypeScript, React/JSX, Astro)
 
 **Phase:** 0  
-**Description:** Configure ESLint with TypeScript, React/JSX, and Astro plugins. Flat config (eslint.config.js). Code lint runs on every pre-commit for staged source files.
+**Description:** Configure ESLint with TypeScript, React/JSX, and Astro plugins. Flat config (eslint.config.ts). Code lint runs on every pre-commit for staged source files.
 
 **Acceptance criteria:**
 
-- [ ] `eslint.config.js` (flat config) with `@typescript-eslint`, `eslint-plugin-react`, `eslint-plugin-astro` (and `astro-eslint-parser`).
+- [ ] `eslint.config.ts` (flat config) with `@typescript-eslint`, `eslint-plugin-react`, `eslint-plugin-astro` (and `astro-eslint-parser`).
 - [ ] Type-aware rules for `src/**/*.{ts,tsx}`; React and JSX rules for `**/*.{jsx,tsx}`; Astro rules for `**/*.astro`.
 - [ ] `pnpm lint` (and `pnpm lint:fix`) run ESLint; lint runs in pre-commit for staged code.
 
+**Notes:** TypeScript ESLint is already in place (from TV-0.2). Remaining: add `eslint-plugin-react`, `eslint-plugin-astro`, `astro-eslint-parser`, and the corresponding rules for React/JSX and Astro.
+
 ---
 
-### TV-0.4 — Prettier for formatting
+### TV-0.4 — Prettier for formatting - DONE ✅
 
 **Phase:** 0  
 **Description:** Prettier for consistent formatting of JS/TS/JSX/TSX, Astro, CSS, and Markdown. Format check and fix runnable via pnpm; Prettier runs in pre-commit for staged files.
 
 **Acceptance criteria:**
 
-- [ ] Prettier installed; config (e.g. `.prettierrc`) for code, CSS, Astro, and MD.
-- [ ] `pnpm lint:format` (check) and `pnpm lint:format:fix` (write) run Prettier on project paths.
-- [ ] Pre-commit formats staged files (via lint-staged).
+- [x] Prettier installed; config (e.g. `prettier.config.ts`) for code, CSS, Astro, and MD.
+- [x] `pnpm lint:format` (check) and `pnpm lint:format:fix` (write) run Prettier on project paths.
+- [x] Pre-commit formats staged files (via lint-staged).
 
 ---
 
-### TV-0.5 — MarkdownLint for Markdown
+### TV-0.5 — MarkdownLint for Markdown - DONE ✅
 
 **Phase:** 0  
 **Description:** MarkdownLint for all `.md` files (plan docs, README, content). Run on pre-commit for staged Markdown.
 
 **Acceptance criteria:**
 
-- [ ] `markdownlint-cli` installed; `.markdownlint.json` (or `.markdownlintrc`) and `.markdownlintignore` as needed.
-- [ ] `pnpm lint:md` (check) and `pnpm lint:md:fix` (fix) run markdownlint.
-- [ ] Pre-commit runs markdown lint/fix on staged `*.md`.
+- [x] `markdownlint-cli` installed; `.markdownlint.json` (or `.markdownlintrc`) and `.markdownlintignore` as needed.
+- [x] `pnpm lint:md` (check) and `pnpm lint:md:fix` (fix) run markdownlint.
+- [x] Pre-commit runs markdown lint/fix on staged `*.md`.
 
 ---
 
