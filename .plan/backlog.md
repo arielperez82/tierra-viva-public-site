@@ -19,9 +19,9 @@
 **Description:** Configure TypeScript strict mode and type-check script. Use `astro check` (or `tsc --noEmit`) so every commit is type-safe.
 
 **Acceptance criteria:**
-- [ ] `pnpm type-check` or `pnpm check` runs TypeScript validation (e.g. `astro check` or `tsc --noEmit`).
-- [ ] `tsconfig.json` uses strict mode; no `any` in codebase.
-- [ ] Script documented in README and runs in pre-commit (via lint-staged or husky).
+- [x] `pnpm type-check` or `pnpm check` runs TypeScript validation (e.g. `astro check` or `tsc --noEmit`).
+- [x] `tsconfig.json` uses strict mode; no `any` in codebase.
+- [x] Script documented in README and runs in pre-commit (via lint-staged or husky).
 
 ---
 
