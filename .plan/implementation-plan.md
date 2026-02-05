@@ -4,7 +4,7 @@
 **Inputs:** website-proposal.md, tierra-viva.md, wireframe.md, competitive-research.md  
 **Perspectives:** Senior PM (scope, iterations, stakeholders), Product Analyst (offer, jobs, prioritization), UI Designer (structure, flow), Content Creator (copy per phase), SEO Strategist (discoverability, IA)
 
-**Scope of this document:** What pages the site will have, in what order they are built, and what copy/content each iteration includes. No technical specifications—those follow once this plan is agreed.
+**Scope of this document:** What pages the site will have, in what order they are built, and what copy/content each iteration includes. No technical specifications—those follow once this plan is agreed. **Execution order** (quality gate, scaffold, then Iterations 1–5) is defined in `.plan/development-plan.md` and `.plan/backlog.md`.
 
 **Revisions (post SEO & Content review):** Iteration 1 copy and structure tightened; About vs. Home intent split; Projects & Focus label fixed; Research = hub + one URL per article; Team/Contact/voice and Content & SEO handoff added. See implementation-plan-review-seo-content.md.
 
