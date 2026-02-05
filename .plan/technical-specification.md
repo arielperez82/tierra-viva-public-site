@@ -15,15 +15,15 @@
 
 Configured and run **before** any scaffold or feature work. Every commit must pass pre-commit checks. All runnable via pnpm scripts.
 
-| Tool | Purpose | Pre-commit | Notes |
-|------|---------|------------|-------|
-| **TSC / astro check** | Type-checking | Yes (when TS/JS/Astro staged) | `pnpm check` or `pnpm type-check`; strict mode. When any TS/JS/Astro file is staged, run **full-project** type-check so the whole codebase stays type-clean. |
-| **Husky + lint-staged** | Pre-commit hooks | — | When TS/JS/Astro staged → full-project type-check; ESLint/Prettier/MarkdownLint on staged files; blocks commit on failure. |
-| **ESLint** | Code linting | Yes | TypeScript, React/JSX, Astro plugins; flat config (`eslint.config.js`). |
-| **Prettier** | Formatting | Yes | JS/TS/JSX/TSX, Astro, CSS, MD. |
-| **MarkdownLint** | Markdown linting | Yes | `.md` in repo and content; `markdownlint-cli`. |
-| **eslint-plugin-jsx-a11y** | A11y lint (axe-style) | Yes | React/JSX (and Astro client scripts as applicable). |
-| **Lighthouse** | A11y, SEO, performance | No (script + optional CI) | `pnpm lighthouse` against preview/build; too slow for pre-commit. |
+| Tool                       | Purpose                | Pre-commit                    | Notes                                                                                                                                                        |
+| -------------------------- | ---------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **TSC / astro check**      | Type-checking          | Yes (when TS/JS/Astro staged) | `pnpm check` or `pnpm type-check`; strict mode. When any TS/JS/Astro file is staged, run **full-project** type-check so the whole codebase stays type-clean. |
+| **Husky + lint-staged**    | Pre-commit hooks       | —                             | When TS/JS/Astro staged → full-project type-check; ESLint/Prettier/MarkdownLint on staged files; blocks commit on failure.                                   |
+| **ESLint**                 | Code linting           | Yes                           | TypeScript, React/JSX, Astro plugins; flat config (`eslint.config.js`).                                                                                      |
+| **Prettier**               | Formatting             | Yes                           | JS/TS/JSX/TSX, Astro, CSS, MD.                                                                                                                               |
+| **MarkdownLint**           | Markdown linting       | Yes                           | `.md` in repo and content; `markdownlint-cli`.                                                                                                               |
+| **eslint-plugin-jsx-a11y** | A11y lint (axe-style)  | Yes                           | React/JSX (and Astro client scripts as applicable).                                                                                                          |
+| **Lighthouse**             | A11y, SEO, performance | No (script + optional CI)     | `pnpm lighthouse` against preview/build; too slow for pre-commit.                                                                                            |
 
 **CI (recommended):** Run `pnpm check` and `pnpm lint` (and optionally `pnpm lint:md`) on push or PR to protect main; Lighthouse in CI optional. **Security (optional):** Consider `pnpm audit` or audit in CI for dependency vulnerabilities.
 
@@ -33,14 +33,14 @@ Configured and run **before** any scaffold or feature work. Every commit must pa
 
 ### 1.2 Framework and hosting
 
-| Layer | Choice | Notes |
-|-------|--------|--------|
-| **Framework** | Astro 5.x | Static output (`output: 'static'`). Content-driven; minimal client JS. |
-| **Styling** | Tailwind CSS 4.x | Via `@tailwindcss/vite`. Custom theme for Tierra Viva palette. |
-| **Components** | React 19.x (islands) | Where interactivity needed: nav, forms, carousels. Prefer Astro for static sections. |
-| **Language** | TypeScript | Strict mode. No `any`. |
-| **Package manager** | pnpm | Lockfile and scripts aligned with arielperez.io. |
-| **Hosting** | GitHub Pages | Actions build + deploy (artifact → Pages). Custom domain optional (CNAME). |
+| Layer               | Choice               | Notes                                                                                |
+| ------------------- | -------------------- | ------------------------------------------------------------------------------------ |
+| **Framework**       | Astro 5.x            | Static output (`output: 'static'`). Content-driven; minimal client JS.               |
+| **Styling**         | Tailwind CSS 4.x     | Via `@tailwindcss/vite`. Custom theme for Tierra Viva palette.                       |
+| **Components**      | React 19.x (islands) | Where interactivity needed: nav, forms, carousels. Prefer Astro for static sections. |
+| **Language**        | TypeScript           | Strict mode. No `any`.                                                               |
+| **Package manager** | pnpm                 | Lockfile and scripts aligned with arielperez.io.                                     |
+| **Hosting**         | GitHub Pages         | Actions build + deploy (artifact → Pages). Custom domain optional (CNAME).           |
 
 **Reference:** Astro [framework guide (Tailwind)](https://tailwindcss.com/docs/installation/framework-guides/astro), [install and setup](https://docs.astro.build/en/install-and-setup/). Prefer `astro add tailwind` / `astro add react` for integrations.
 
@@ -102,13 +102,13 @@ tierra-viva-public-site/
 
 ### 3.1 Brand Colors (from logo)
 
-| Role | Hex | Usage |
-|------|-----|--------|
-| **Forest (primary)** | `#2E6E30` | Headings, nav, primary buttons, key accents. |
-| **Forest dark** | `#1E4A1F` | Headers, footer background, hover states (professional depth). |
-| **Lime (accent)** | `#68B62C` | CTAs, links, highlights, “VIVA” emphasis. Use sparingly. |
-| **Neutral / body** | `#262626` (or `#333333`) | Body text, footer text, “INVESTMENTS” tone. |
-| **Background** | `#FFFFFF`, `#FAFAFA` | Page and section backgrounds (Bexer-style clean). |
+| Role                 | Hex                      | Usage                                                          |
+| -------------------- | ------------------------ | -------------------------------------------------------------- |
+| **Forest (primary)** | `#2E6E30`                | Headings, nav, primary buttons, key accents.                   |
+| **Forest dark**      | `#1E4A1F`                | Headers, footer background, hover states (professional depth). |
+| **Lime (accent)**    | `#68B62C`                | CTAs, links, highlights, “VIVA” emphasis. Use sparingly.       |
+| **Neutral / body**   | `#262626` (or `#333333`) | Body text, footer text, “INVESTMENTS” tone.                    |
+| **Background**       | `#FFFFFF`, `#FAFAFA`     | Page and section backgrounds (Bexer-style clean).              |
 
 **Principle:** Lead with forest and neutral for trust; use lime for CTAs and key emphasis only.
 
@@ -137,15 +137,15 @@ Implement layout and section patterns in Astro/React to achieve the same “busi
 - **H1:** One per page — hero headline: “Living Capital for Living Places.”
 - **H2s:** Section titles (Why Tierra Viva, An Education-Anchored Development Model, Where We’re Focused, etc.). Each H2 maps to a future URL so that when splitting in I2, headings and URLs stay aligned:
 
-| Section (I1 H2) | Intended URL (I2+) |
-|----------------|--------------------|
+| Section (I1 H2)             | Intended URL (I2+)                        |
+| --------------------------- | ----------------------------------------- |
 | Why Tierra Viva / Our Model | /platform (pillars) + /about (who we are) |
-| Where We’re Focused | /projects |
-| Value & Governance | /strategy |
-| Responsible Investment | /responsible-investment |
-| Team | /team |
-| Research | /research |
-| Partner With Us | /contact |
+| Where We’re Focused         | /projects                                 |
+| Value & Governance          | /strategy                                 |
+| Responsible Investment      | /responsible-investment                   |
+| Team                        | /team                                     |
+| Research                    | /research                                 |
+| Partner With Us             | /contact                                  |
 
 - **Target phrases (I1):** e.g. “Tierra Viva,” “education-anchored communities Latin America,” “Dominican Republic real estate investment.” One clear answer-style sentence near the top (what Tierra Viva is and where it operates) for AEO.
 
@@ -178,6 +178,7 @@ Implement layout and section patterns in Astro/React to achieve the same “busi
 No fund terms, IRR, MOIC, or pricing in any content or schema.
 
 **Site constants (for implementation):**
+
 - **Contact email (mailto for now):** `info@tierravivainvest.com`. Use for “Start an Introductory Conversation” and “Explore Partnership Opportunities” until a form or backend exists.
 - **Future canonical site:** `https://www.tierravivainvest.com`.
 

@@ -22,10 +22,10 @@ This is intentionally **lean but expandable**. It balances credibility, narrativ
 
 ## **Footer / Utility**
 
-* Purpose & Disclaimer  
-* Responsible Investment  
-* Privacy Policy  
-* Jurisdiction Notice
+- Purpose & Disclaimer
+- Responsible Investment
+- Privacy Policy
+- Jurisdiction Notice
 
 ---
 
@@ -104,13 +104,13 @@ Shifting demographics, rising professional demand, and a structural undersupply 
 
 **Preliminary planning envisions a thoughtfully phased, mixed-use community including:**
 
-* Approximately 150–200 residential units
+- Approximately 150–200 residential units
 
-* A high-quality international-curriculum school 
+- A high-quality international-curriculum school
 
-* Community amenities, green corridors, and mixed commercial space
+- Community amenities, green corridors, and mixed commercial space
 
-* Sustainable infrastructure systems designed for resilience and efficiency
+- Sustainable infrastructure systems designed for resilience and efficiency
 
 ---
 
@@ -124,20 +124,20 @@ Shifting demographics, rising professional demand, and a structural undersupply 
 
 Our approach emphasizes:
 
-* A phased development horizon aligned with community building
+- A phased development horizon aligned with community building
 
-* Multiple, complementary value and revenue components across residential, educational, and commercial uses
+- Multiple, complementary value and revenue components across residential, educational, and commercial uses
 
-* Clear decision-making processes, independent oversight, and transparent reporting
+- Clear decision-making processes, independent oversight, and transparent reporting
 
-* International-standard operational controls and risk management frameworks
+- International-standard operational controls and risk management frameworks
 
 **Link CTA:**  
  → Learn About Our Strategy
 
 ---
 
-## **SECTION 5 — RESPONSIBLE INVESTMENT** 
+## **SECTION 5 — RESPONSIBLE INVESTMENT**
 
 **Section header:**  
  **Responsible Investment as a Source of Resilience**
@@ -150,13 +150,13 @@ Our approach emphasizes:
 
 Our approach emphasizes:
 
-* **Governance & Transparency:** Clear oversight structures, disciplined capital allocation, and transparent reporting aligned with international best practices.
+- **Governance & Transparency:** Clear oversight structures, disciplined capital allocation, and transparent reporting aligned with international best practices.
 
-* **Environmental Resilience:** Infrastructure, energy, and water systems designed to reduce operating risk, enhance efficiency, and support long-term asset durability.
+- **Environmental Resilience:** Infrastructure, energy, and water systems designed to reduce operating risk, enhance efficiency, and support long-term asset durability.
 
-* **Social Foundations:** Education access, local employment pathways, and community integration that strengthen demand stability and long-term occupancy.
+- **Social Foundations:** Education access, local employment pathways, and community integration that strengthen demand stability and long-term occupancy.
 
-* **Stewardship Orientation:** Development decisions evaluated not only on near-term returns, but on their ability to sustain value across economic cycles.
+- **Stewardship Orientation:** Development decisions evaluated not only on near-term returns, but on their ability to sustain value across economic cycles.
 
 We intend to report on selected, material indicators over time as projects advance, with a focus on substance over signaling.
 
@@ -196,11 +196,11 @@ We publish select insights to foster transparency, invite informed dialogue, and
 
 **Featured Insights:**
 
-* Why Education Anchors Long-Term Community Value
+- Why Education Anchors Long-Term Community Value
 
-* Dominican Republic: Demographics, Diaspora, and Demand
+- Dominican Republic: Demographics, Diaspora, and Demand
 
-* Responsible Development and Long-Term Asset Performance
+- Responsible Development and Long-Term Asset Performance
 
 **Link CTA:**  
  → Explore Research & Insights
@@ -226,4 +226,4 @@ We publish select insights to foster transparency, invite informed dialogue, and
 **Disclaimer (condensed):**  
  This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Any offering, if pursued, will be made only through formal materials provided to qualified individuals in compliance with applicable laws.
 
-*(Expanded disclaimer, jurisdiction notice, privacy policy, and responsible investment principles accessible via footer.)*
+_(Expanded disclaimer, jurisdiction notice, privacy policy, and responsible investment principles accessible via footer.)_

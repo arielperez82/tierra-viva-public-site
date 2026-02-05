@@ -3,12 +3,19 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "prepare": "husky",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
     "type-check": "tsc --noEmit",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ",
+    "lint:format": "NODE_OPTIONS=--experimental-strip-types prettier --check .",
+    "lint:format:fix": "NODE_OPTIONS=--experimental-strip-types prettier --write ",
+    "lint:md": "markdownlint .",
+    "lint:md:fix": "markdownlint --fix "
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -22,6 +29,13 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
-    "typescript": "^5.9.3"
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "markdownlint-cli": "^0.47.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
   }
 }

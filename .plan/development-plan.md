@@ -254,14 +254,14 @@
 
 ## Dependency Summary
 
-| Phase | Depends on | Unblocks |
-|-------|------------|----------|
-| 0 (Quality gate) | — | Phase 1 |
-| 1 (Scaffold) | 0 | Phase 2 |
-| 2 (I1 single-page) | 1 | Phase 3 |
-| 3 (I2 core pages) | 2 | Phase 4, 5 (placeholders) |
-| 4 (I3 Projects) | 3 | — |
-| 5 (I4 Research) | 3 | — |
-| 6 (Polish) | 3 (4, 5 optional) | — |
+| Phase              | Depends on        | Unblocks                  |
+| ------------------ | ----------------- | ------------------------- |
+| 0 (Quality gate)   | —                 | Phase 1                   |
+| 1 (Scaffold)       | 0                 | Phase 2                   |
+| 2 (I1 single-page) | 1                 | Phase 3                   |
+| 3 (I2 core pages)  | 2                 | Phase 4, 5 (placeholders) |
+| 4 (I3 Projects)    | 3                 | —                         |
+| 5 (I4 Research)    | 3                 | —                         |
+| 6 (Polish)         | 3 (4, 5 optional) | —                         |
 
 Phase 0 (Quality gate) is first and mandatory. Phase 4 and 5 can be parallelized after Phase 3. Phase 6 can start once Phase 3 is stable.

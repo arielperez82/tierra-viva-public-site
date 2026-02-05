@@ -71,27 +71,27 @@ close in 18-24 months with \$10 million to complete phases 2 & 3 which includes 
 
 ![](_page_8_Figure_4.jpeg)
 
-| Sources & Uses         |                    |         |         |          |  |  |  |  |  |
-|------------------------|--------------------|---------|---------|----------|--|--|--|--|--|
-|                        | Phase 1<br>Phase 2 |         | Phase 3 | Total    |  |  |  |  |  |
-| Uses                   |                    |         |         |          |  |  |  |  |  |
-| Capital Investments    | \$35.6M            | \$29.0M | \$21.0M | \$85.6M  |  |  |  |  |  |
-| Capital Reserves       | \$0.0M             | \$0.0M  | \$23.2M | \$23.2M  |  |  |  |  |  |
-| Total                  | \$35.6M            | \$29.0M | \$44.2M | \$108.9M |  |  |  |  |  |
-| Sources                |                    |         |         |          |  |  |  |  |  |
-| Equity                 | \$25.0M            |         |         | \$25.0M  |  |  |  |  |  |
-| Pre-Sale Deposits      | \$4.0M             | \$9.8M  | \$15.0M | \$28.7M  |  |  |  |  |  |
-| Sales (previous phase) |                    | \$18.6M | \$29.3M | \$47.9M  |  |  |  |  |  |
-| Debt                   | \$6.6M             | \$0.7M  | \$0.0M  | \$7.3M   |  |  |  |  |  |
-| Total                  | \$35.6M            | \$29.0M | \$44.2M | \$108.9M |  |  |  |  |  |
+| Sources & Uses         |                    |         |         |          |     |     |     |     |     |
+| ---------------------- | ------------------ | ------- | ------- | -------- | --- | --- | --- | --- | --- |
+|                        | Phase 1<br>Phase 2 |         | Phase 3 | Total    |     |     |     |     |     |
+| Uses                   |                    |         |         |          |     |     |     |     |     |
+| Capital Investments    | \$35.6M            | \$29.0M | \$21.0M | \$85.6M  |     |     |     |     |     |
+| Capital Reserves       | \$0.0M             | \$0.0M  | \$23.2M | \$23.2M  |     |     |     |     |     |
+| Total                  | \$35.6M            | \$29.0M | \$44.2M | \$108.9M |     |     |     |     |     |
+| Sources                |                    |         |         |          |     |     |     |     |     |
+| Equity                 | \$25.0M            |         |         | \$25.0M  |     |     |     |     |     |
+| Pre-Sale Deposits      | \$4.0M             | \$9.8M  | \$15.0M | \$28.7M  |     |     |     |     |     |
+| Sales (previous phase) |                    | \$18.6M | \$29.3M | \$47.9M  |     |     |     |     |     |
+| Debt                   | \$6.6M             | \$0.7M  | \$0.0M  | \$7.3M   |     |     |     |     |     |
+| Total                  | \$35.6M            | \$29.0M | \$44.2M | \$108.9M |     |     |     |     |     |
 
 ### **Fund Differentiation**
 
-**Diaspora demand flywheel** 
+**Diaspora demand flywheel**
 
 convert hard-currency remittances and expat/HNW networks into USD-linked presales and leases, creating early cash flow and faster DPI.
 
-**Education-anchored scarcity (with a Global Partner)** 
+**Education-anchored scarcity (with a Global Partner)**
 
 pair premium housing with a branded international-school or learning hub to unlock price premiums, deepen community stickiness, and drive outsized absorption.
 
@@ -99,7 +99,7 @@ pair premium housing with a branded international-school or learning hub to unlo
 
 SPV-per-asset with clear capital stacks, USD protections, hedging policy, phase-gated draws, GMP/fixed-price contracts, and best in class fund administration for clean repatriation and governance.
 
-**Established local partners, proprietary access** 
+**Established local partners, proprietary access**
 
 long-standing Santiago relationships secure offmarket land and expedited permits, reducing execution risk and delivering belowmarket basis.
 
@@ -134,7 +134,7 @@ long-standing Santiago relationships secure offmarket land and expedited permits
 - \$30M equity fund with \$7M additional debt for construction financing
 - 26% IRR with 4X+ MOIC over 10-year horizon
 - Optional draw down by year 5
-  
+
 ### **Fund Structure & Returns 10-Year Financial Overview**
 
 - Total revenues: \$153M
@@ -196,7 +196,6 @@ long-standing Santiago relationships secure offmarket land and expedited permits
 ### **Demographic Tailwinds**
 
 2.8-3.0 million Dominicans moved out of poverty over two decades; middle class now exceeds the poor
-
 
 ### **Middle class expansion Urban demand concentration Young, growing households**
 
@@ -374,7 +373,6 @@ Partner with Alpha School to launch a bilingual, international K-12 anchored on 
 
 ## **VG: <include renderings>**
 
-
 ### **Innovative Sustainability**
 
 ### **Energy Independence**
@@ -418,7 +416,7 @@ Partner with Alpha School to launch a bilingual, international K-12 anchored on 
 
 ## **VG: <include Daily Essentials renderings>**
 
-### **Altos de Gurabo Masterplan**  THE OFFER
+### **Altos de Gurabo Masterplan** THE OFFER
 
 ## **VG: <include renderings>**
 
@@ -511,7 +509,7 @@ THE DEAL
 - Exploring tokenization for reduced friction and easier liquidity
 
 | Sources & Uses         |         |         |         |              |
-|------------------------|---------|---------|---------|--------------|
+| ---------------------- | ------- | ------- | ------- | ------------ |
 |                        | Phase 1 | Phase 2 | Phase 3 | Total        |
 | Uses                   |         |         |         |              |
 | Capital Investments    | \$35.6M | \$29.0M | \$21.0M | \$85.6M      |
@@ -530,7 +528,7 @@ THE DEAL
 THE DEAL
 
 | Revenue, Expenses and NOI |                |              |              |              |               |               |               |               |               |               |                |
-|---------------------------|----------------|--------------|--------------|--------------|---------------|---------------|---------------|---------------|---------------|---------------|----------------|
+| ------------------------- | -------------- | ------------ | ------------ | ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------- |
 |                           | Y1             | Y2           | Y3           | Y4           | Y5            | Y6            | Y7            | Y8            | Y9            | Y10           | Total          |
 |                           |                |              |              |              |               |               |               |               |               |               |                |
 | Revenues                  | \$ -           | \$ 6,110,358 | \$ 4,959,131 | \$ 8,270,032 | \$ 14,612,721 | \$ 10,542,542 | \$ 19,851,047 | \$ 37,506,350 | \$ 21,906,819 | \$ 29,435,217 | \$ 153,194,217 |
@@ -548,7 +546,7 @@ THE DEAL
 ### **Annual Cash Flows**
 
 | Cash flows                | Y1              | Y2           | Y3           | Y4            | Y5           | Y6            | Y7            | Y8         | Y9         | Y10        | Total             |
-|---------------------------|-----------------|--------------|--------------|---------------|--------------|---------------|---------------|------------|------------|------------|-------------------|
+| ------------------------- | --------------- | ------------ | ------------ | ------------- | ------------ | ------------- | ------------- | ---------- | ---------- | ---------- | ----------------- |
 |                           |                 |              |              |               |              |               |               |            |            |            | \$<br>(25,000,000 |
 | Equity                    | \$ (25,000,000) |              |              |               |              |               |               |            |            |            | )                 |
 |                           |                 |              |              |               |              |               |               |            |            |            | \$                |
@@ -968,23 +966,23 @@ Sales velocity. Backstops: small releases, presale gates, strong broker network,
 1.Stakeholder map & strategy
 
 - 1. Municipality (Santiago):
-	- 1. Mayor José Ulises Rodríguez (2024–2028) political sponsor for zoning, traffic, and local services. [ayuntamientosantiago.gob.do](http://ayuntamientosantiago.gob.do/)
-	- 2. Urban Planning / "Uso de Suelo" office (Ayuntamiento) issues No Objeción al Uso de Suelo; route your master plan here first. [ayuntamientosantiago.gob.do](http://ayuntamientosantiago.gob.do/)[+1](https://ayuntamientosantiago.gob.do/servicios/?utm_source=chatgpt.com)
+  - 1.  Mayor José Ulises Rodríguez (2024–2028) political sponsor for zoning, traffic, and local services. [ayuntamientosantiago.gob.do](http://ayuntamientosantiago.gob.do/)
+  - 2.  Urban Planning / "Uso de Suelo" office (Ayuntamiento) issues No Objeción al Uso de Suelo; route your master plan here first. [ayuntamientosantiago.gob.do](http://ayuntamientosantiago.gob.do/)[+1](https://ayuntamientosantiago.gob.do/servicios/?utm_source=chatgpt.com)
 - 2. National Permitting (single window):
-	- 1. MIVED / Ventanilla Única de la Construcción (VUC) the official channel for construction licenses; desk of Minister Carlos Bonilla Sánchez oversees policy (incl. the new national building code). [vuc.gob.do](http://vuc.gob.do/)[+2mived.gob.do+2](https://www.vuc.gob.do/?utm_source=chatgpt.com)
+  - 1.  MIVED / Ventanilla Única de la Construcción (VUC) the official channel for construction licenses; desk of Minister Carlos Bonilla Sánchez oversees policy (incl. the new national building code). [vuc.gob.do](http://vuc.gob.do/)[+2mived.gob.do+2](https://www.vuc.gob.do/?utm_source=chatgpt.com)
 - 3. Environment (national):
-	- 1. Ministerio de Medio Ambiente Minister Paíno Henríquez; file your environmental authorization (Declaración/EIA per category). [Environmental Ministry+1](https://ambiente.gob.do/en/sobre-nosotros/despacho-del-ministro/?utm_source=chatgpt.com)
+  - 1.  Ministerio de Medio Ambiente Minister Paíno Henríquez; file your environmental authorization (Declaración/EIA per category). [Environmental Ministry+1](https://ambiente.gob.do/en/sobre-nosotros/despacho-del-ministro/?utm_source=chatgpt.com)
 - 4. Education (school operator):
-	- 1. MINERD Minister Luis Miguel De Camps (since Feb 2025); engage for private-school apertura/acreditación sequence and facilities standards. [Presidencia de la República](https://presidencia.gob.do/ministros/luis-miguel-de-camps-garcia-mella?utm_source=chatgpt.com) [Dominicana+1](https://presidencia.gob.do/ministros/luis-miguel-de-camps-garcia-mella?utm_source=chatgpt.com)
+  - 1.  MINERD Minister Luis Miguel De Camps (since Feb 2025); engage for private-school apertura/acreditación sequence and facilities standards. [Presidencia de la República](https://presidencia.gob.do/ministros/luis-miguel-de-camps-garcia-mella?utm_source=chatgpt.com) [Dominicana+1](https://presidencia.gob.do/ministros/luis-miguel-de-camps-garcia-mella?utm_source=chatgpt.com)
 - 5. Utilities (Santiago/Cibao):
-	- 1. CORAASAN (water/sewer) DG Andrés Cueto; obtain feasibility + connection letters and design approvals. [coraasan.gob.do](http://coraasan.gob.do/)
-	- 2. EDENORTE (power distributor) GM Gustavo Martínez (appointed Feb 3, 2025) for load studies, substation/line works, and metering. [Diario](https://www.diariolibre.com/economia/energia/2025/02/03/nuevo-gerente-general-de-edenorte/2987930?utm_source=chatgpt.com) [Libre](https://www.diariolibre.com/economia/energia/2025/02/03/nuevo-gerente-general-de-edenorte/2987930?utm_source=chatgpt.com)
+  - 1.  CORAASAN (water/sewer) DG Andrés Cueto; obtain feasibility + connection letters and design approvals. [coraasan.gob.do](http://coraasan.gob.do/)
+  - 2.  EDENORTE (power distributor) GM Gustavo Martínez (appointed Feb 3, 2025) for load studies, substation/line works, and metering. [Diario](https://www.diariolibre.com/economia/energia/2025/02/03/nuevo-gerente-general-de-edenorte/2987930?utm_source=chatgpt.com) [Libre](https://www.diariolibre.com/economia/energia/2025/02/03/nuevo-gerente-general-de-edenorte/2987930?utm_source=chatgpt.com)
 - 6. Investment facilitation / nearshoring links:
-	- 1. ProDominicana Exec. Dir. Biviana Riveiro; position the project within FDI narrative and repatriation facilitation. [prodominicana.gob.do+1](https://prodominicana.gob.do/?utm_source=chatgpt.com)
-	- 2. CNZFE (Free-Zone Council) Exec. Dir. Daniel Liranzo; align with nearby FTZ employers for corporate seat and housing programs. [Presidencia de la República Dominicana+1](https://presidencia.gob.do/noticias/consejo-nacional-de-zonas-francas-de-exportacion-aprobo-2-nuevos-parques-industriales-y-la?utm_source=chatgpt.com)
+  - 1.  ProDominicana Exec. Dir. Biviana Riveiro; position the project within FDI narrative and repatriation facilitation. [prodominicana.gob.do+1](https://prodominicana.gob.do/?utm_source=chatgpt.com)
+  - 2.  CNZFE (Free-Zone Council) Exec. Dir. Daniel Liranzo; align with nearby FTZ employers for corporate seat and housing programs. [Presidencia de la República Dominicana+1](https://presidencia.gob.do/noticias/consejo-nacional-de-zonas-francas-de-exportacion-aprobo-2-nuevos-parques-industriales-y-la?utm_source=chatgpt.com)
 - 7. Provincial & connectivity allies:
-	- 1. Gobernadora Provincial de Santiago, Rosa Santos convening power for inter-agency coordination. [Wikipedia](https://es.wikipedia.org/wiki/Anexo%3AGobernadores_provinciales_de_Rep%C3%BAblica_Dominicana?utm_source=chatgpt.com)
-	- 2. Cibao International Airport (STI) expansion underway; keep airport leadership looped for mobility messaging. [lainformacion.com.do](https://lainformacion.com.do/ciudad/santiago-de-los-caballeros/aeropuerto-internacional-del-cibao-contara-con-elevado-y-nueva-terminal-para-2027?utm_source=chatgpt.com)
+  - 1.  Gobernadora Provincial de Santiago, Rosa Santos convening power for inter-agency coordination. [Wikipedia](https://es.wikipedia.org/wiki/Anexo%3AGobernadores_provinciales_de_Rep%C3%BAblica_Dominicana?utm_source=chatgpt.com)
+  - 2.  Cibao International Airport (STI) expansion underway; keep airport leadership looped for mobility messaging. [lainformacion.com.do](https://lainformacion.com.do/ciudad/santiago-de-los-caballeros/aeropuerto-internacional-del-cibao-contara-con-elevado-y-nueva-terminal-para-2027?utm_source=chatgpt.com)
 
 ## **Key Partners/Service Providers**
 

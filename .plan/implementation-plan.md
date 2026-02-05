@@ -32,17 +32,17 @@
 
 ### Sections (in order)
 
-| # | Section name | Purpose | Copy / content intent |
-|---|--------------|---------|------------------------|
-| 1 | **Hero** | Identity + primary CTA | Headline: “Living Capital for Living Places.” Subhead: education-anchored communities across Latin America; one line on regenerative platform + institutional discipline. Primary CTA: “Start an Introductory Conversation.” Secondary: “Explore Our Thesis” (anchor to Strategy section). |
-| 2 | **Why + Model** | Purpose and how they build | **Why:** Either 2–3 sentences (families returning, prosperity and belonging, Tierra Viva exists to make that return possible) with four pillars at one sentence each, **or** one sentence for Why and **one** pillar (e.g. Learning) at two sentences as anchor; rest of pillars one sentence. Avoid generic compression; keep one clear narrative hook. **Our Model:** four pillars as tiles—Learning, Homes, Enterprise, Stewardship (from wireframe). No fund numbers. |
-| 3 | **Where We’re Focused** | Geography + proof | DR as first focus; Santiago; one line on demographics/diaspora. **First-project teaser (exact copy intent):** “Altos de Gurabo is our first flagship community in Santiago—an integrated neighborhood anchored by an international school, with homes, green space, and daily conveniences in one place.” Optional second sentence; no unit counts, no pricing. Optional: single image or “Coming soon” placeholder. |
-| 4 | **Value & Governance** | Why trust the platform | Short “platform built for enduring value”: phased development, multiple value streams, clear governance, transparent reporting. Bullets only. Link/CTA: “Learn About Our Strategy” (for later: will go to Strategy page; in Iteration 1 can be anchor or same-page). |
-| 5 | **Responsible Investment** | ESG / responsibility | Snapshot only: governance, environmental resilience, social foundations, stewardship. One short paragraph + 4 bullet lines. CTA: “Our Responsible Investment Principles” (later → dedicated page; Iteration 1 = anchor or in-page). |
-| 6 | **Team** | Credibility | Founder highlight: Ramon Marmolejos, title, one-line credential (e.g. Wharton, IE, 20+ years learning/impact). One line: “Supported by advisors and partners in capital markets, development, and governance.” CTA: “Meet the Team” (later → Team page; Iteration 1 = anchor). |
-| 7 | **Research** | Conviction + SEO hook | “Research-led conviction”: one sentence. Three **featured insight titles** only (e.g. “Why Education Anchors Long-Term Community Value,” “Dominican Republic: Demographics, Diaspora, and Demand,” “Responsible Development and Long-Term Asset Performance”). CTA: “Explore Research & Insights” (later → Research page; Iteration 1 = anchor or “Coming soon”). |
-| 8 | **Partner With Us** | Conversion | Two audience-specific CTAs: **“For Investors: Start an Introductory Conversation”** and **“For Partners: Explore Partnership Opportunities.”** Short line: invite those seeking long-term alignment. Same destination for now (e.g. contact form or email); later can branch. |
-| 9 | **Footer** | Legal + trust | Purpose & Disclaimer (informational only, no offer/solicitation). Links: Responsible Investment (anchor or placeholder), Privacy Policy, Jurisdiction Notice. |
+| #   | Section name               | Purpose                    | Copy / content intent                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| --- | -------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Hero**                   | Identity + primary CTA     | Headline: “Living Capital for Living Places.” Subhead: education-anchored communities across Latin America; one line on regenerative platform + institutional discipline. Primary CTA: “Start an Introductory Conversation.” Secondary: “Explore Our Thesis” (anchor to Strategy section).                                                                                                                                                                                |
+| 2   | **Why + Model**            | Purpose and how they build | **Why:** Either 2–3 sentences (families returning, prosperity and belonging, Tierra Viva exists to make that return possible) with four pillars at one sentence each, **or** one sentence for Why and **one** pillar (e.g. Learning) at two sentences as anchor; rest of pillars one sentence. Avoid generic compression; keep one clear narrative hook. **Our Model:** four pillars as tiles—Learning, Homes, Enterprise, Stewardship (from wireframe). No fund numbers. |
+| 3   | **Where We’re Focused**    | Geography + proof          | DR as first focus; Santiago; one line on demographics/diaspora. **First-project teaser (exact copy intent):** “Altos de Gurabo is our first flagship community in Santiago—an integrated neighborhood anchored by an international school, with homes, green space, and daily conveniences in one place.” Optional second sentence; no unit counts, no pricing. Optional: single image or “Coming soon” placeholder.                                                      |
+| 4   | **Value & Governance**     | Why trust the platform     | Short “platform built for enduring value”: phased development, multiple value streams, clear governance, transparent reporting. Bullets only. Link/CTA: “Learn About Our Strategy” (for later: will go to Strategy page; in Iteration 1 can be anchor or same-page).                                                                                                                                                                                                      |
+| 5   | **Responsible Investment** | ESG / responsibility       | Snapshot only: governance, environmental resilience, social foundations, stewardship. One short paragraph + 4 bullet lines. CTA: “Our Responsible Investment Principles” (later → dedicated page; Iteration 1 = anchor or in-page).                                                                                                                                                                                                                                       |
+| 6   | **Team**                   | Credibility                | Founder highlight: Ramon Marmolejos, title, one-line credential (e.g. Wharton, IE, 20+ years learning/impact). One line: “Supported by advisors and partners in capital markets, development, and governance.” CTA: “Meet the Team” (later → Team page; Iteration 1 = anchor).                                                                                                                                                                                            |
+| 7   | **Research**               | Conviction + SEO hook      | “Research-led conviction”: one sentence. Three **featured insight titles** only (e.g. “Why Education Anchors Long-Term Community Value,” “Dominican Republic: Demographics, Diaspora, and Demand,” “Responsible Development and Long-Term Asset Performance”). CTA: “Explore Research & Insights” (later → Research page; Iteration 1 = anchor or “Coming soon”).                                                                                                         |
+| 8   | **Partner With Us**        | Conversion                 | Two audience-specific CTAs: **“For Investors: Start an Introductory Conversation”** and **“For Partners: Explore Partnership Opportunities.”** Short line: invite those seeking long-term alignment. Same destination for now (e.g. contact form or email); later can branch.                                                                                                                                                                                             |
+| 9   | **Footer**                 | Legal + trust              | Purpose & Disclaimer (informational only, no offer/solicitation). Links: Responsible Investment (anchor or placeholder), Privacy Policy, Jurisdiction Notice.                                                                                                                                                                                                                                                                                                             |
 
 **Copy ownership (for content creator):** All section copy derived from wireframe + tierra-viva.md; no fund numbers, no IRR/MOIC, no deal terms. “Altos de Gurabo” or “first project” = place, school, sustainability, connectivity only.
 
@@ -58,14 +58,14 @@
 
 **New pages:**
 
-| Page | Purpose | Copy / content intent |
-|------|---------|------------------------|
-| **About** | Who Tierra Viva is | **Intent:** “Who we are, mission, backstory, why this team.” Mission (unlock potential of Latin America’s promising places). Who we are and why we exist in 1–2 paragraphs. **Do not** repeat the full education-anchored model here; link to Strategy and Platform for “how we invest” and “how we build.” No fund size or returns. |
-| **Strategy** | Thesis and capital approach | Investment thesis: where urban expansion, education, and affluent demand converge. Strategy: early entry, perimeter zones, phased community development. No deal terms. One primary keyword intent: e.g. “education-anchored real estate Latin America.” Clear answer block in first 1–2 paragraphs. |
-| **Platform** | How they build | Development model: four pillars (Learning, Homes, Enterprise, Stewardship) with short expansion each. Execution: phased, community-led; partnerships, governance. Optional: one diagram or visual. No financials. |
-| **Responsible Investment** | ESG and governance | Full content from wireframe Section 5: governance, environmental resilience, social foundations, stewardship. “Substance over signaling” line. No fund specifics. |
-| **Team & Governance** | Full team for trust | **GP (Ramon, Henry, Leslie):** 2–3 sentences each (role + relevant experience + value to fund). **IC (Ranjan, Jose Luis, Carlos, Ariel):** one sentence each (role + one credential or domain). **Key development partner:** Espejo y Asociados (name, one sentence). Source: tierra-viva.md appendix bios; trim for web, do not invent. Links to LinkedIn where appropriate. |
-| **Contact** | Conversion | **Intent sentence:** e.g. “Whether you’re exploring an investment conversation or a development or operating partnership, we’d like to hear from you.” **What happens next:** 1–2 lines (e.g. “We’ll respond within [X] to schedule a conversation.”). Single contact path (form or email). Optional: “For investors” / “For partners” as form dropdown or two buttons. |
+| Page                       | Purpose                     | Copy / content intent                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **About**                  | Who Tierra Viva is          | **Intent:** “Who we are, mission, backstory, why this team.” Mission (unlock potential of Latin America’s promising places). Who we are and why we exist in 1–2 paragraphs. **Do not** repeat the full education-anchored model here; link to Strategy and Platform for “how we invest” and “how we build.” No fund size or returns.                                          |
+| **Strategy**               | Thesis and capital approach | Investment thesis: where urban expansion, education, and affluent demand converge. Strategy: early entry, perimeter zones, phased community development. No deal terms. One primary keyword intent: e.g. “education-anchored real estate Latin America.” Clear answer block in first 1–2 paragraphs.                                                                          |
+| **Platform**               | How they build              | Development model: four pillars (Learning, Homes, Enterprise, Stewardship) with short expansion each. Execution: phased, community-led; partnerships, governance. Optional: one diagram or visual. No financials.                                                                                                                                                             |
+| **Responsible Investment** | ESG and governance          | Full content from wireframe Section 5: governance, environmental resilience, social foundations, stewardship. “Substance over signaling” line. No fund specifics.                                                                                                                                                                                                             |
+| **Team & Governance**      | Full team for trust         | **GP (Ramon, Henry, Leslie):** 2–3 sentences each (role + relevant experience + value to fund). **IC (Ranjan, Jose Luis, Carlos, Ariel):** one sentence each (role + one credential or domain). **Key development partner:** Espejo y Asociados (name, one sentence). Source: tierra-viva.md appendix bios; trim for web, do not invent. Links to LinkedIn where appropriate. |
+| **Contact**                | Conversion                  | **Intent sentence:** e.g. “Whether you’re exploring an investment conversation or a development or operating partnership, we’d like to hear from you.” **What happens next:** 1–2 lines (e.g. “We’ll respond within [X] to schedule a conversation.”). Single contact path (form or email). Optional: “For investors” / “For partners” as form dropdown or two buttons.       |
 
 **Homepage changes:** Section CTAs (“Learn About Our Strategy,” “Our Responsible Investment Principles,” “Meet the Team,” “Explore Research & Insights”) become real links to these pages. Hero “Explore Our Thesis” can link to Strategy. No new homepage sections; same 9 sections, now with working nav.
 
@@ -81,8 +81,8 @@
 
 **New page:**
 
-| Page | Purpose | Copy / content intent |
-|------|---------|------------------------|
+| Page                 | Purpose                | Copy / content intent                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Projects & Focus** | First project as proof | **Label and URL:** Use **“Projects & Focus”** consistently in nav, URLs, and internal links (SEO and brand clarity). **Featured project: Altos de Gurabo.** Content from tierra-viva.md “The Offer” / Altos de Gurabo only: location (Santiago, Gurabo), integrated community (residential, school, commercial, recreational), world-class international school (e.g. Alpha partnership, no financials), walkable master plan, residential options (townhomes/apartments—formats only, no prices), strategic connectivity (Northern Bypass, 5 min FTZ, 15 min airport), amenities (wellness, parks, security), sustainability (energy, water, climate-adapted envelope), mixed commercial (daily essentials, zero-commute). Optional: masterplan image, school or amenity visuals. **No unit counts, no pricing, no IRR, no fund terms.** |
 
 **Nav:** Add “Projects & Focus.” Homepage “Where We’re Focused” teaser links to this page.
@@ -101,10 +101,10 @@
 
 **New pages:**
 
-| Page | Purpose | Copy / content intent |
-|------|---------|------------------------|
-| **Research & Insights (hub)** | List and link to articles | Intro: strategy informed by research; we publish select insights for transparency and dialogue. List of articles with titles and short descriptions; each links to its article URL. Hub never launches empty (see below). |
-| **Individual articles** | One per primary query | **At least one full article at launch** (e.g. “Why Education Anchors Long-Term Community Value”) with full text, clear H1/H2s, answer-style opening. Other featured titles (“Dominican Republic: Demographics, Diaspora, and Demand,” “Responsible Development and Long-Term Asset Performance”) get their own URLs when published. If the first full article isn’t ready by I4: ship hub with a **short, permanent overview piece** (e.g. “How We Use Research”) plus one full insight article when ready. **Production:** Start drafting the first article in parallel with Iteration 2 so it’s ready for I4. Structure each article for one primary query and AEO-style answer near top. No fund or offer content. |
+| Page                          | Purpose                   | Copy / content intent                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ----------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Research & Insights (hub)** | List and link to articles | Intro: strategy informed by research; we publish select insights for transparency and dialogue. List of articles with titles and short descriptions; each links to its article URL. Hub never launches empty (see below).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Individual articles**       | One per primary query     | **At least one full article at launch** (e.g. “Why Education Anchors Long-Term Community Value”) with full text, clear H1/H2s, answer-style opening. Other featured titles (“Dominican Republic: Demographics, Diaspora, and Demand,” “Responsible Development and Long-Term Asset Performance”) get their own URLs when published. If the first full article isn’t ready by I4: ship hub with a **short, permanent overview piece** (e.g. “How We Use Research”) plus one full insight article when ready. **Production:** Start drafting the first article in parallel with Iteration 2 so it’s ready for I4. Structure each article for one primary query and AEO-style answer near top. No fund or offer content. |
 
 **Homepage:** “Explore Research & Insights” links to hub; featured insight titles link to hub or directly to article URLs when live.
 
@@ -120,12 +120,12 @@
 
 **Optional additions:**
 
-| Item | Purpose | Copy / content intent |
-|------|---------|------------------------|
-| **News / Press** (footer or sub-nav) | Press and announcements | Placeholder or list of press releases / news. No offer language. |
-| **Audience entry points** | Light segmentation | Footer or CTA block: “For Investors” / “For Partners” linking to same Contact with pre-set context (e.g. form field or query param). Copy: one line each. |
-| **Hero video or asset imagery** | Differentiation and proof | Per competitive research: hero video or high-quality project/place imagery. No copy change. |
-| **Contact branching** | Better lead routing | Two paths from “Partner With Us”: investors → one form/email; partners → another, with one sentence of copy each. |
+| Item                                 | Purpose                   | Copy / content intent                                                                                                                                     |
+| ------------------------------------ | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **News / Press** (footer or sub-nav) | Press and announcements   | Placeholder or list of press releases / news. No offer language.                                                                                          |
+| **Audience entry points**            | Light segmentation        | Footer or CTA block: “For Investors” / “For Partners” linking to same Contact with pre-set context (e.g. form field or query param). Copy: one line each. |
+| **Hero video or asset imagery**      | Differentiation and proof | Per competitive research: hero video or high-quality project/place imagery. No copy change.                                                               |
+| **Contact branching**                | Better lead routing       | Two paths from “Partner With Us”: investors → one form/email; partners → another, with one sentence of copy each.                                         |
 
 **Copy:** Minimal; mostly links and one-line cues. Disclaimer and legal pages unchanged.
 
@@ -133,17 +133,17 @@
 
 ## Page Summary (Final State)
 
-| Order | Page | When added | Primary audience |
-|-------|------|------------|-------------------|
-| — | Home | Iteration 1 | All |
-| 1 | About | Iteration 2 | All |
-| 2 | Strategy | Iteration 2 | Investors |
-| 3 | Platform | Iteration 2 | Investors, Partners |
-| 4 | Responsible Investment | Iteration 2 | Investors |
-| 5 | Team & Governance | Iteration 2 | All |
-| 6 | Research & Insights | Iteration 4 | All (credibility + SEO) |
-| 7 | Projects & Focus | Iteration 3 | Investors, Partners |
-| 8 | Contact | Iteration 2 | All |
+| Order | Page                   | When added  | Primary audience        |
+| ----- | ---------------------- | ----------- | ----------------------- |
+| —     | Home                   | Iteration 1 | All                     |
+| 1     | About                  | Iteration 2 | All                     |
+| 2     | Strategy               | Iteration 2 | Investors               |
+| 3     | Platform               | Iteration 2 | Investors, Partners     |
+| 4     | Responsible Investment | Iteration 2 | Investors               |
+| 5     | Team & Governance      | Iteration 2 | All                     |
+| 6     | Research & Insights    | Iteration 4 | All (credibility + SEO) |
+| 7     | Projects & Focus       | Iteration 3 | Investors, Partners     |
+| 8     | Contact                | Iteration 2 | All                     |
 
 **Nav order (proposal-aligned):** About → Strategy → Platform → Projects & Focus → Responsible Investment → Team & Governance → Research & Insights → Contact.
 
@@ -163,13 +163,13 @@
 
 ## RAPID (Plan Ownership)
 
-| Role | Who |
-|------|-----|
-| **Recommend** | This implementation plan (PM + Product Analyst + UI + Content + SEO view). |
-| **Agree** | Tierra Viva leadership (scope, order of iterations, copy boundaries). |
-| **Perform** | Content: copy per iteration. Design: layout and flow. Build: technical implementation (separate spec). |
-| **Input** | Legal (disclaimer, jurisdiction), SEO (keywords per page), UX (audience cues). |
-| **Decide** | Tierra Viva leadership (approve plan before technical spec and build). |
+| Role          | Who                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------ |
+| **Recommend** | This implementation plan (PM + Product Analyst + UI + Content + SEO view).                             |
+| **Agree**     | Tierra Viva leadership (scope, order of iterations, copy boundaries).                                  |
+| **Perform**   | Content: copy per iteration. Design: layout and flow. Build: technical implementation (separate spec). |
+| **Input**     | Legal (disclaimer, jurisdiction), SEO (keywords per page), UX (audience cues).                         |
+| **Decide**    | Tierra Viva leadership (approve plan before technical spec and build).                                 |
 
 ---
 
