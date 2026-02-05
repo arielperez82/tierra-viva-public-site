@@ -83,7 +83,24 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-0.6 — Axe / a11y linting (ESLint jsx-a11y) - DONE ✅
+### TV-0.6 — Stylelint for CSS and styles (Tailwind-aware)
+
+**Phase:** 0  
+**Description:** Stylelint for all CSS and style files. Config must be Tailwind-aware (e.g. `postcss-lit` or `stylelint-plugin-tailwindcss`) so Tailwind directives and utilities are valid. Ensures style consistency and catches invalid/unknown at-rules and properties on every commit.
+
+**Acceptance criteria:**
+
+- [ ] Stylelint installed; config (e.g. `.stylelintrc.json` or `stylelint.config.js`) with Tailwind compatibility (e.g. `postcss-lit`, or `stylelint-config-standard` + `stylelint-plugin-tailwindcss`).
+- [ ] Config disables rules that conflict with Prettier (e.g. `stylelint-config-prettier`).
+- [ ] `pnpm lint:css` (check) and `pnpm lint:css:fix` (fix) run Stylelint on `src/**/*.css` (and any other style files in use).
+- [ ] Pre-commit runs Stylelint on staged `*.css` (and staged style files) via lint-staged.
+- [ ] README documents the scripts.
+
+**Notes:** Tailwind uses `@tailwind`, `@apply`, and custom at-rules; Stylelint must either understand them (plugin) or allow them (e.g. `postcss-lit` or rule overrides) so the build and lint both pass.
+
+---
+
+### TV-0.7 — Axe / a11y linting (ESLint jsx-a11y) - DONE ✅
 
 **Phase:** 0  
 **Description:** Accessibility linting via `eslint-plugin-jsx-a11y` for React/JSX. Ensures a11y rules are enforced on every commit for component code.
@@ -95,7 +112,7 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-0.7 — Lighthouse (a11y, SEO, performance)
+### TV-0.8 — Lighthouse (a11y, SEO, performance)
 
 **Phase:** 0  
 **Description:** Lighthouse script for a11y, SEO, and performance. Runnable via pnpm (e.g. against preview build); optional CI step. Not required on every pre-commit (too slow) but part of the quality toolkit. **CI recommendation:** run `pnpm check` and `pnpm lint` (and optionally `pnpm lint:md`) on push/PR to protect main; optionally add Lighthouse to CI on main or PR.

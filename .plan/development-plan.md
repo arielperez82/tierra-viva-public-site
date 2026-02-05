@@ -31,13 +31,16 @@
 5. **MarkdownLint**
    - `markdownlint-cli`, `.markdownlint.json` / `.markdownlintignore`. `pnpm lint:md` and `pnpm lint:md:fix`. Pre-commit on staged `*.md`.
 
-6. **A11y linting (eslint-plugin-jsx-a11y)**
+6. **Stylelint (CSS and styles, Tailwind-aware)**
+   - Stylelint for `src/**/*.css` and other style files. Config Tailwind-aware (e.g. `postcss-lit` or `stylelint-plugin-tailwindcss`) so `@tailwind`, `@apply`, and Tailwind at-rules are valid. Use `stylelint-config-prettier` to avoid conflicts with Prettier. `pnpm lint:css` and `pnpm lint:css:fix`; pre-commit on staged `*.css`.
+
+7. **A11y linting (eslint-plugin-jsx-a11y)**
    - Add `eslint-plugin-jsx-a11y` to ESLint; recommended rules for React/JSX (and Astro client scripts as applicable). Part of `pnpm lint` and pre-commit.
 
-7. **Lighthouse (a11y, SEO, performance)**
+8. **Lighthouse (a11y, SEO, performance)**
    - Script (e.g. `pnpm lighthouse`) to run Lighthouse against preview/build. Document in README; optional CI step. Not on pre-commit (too slow).
 
-**Exit criteria:** All seven tools configured; `pnpm check`, `pnpm lint`, `pnpm lint:md` (and fix variants) pass; pre-commit runs and blocks on failure; README documents scripts.
+**Exit criteria:** All eight tools configured; `pnpm check`, `pnpm lint`, `pnpm lint:md`, `pnpm lint:css` (and fix variants) pass; pre-commit runs and blocks on failure; README documents scripts.
 
 ---
 
