@@ -4,6 +4,7 @@ import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
 import eslintPluginAstro from "eslint-plugin-astro";
+import jsxA11y from "eslint-plugin-jsx-a11y";
 
 const tsconfigRootDir = path.dirname(fileURLToPath(import.meta.url));
 
@@ -38,6 +39,10 @@ export default [
     files: ["**/*.jsx", "**/*.tsx"],
     ...reactPlugin.configs.flat.recommended,
     ...reactPlugin.configs.flat["jsx-runtime"],
+  },
+  {
+    files: ["**/*.jsx", "**/*.tsx"],
+    ...jsxA11y.flatConfigs.recommended,
   },
   ...eslintPluginAstro.configs.recommended,
 ];

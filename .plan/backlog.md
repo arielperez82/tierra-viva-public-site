@@ -83,15 +83,15 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-0.6 — Axe / a11y linting (ESLint jsx-a11y)
+### TV-0.6 — Axe / a11y linting (ESLint jsx-a11y) - DONE ✅
 
 **Phase:** 0  
 **Description:** Accessibility linting via `eslint-plugin-jsx-a11y` for React/JSX. Ensures a11y rules are enforced on every commit for component code.
 
 **Acceptance criteria:**
 
-- [ ] `eslint-plugin-jsx-a11y` in ESLint config; recommended rules applied for `**/*.{jsx,tsx}` (and Astro client scripts if applicable).
-- [ ] A11y violations fail lint; run as part of `pnpm lint` and pre-commit.
+- [x] `eslint-plugin-jsx-a11y` in ESLint config; recommended rules applied for `**/*.{jsx,tsx}` (and Astro client scripts if applicable).
+- [x] A11y violations fail lint; run as part of `pnpm lint` and pre-commit.
 
 ---
 
