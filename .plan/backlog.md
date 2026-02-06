@@ -185,6 +185,8 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ## Phase 2 — Iteration 1 (Single-page)
 
+**Note:** Section-level tests (e.g. Vitest + Testing Library or Playwright) for critical sections are recommended after I1 or early Phase 2; not a blocker for individual section completion.
+
 ### TV-2.1 — Header with logo and optional CTA - DONE ✅
 
 **Phase:** 2  
@@ -211,16 +213,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.3 — Why + Model section (four pillars)
+### TV-2.3 — Why + Model section (four pillars) - DONE ✅
 
 **Phase:** 2  
 **Description:** “Why Tierra Viva” short copy plus four pillar tiles: Learning, Homes, Enterprise, Stewardship. Copy from wireframe; no fund numbers.
 
 **Acceptance criteria:**
 
-- [ ] Section has id for anchor (e.g. `id="why-model"`).
-- [ ] Four pillars visible as tiles/cards with titles and one sentence each.
-- [ ] H2 (or equivalent) for section; no duplicate H1.
+- [x] Section has id for anchor (e.g. `id="why-model"`).
+- [x] Four pillars visible as tiles/cards with titles and one sentence each.
+- [x] H2 (or equivalent) for section; no duplicate H1.
 
 ---
 
@@ -579,6 +581,20 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
+### TV-6.5 — Revisit PILLARS as content collection (markdown)
+
+**Phase:** 6  
+**Description:** Migrate the four pillars (Learning, Homes, Enterprise, Stewardship) from `src/data/pillars.ts` to an Astro content collection so they can be managed as markdown (e.g. `src/content/pillars/*.md`). Enables non-developers to edit pillar copy, keeps content in version control, and aligns with the Research collection pattern. Homepage WhyModel and Platform page (TV-3.4) should consume the collection.
+
+**Acceptance criteria:**
+
+- [ ] Content collection `src/content/config.ts` includes a `pillars` collection with schema (title, description, optional order/slug).
+- [ ] One .md file per pillar; frontmatter and body or frontmatter-only per schema.
+- [ ] WhyModel (and Platform when built) fetches pillars from the collection; `src/data/pillars.ts` removed or re-exported from collection for type safety.
+- [ ] Build and type-check pass; pillar content unchanged from current copy.
+
+---
+
 ## Summary by Phase
 
 | Phase | Ticket count | Focus                                                                                      |
@@ -589,6 +605,6 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 | 3     | 11           | Nav, 6 core pages, 2 placeholders, homepage CTAs, sitemap                                  |
 | 4     | 2            | Projects & Focus page, homepage link                                                       |
 | 5     | 3            | Research hub, first article, homepage links                                                |
-| 6     | 4            | Legal pages, audience entry, contact branching, audit                                      |
+| 6     | 5            | Legal pages, audience entry, contact branching, audit, pillars content collection          |
 
-**Total:** 42 tickets. **Phase 0 (Quality gate) is first and non-negotiable;** every commit must pass pre-commit checks. Phase 4 and 5 can be parallelized after Phase 3. Phase 6 items are optional or polish.
+**Total:** 43 tickets. **Phase 0 (Quality gate) is first and non-negotiable;** every commit must pass pre-commit checks. Phase 4 and 5 can be parallelized after Phase 3. Phase 6 items are optional or polish.
