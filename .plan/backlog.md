@@ -576,8 +576,8 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 **Acceptance criteria:**
 
-- [ ] No critical a11y or performance regressions.
-- [ ] Contrast and focus order verified; reduced-motion respected where applicable.
+- [x] No critical a11y or performance regressions.
+- [x] Contrast and focus order verified; reduced-motion respected where applicable.
 
 ---
 
