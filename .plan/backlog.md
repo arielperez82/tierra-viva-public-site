@@ -239,15 +239,15 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.5 — Value & Governance section
+### TV-2.5 — Value & Governance section - DONE ✅
 
 **Phase:** 2  
 **Description:** Short “platform built for enduring value” plus bullets (phased development, value streams, governance, reporting). CTA “Learn About Our Strategy” (anchor for I1).
 
 **Acceptance criteria:**
 
-- [ ] Section id (e.g. `id="value-governance"`).
-- [ ] Bullets and CTA present; CTA is anchor link for I1.
+- [x] Section id (e.g. `id="value-governance"`).
+- [x] Bullets and CTA present; CTA is anchor link for I1.
 
 ---
 
