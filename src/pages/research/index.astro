@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../../consts";
+
+const entries = (await getCollection("research")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<BaseLayout
+  title={`Research & Insights | ${SITE_TITLE}`}
+  description="Research-led conviction: select insights on education-anchored development, demographics, and long-term community value."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
+    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
+      Research &amp; Insights
+    </h1>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      Our strategy is informed by continuous research into regional macro
+      trends, education-anchored development models, governance frameworks, and
+      long-term community economics. We publish select insights to foster
+      transparency and informed dialogue.
+    </p>
+    <ul class="mt-10 space-y-6" role="list">
+      {entries.map((entry) => (
+        <li>
+          <a
+            href={`/research/${entry.id}`}
+            class="block rounded-lg border border-tierra-forest/10 bg-tierra-sage/5 p-4 transition hover:border-tierra-forest/20 hover:bg-tierra-sage/10 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+          >
+            <h2 class="font-semibold text-tierra-forest-dark">
+              {entry.data.title}
+            </h2>
+            <p class="mt-2 text-sm leading-relaxed text-tierra-forest-dark/95">
+              {entry.data.description}
+            </p>
+            <p class="mt-2 text-xs text-tierra-forest-dark/70">
+              <time datetime={entry.data.pubDate.toISOString()}>
+                {entry.data.pubDate.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+            </p>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-10">
+      <a
+        href="/"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Back to home
+      </a>
+    </p>
+  </article>
+</BaseLayout>

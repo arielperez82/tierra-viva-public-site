@@ -464,17 +464,17 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ## Phase 4 — Iteration 3 (Projects & Focus)
 
-### TV-4.1 — Projects & Focus page with Altos de Gurabo
+### TV-4.1 — Projects & Focus page with Altos de Gurabo - DONE ✅
 
 **Phase:** 4  
 **Description:** Replace placeholder with full “Projects & Focus” page. Featured project: Altos de Gurabo—location, integrated community, school, master plan, residential formats (no prices), connectivity, amenities, sustainability, mixed commercial. Optional images.
 
 **Acceptance criteria:**
 
-- [ ] `/projects` shows full Altos de Gurabo content per implementation-plan.
-- [ ] No unit counts, pricing, IRR, or fund terms.
+- [x] `/projects` shows full Altos de Gurabo content per implementation-plan.
+- [x] No unit counts, pricing, IRR, or fund terms.
 - [ ] Optional masterplan/school/amenity imagery.
-- [ ] Answer-style intro for SEO (what/where).
+- [x] Answer-style intro for SEO (what/where).
 
 ---
 
@@ -485,48 +485,48 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 **Acceptance criteria:**
 
-- [ ] At least one clear link from homepage to Projects page.
+- [x] At least one clear link from homepage to Projects page.
 
 ---
 
 ## Phase 5 — Iteration 4 (Research hub + articles)
 
-### TV-5.1 — Research content collection, article template, and hub page
+### TV-5.1 — Research content collection, article template, and hub page - DONE ✅
 
 **Phase:** 5  
 **Description:** Define content collection `src/content/research/` (title, description, slug, date). Add templated article route (e.g. `src/pages/research/[...slug].astro`) with `getStaticPaths` from collection so one layout renders all articles. Research hub page lists articles with title, description, link to `/research/<slug>`.
 
 **Acceptance criteria:**
 
-- [ ] Content collection with schema; one .md/.mdx per article.
-- [ ] Single article template; one URL per collection entry.
-- [ ] Hub at `/research` lists all published articles with links.
-- [ ] Intro copy per implementation-plan.
+- [x] Content collection with schema; one .md/.mdx per article.
+- [x] Single article template; one URL per collection entry.
+- [x] Hub at `/research` lists all published articles with links.
+- [x] Intro copy per implementation-plan.
 
 ---
 
-### TV-5.2 — First full Research article (in collection)
+### TV-5.2 — First full Research article (in collection) - DONE ✅
 
 **Phase:** 5  
 **Description:** Add at least one entry to the research content collection (e.g. “Why Education Anchors Long-Term Community Value”) with full text, H1/H2, answer-style opening. If only one ready, add “How We Use Research” overview entry plus one insight.
 
 **Acceptance criteria:**
 
-- [ ] At least one collection entry; renders at `/research/<slug>` via template.
-- [ ] Clear H1/H2; answer-style intro; no offer content.
-- [ ] Hub links to it.
+- [x] At least one collection entry; renders at `/research/<slug>` via template.
+- [x] Clear H1/H2; answer-style intro; no offer content.
+- [x] Hub links to it.
 
 ---
 
-### TV-5.3 — Homepage Research links to hub and articles
+### TV-5.3 — Homepage Research links to hub and articles - DONE ✅
 
 **Phase:** 5  
 **Description:** “Explore Research & Insights” and featured titles link to hub or direct article URLs.
 
 **Acceptance criteria:**
 
-- [ ] Homepage Research CTA and titles point to hub or article URLs.
-- [ ] No broken links.
+- [x] Homepage Research CTA and titles point to hub or article URLs.
+- [x] No broken links.
 
 ---
 
