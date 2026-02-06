@@ -3,19 +3,24 @@ import "../styles/global.css";
 import { SITE_TITLE } from "../consts";
 import Header from "../components/Header.astro";
 
+const DEFAULT_DESCRIPTION =
+  "Tierra Viva builds education-anchored communities across Latin America—where learning, enterprise, and long-term investment create shared prosperity.";
+
 type Props = {
   title?: string;
+  description?: string;
 };
 
-const { title } = Astro.props;
+const { title, description = DEFAULT_DESCRIPTION } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <title>{title ?? SITE_TITLE}</title>
   </head>

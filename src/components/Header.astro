@@ -1,5 +1,7 @@
 ---
-import { SITE_TITLE, CONTACT_EMAIL } from "../consts";
+import { Image } from "astro:assets";
+import { CONTACT_EMAIL } from "../consts";
+import logoHorizontal from "../assets/tierra-viva-investments-logo-horizontal.png";
 ---
 
 <header class="sticky top-0 z-50 border-b border-tierra-neutral/10 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/80">
@@ -7,13 +9,12 @@ import { SITE_TITLE, CONTACT_EMAIL } from "../consts";
     <a
       href="/"
       class="flex items-center focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 rounded"
-      aria-label={`${SITE_TITLE} — home`}
     >
-      <img
-        src={`${import.meta.env.BASE_URL}tierra-viva-investments-logo-horizontal.png`}
+      <Image
+        src={logoHorizontal}
         alt="Tierra Viva Investments"
-        width="240"
-        height="56"
+        width={240}
+        height={56}
         class="h-12 w-auto sm:h-14"
         decoding="async"
         fetchpriority="high"
@@ -56,19 +57,4 @@ import { SITE_TITLE, CONTACT_EMAIL } from "../consts";
   </div>
 </header>
 
-<script>
-  function initHeader() {
-    const toggle = document.querySelector("[data-header-toggle]");
-    const menu = document.querySelector("[data-header-menu]");
-    if (!toggle || !menu) return;
-
-    toggle.addEventListener("click", () => {
-      const expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      toggle.setAttribute("aria-label", expanded ? "Open menu" : "Close menu");
-      menu.classList.toggle("hidden", expanded);
-      menu.setAttribute("aria-hidden", String(expanded));
-    });
-  }
-  initHeader();
-</script>
+<script src="../scripts/header.ts" />
