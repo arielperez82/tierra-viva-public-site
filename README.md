@@ -58,7 +58,7 @@ Pre-commit (Husky + lint-staged) runs full-project type-check, ESLint fix, Prett
 - `lighthouse-report.report.json` — raw data
 - `lighthouse-report.md` — score summary table
 
-**Config:** Defaults come from `lighthouse.config.json` (`port`, `basePath`, `reportDir`). Override with env vars (no dotenv inside the script; pass env from outside if needed):
+**Config:** Defaults come from `lighthouse.config.ts` (`port`, `basePath`, `reportDir`). Override with env vars (no dotenv inside the script; pass env from outside if needed). The `.ts` config allows dynamic logic when required.
 
 | Env var                 | Effect                                                                                      |
 | ----------------------- | ------------------------------------------------------------------------------------------- |

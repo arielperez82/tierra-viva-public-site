@@ -2,15 +2,10 @@ import { readFileSync, mkdirSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execSync } from "node:child_process";
+import { getLighthouseConfig } from "../lighthouse.config";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
-
-type LighthouseConfig = {
-  port: number;
-  basePath: string;
-  reportDir: string;
-};
 
 type LighthouseCategory = {
   title?: string;
@@ -20,37 +15,6 @@ type LighthouseCategory = {
 type LighthouseReport = {
   categories?: Record<string, LighthouseCategory>;
 };
-
-const defaultConfig: LighthouseConfig = {
-  port: 4321,
-  basePath: "/tierra-viva-public-site/",
-  reportDir: "test-reports",
-};
-
-function loadConfig(): LighthouseConfig {
-  const configPath = join(root, "lighthouse.config.json");
-  let fileConfig: Partial<LighthouseConfig> = {};
-  if (existsSync(configPath)) {
-    fileConfig = JSON.parse(
-      readFileSync(configPath, "utf8")
-    ) as Partial<LighthouseConfig>;
-  }
-  const basePath = (
-    process.env.LIGHTHOUSE_BASE_PATH ??
-    fileConfig.basePath ??
-    defaultConfig.basePath
-  ).replace(/\/?$/, "/");
-  return {
-    port: Number(
-      process.env.LIGHTHOUSE_PORT ?? fileConfig.port ?? defaultConfig.port
-    ),
-    basePath,
-    reportDir:
-      process.env.LIGHTHOUSE_REPORT_DIR ??
-      fileConfig.reportDir ??
-      defaultConfig.reportDir,
-  };
-}
 
 function writeMdSummary(jsonPath: string, mdPath: string): void {
   if (!existsSync(jsonPath)) return;
@@ -68,7 +32,7 @@ function writeMdSummary(jsonPath: string, mdPath: string): void {
   writeFileSync(mdPath, lines.join("\n") + "\n", "utf8");
 }
 
-const config = loadConfig();
+const config = getLighthouseConfig();
 const url =
   process.env.LIGHTHOUSE_URL ??
   `http://localhost:${config.port}${config.basePath}`;
