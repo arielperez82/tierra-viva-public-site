@@ -328,93 +328,93 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ## Phase 3 — Iteration 2 (Core pages + nav)
 
-### TV-3.1 — Navigation component with full nav order
+### TV-3.1 — Navigation component with full nav order - DONE ✅
 
 **Phase:** 3  
 **Description:** Implement nav: About → Strategy → Platform → Projects & Focus → Responsible Investment → Team & Governance → Research & Insights → Contact. Responsive menu. Projects & Research can link to placeholders.
 
 **Acceptance criteria:**
 
-- [ ] All eight items in order; links work (pages or placeholders).
-- [ ] Mobile menu works; no broken layout.
-- [ ] Accessible (keyboard, focus).
+- [x] All eight items in order; links work (pages or placeholders).
+- [x] Mobile menu works; no broken layout.
+- [x] Accessible (keyboard, focus).
 
 ---
 
-### TV-3.2 — About page
+### TV-3.2 — About page - DONE ✅
 
 **Phase:** 3  
 **Description:** About page: who we are, mission, backstory. No full pillar repeat; link to Strategy and Platform. Copy from implementation-plan.
 
 **Acceptance criteria:**
 
-- [ ] Route `/about` renders full content.
-- [ ] One H1; H2s as needed; links to Strategy and Platform.
-- [ ] No fund size or returns.
+- [x] Route `/about` renders full content.
+- [x] One H1; H2s as needed; links to Strategy and Platform.
+- [x] No fund size or returns.
 
 ---
 
-### TV-3.3 — Strategy page
+### TV-3.3 — Strategy page - DONE ✅
 
 **Phase:** 3  
 **Description:** Investment thesis and capital approach (no deal terms). Answer-style intro. Copy from wireframe + tierra-viva.md.
 
 **Acceptance criteria:**
 
-- [ ] Route `/strategy` renders; clear answer block in first 1–2 paragraphs.
-- [ ] One primary intent (e.g. education-anchored real estate Latin America); no offer content.
+- [x] Route `/strategy` renders; clear answer block in first 1–2 paragraphs.
+- [x] One primary intent (e.g. education-anchored real estate Latin America); no offer content.
 
 ---
 
-### TV-3.4 — Platform page
+### TV-3.4 — Platform page - DONE ✅
 
 **Phase:** 3  
 **Description:** Four pillars with short expansion; execution (phased, partnerships, governance). Optional diagram. No financials.
 
 **Acceptance criteria:**
 
-- [ ] Route `/platform` renders; four pillars and execution described.
-- [ ] No fund or pricing content.
+- [x] Route `/platform` renders; four pillars and execution described.
+- [x] No fund or pricing content.
 
 ---
 
-### TV-3.5 — Responsible Investment page
+### TV-3.5 — Responsible Investment page - DONE ✅
 
 **Phase:** 3  
 **Description:** Full content from wireframe Section 5: governance, environmental, social, stewardship; “substance over signaling.”
 
 **Acceptance criteria:**
 
-- [ ] Route `/responsible-investment` (or `/responsible-investment`) renders full section content.
-- [ ] All four bullets and intro present.
+- [x] Route `/responsible-investment` (or `/responsible-investment`) renders full section content.
+- [x] All four bullets and intro present.
 
 ---
 
-### TV-3.6 — Team & Governance page
+### TV-3.6 — Team & Governance page - DONE ✅
 
 **Phase:** 3  
 **Description:** GP (Ramon, Henry, Leslie) 2–3 sentences each; IC (Ranjan, Jose Luis, Carlos, Ariel) one sentence each; key partner Espejo y Asociados. Bios from tierra-viva.md; LinkedIn links where appropriate.
 
 **Acceptance criteria:**
 
-- [ ] Route `/team` renders all GP and IC and partner.
-- [ ] Bios trimmed from source only; no invention; LinkedIn links where applicable.
+- [x] Route `/team` renders all GP and IC and partner.
+- [x] Bios trimmed from source only; no invention; LinkedIn links where applicable.
 
 ---
 
-### TV-3.7 — Contact page
+### TV-3.7 — Contact page - DONE ✅
 
 **Phase:** 3  
 **Description:** Intent sentence; “what happens next” (e.g. response time). Use mailto:info@tierravivainvest.com for now (no form). Optional “For investors” / “For partners” as two mailto links or buttons with same address.
 
 **Acceptance criteria:**
 
-- [ ] Route `/contact` renders; clear next step for user.
-- [ ] Mailto link(s) to info@tierravivainvest.com; optional audience selector (same mailto).
+- [x] Route `/contact` renders; clear next step for user.
+- [x] Mailto link(s) to info@tierravivainvest.com; optional audience selector (same mailto).
 
 ---
 
-### TV-3.8 — Projects & Focus placeholder page
+### TV-3.8 — Projects & Focus placeholder page - DONE ✅
 
 **Phase:** 3  
 **Description:** Add `/projects` page with “Coming soon” or minimal intro so nav link works until I3.
@@ -445,20 +445,20 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 **Acceptance criteria:**
 
-- [ ] Every section CTA that should go to a page does so.
-- [ ] No dead anchors unless intentional (e.g. same-page scroll).
+- [x] Every section CTA that should go to a page does so.
+- [x] No dead anchors unless intentional (e.g. same-page scroll).
 
 ---
 
-### TV-3.11 — Sitemap and per-page meta
+### TV-3.11 — Sitemap and per-page meta - DONE ✅
 
 **Phase:** 3  
 **Description:** Ensure sitemap includes all new routes. Per-page title and description for SEO.
 
 **Acceptance criteria:**
 
-- [ ] Sitemap generated (e.g. @astrojs/sitemap); all public pages included.
-- [ ] Each page has unique title and description where applicable.
+- [x] Sitemap generated (e.g. @astrojs/sitemap); all public pages included.
+- [x] Each page has unique title and description where applicable.
 
 ---
 

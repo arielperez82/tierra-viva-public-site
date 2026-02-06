@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<BaseLayout
+  title={`About | ${SITE_TITLE}`}
+  description="Tierra Viva unlocks the potential of Latin America's most promising places through education-anchored, purpose-driven community development."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
+    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">About Tierra Viva</h1>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      Tierra Viva is a real estate investment platform building high-quality,
+      purpose-driven communities across Latin America. We exist to unlock the
+      potential of the region's most promising places by connecting global
+      capital with local vision.
+    </p>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      Our mission is to make it possible for families who have left in search of
+      opportunity to return—to places that offer both prosperity and belonging.
+      We design communities where children can learn, families can grow, and
+      capital is deployed with intention.
+    </p>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      For how we invest and our investment thesis, see our
+      <a
+        href="/strategy"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Strategy
+      </a>
+      page. For how we build—our development model and four pillars—see
+      <a
+        href="/platform"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Platform
+      </a>.
+    </p>
+    <p class="mt-10">
+      <a
+        href="/"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Back to home
+      </a>
+    </p>
+  </article>
+</BaseLayout>

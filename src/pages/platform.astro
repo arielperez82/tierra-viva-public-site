@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { PILLARS } from "../data/pillars";
+import { SITE_TITLE } from "../consts";
+---
+
+<BaseLayout
+  title={`Platform | ${SITE_TITLE}`}
+  description="Tierra Viva's development model: four pillars—Learning, Homes, Enterprise, Stewardship—and phased, community-led execution."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
+    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
+      An Education-Anchored Development Model
+    </h1>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      Every Tierra Viva community is designed as an interconnected system of
+      social, economic, and environmental value creation—anchored by learning
+      and governed for the long term.
+    </p>
+    <h2 class="mt-10 text-xl font-semibold tracking-tight">Four Pillars</h2>
+    <ul class="mt-6 space-y-6" role="list">
+      {PILLARS.map((pillar) => (
+        <li class="rounded-lg border border-tierra-forest/10 bg-tierra-sage/5 p-4">
+          <h3 class="font-semibold text-tierra-forest-dark">{pillar.title}</h3>
+          <p class="mt-2 text-base leading-relaxed text-tierra-forest-dark/95">
+            {pillar.description}
+          </p>
+        </li>
+      ))}
+    </ul>
+    <h2 class="mt-10 text-xl font-semibold tracking-tight">Execution</h2>
+    <p class="mt-4 text-base leading-relaxed text-tierra-forest-dark/95">
+      Our approach is phased and community-led: we build infrastructure and
+      amenities first, attract families through early presales, then add
+      schools and commercial nodes. Partnerships with experienced local
+      developers, clear governance, and transparent reporting underpin
+      execution. We do not disclose fund or pricing details on this site.
+    </p>
+    <p class="mt-10">
+      <a
+        href="/"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Back to home
+      </a>
+    </p>
+  </article>
+</BaseLayout>

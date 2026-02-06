@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { CONTACT_EMAIL, SITE_TITLE } from "../consts";
+---
+
+<BaseLayout
+  title={`Contact | ${SITE_TITLE}`}
+  description="Get in touch with Tierra Viva—whether you're exploring an investment conversation or a development or operating partnership."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
+    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">Contact</h1>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      Whether you're exploring an investment conversation or a development or
+      operating partnership, we'd like to hear from you.
+    </p>
+    <p class="mt-4 text-base leading-relaxed text-tierra-forest-dark/95">
+      We'll respond promptly to schedule a conversation. Reach us by email
+      at the address below.
+    </p>
+    <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">
+      <a
+        href={`mailto:${CONTACT_EMAIL}`}
+        class="inline-flex items-center justify-center rounded-md bg-tierra-forest px-5 py-2.5 font-medium text-tierra-white transition hover:bg-tierra-forest-dark focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        For Investors: Start an Introductory Conversation
+      </a>
+      <a
+        href={`mailto:${CONTACT_EMAIL}`}
+        class="inline-flex items-center justify-center rounded-md border border-tierra-forest bg-transparent px-5 py-2.5 font-medium text-tierra-forest transition hover:bg-tierra-sage/20 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        For Partners: Explore Partnership Opportunities
+      </a>
+    </div>
+    <p class="mt-8 text-base text-tierra-forest-dark/95">
+      <a
+        href={`mailto:${CONTACT_EMAIL}`}
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        {CONTACT_EMAIL}
+      </a>
+    </p>
+    <p class="mt-10">
+      <a
+        href="/"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Back to home
+      </a>
+    </p>
+  </article>
+</BaseLayout>

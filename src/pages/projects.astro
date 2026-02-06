@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<BaseLayout
+  title={`Projects & Focus | ${SITE_TITLE}`}
+  description="Tierra Viva's projects and focus—featured community development in the Dominican Republic."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
+    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
+      Projects &amp; Focus
+    </h1>
+    <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
+      Our first flagship community and project details will be published here
+      soon. We are focused on the Dominican Republic—one of the
+      fastest-growing economies in Latin America—with integrated,
+      education-anchored communities.
+    </p>
+    <p class="mt-6">
+      <a
+        href="/"
+        class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+      >
+        Back to home
+      </a>
+    </p>
+  </article>
+</BaseLayout>
