@@ -275,54 +275,54 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.8 — Research section (teaser + featured titles)
+### TV-2.8 — Research section (teaser + featured titles) - DONE ✅
 
 **Phase:** 2  
 **Description:** “Research-led conviction” sentence and three featured insight titles. CTA “Explore Research & Insights” (anchor or “Coming soon”).
 
 **Acceptance criteria:**
 
-- [ ] Section id (e.g. `id="research"`).
-- [ ] Three titles present; CTA links to anchor or placeholder.
+- [x] Section id (e.g. `id="research"`).
+- [x] Three titles present; CTA links to anchor or placeholder.
 
 ---
 
-### TV-2.9 — Partner With Us section (two CTAs)
+### TV-2.9 — Partner With Us section (two CTAs) - DONE ✅
 
 **Phase:** 2  
 **Description:** Two audience-specific CTAs: “For Investors: Start an Introductory Conversation” and “For Partners: Explore Partnership Opportunities.” Short invite line. Both use mailto:info@tierravivainvest.com for now.
 
 **Acceptance criteria:**
 
-- [ ] Section id (e.g. `id="partner-with-us"`).
-- [ ] Both CTAs visible and distinct; each links to mailto:info@tierravivainvest.com.
-- [ ] No offer language.
+- [x] Section id (e.g. `id="partner-with-us"`).
+- [x] Both CTAs visible and distinct; each links to mailto:info@tierravivainvest.com.
+- [x] No offer language.
 
 ---
 
-### TV-2.10 — Footer (disclaimer and legal links)
+### TV-2.10 — Footer (disclaimer and legal links) - DONE ✅
 
 **Phase:** 2  
 **Description:** Purpose & Disclaimer (informational only). Links: Responsible Investment (anchor), Privacy Policy, Jurisdiction Notice.
 
 **Acceptance criteria:**
 
-- [ ] Disclaimer text visible; no offer/solicitation language.
-- [ ] Three links present; targets can be anchors or placeholder pages.
-- [ ] Layout readable and responsive.
+- [x] Disclaimer text visible; no offer/solicitation language.
+- [x] Three links present; targets can be anchors or placeholder pages.
+- [x] Layout readable and responsive.
 
 ---
 
-### TV-2.11 — SEO and accessibility pass (I1)
+### TV-2.11 — SEO and accessibility pass (I1) - DONE ✅
 
 **Phase:** 2  
 **Description:** Verify one H1, H2s per section, answer-style sentence near top. Check focus order, contrast, and optional skip link.
 
 **Acceptance criteria:**
 
-- [ ] Single H1; logical heading hierarchy.
-- [ ] One clear “what is Tierra Viva and where” sentence near top.
-- [ ] Focus order and contrast meet WCAG 2.1 targets; images have alt.
+- [x] Single H1; logical heading hierarchy.
+- [x] One clear “what is Tierra Viva and where” sentence near top.
+- [x] Focus order and contrast meet WCAG 2.1 targets; images have alt.
 
 ---
 
