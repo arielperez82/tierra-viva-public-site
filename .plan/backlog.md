@@ -251,15 +251,15 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.6 — Responsible Investment section
+### TV-2.6 — Responsible Investment section - DONE ✅
 
 **Phase:** 2  
 **Description:** Snapshot: one short paragraph + 4 bullet lines (governance, environmental, social, stewardship). CTA “Our Responsible Investment Principles” (anchor).
 
 **Acceptance criteria:**
 
-- [ ] Section id (e.g. `id="responsible-investment"`).
-- [ ] Copy and CTA per wireframe; CTA as anchor for I1.
+- [x] Section id (e.g. `id="responsible-investment"`).
+- [x] Copy and CTA per wireframe; CTA as anchor for I1.
 
 ---
 
