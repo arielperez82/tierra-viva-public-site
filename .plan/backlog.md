@@ -226,16 +226,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.4 — Where We’re Focused section
+### TV-2.4 — Where We're Focused section - DONE ✅
 
 **Phase:** 2  
 **Description:** Geography (DR, Santiago) and first-project teaser: Altos de Gurabo one-line (and optional second sentence). Optional image or “Coming soon” placeholder.
 
 **Acceptance criteria:**
 
-- [ ] Section id (e.g. `id="where-focused"`).
-- [ ] Altos de Gurabo teaser copy per implementation-plan; no unit counts or pricing.
-- [ ] Optional image or placeholder present.
+- [x] Section id (e.g. `id="where-focused"`).
+- [x] Altos de Gurabo teaser copy per implementation-plan; no unit counts or pricing.
+- [x] Optional image or placeholder present.
 
 ---
 

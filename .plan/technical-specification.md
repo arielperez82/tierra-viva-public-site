@@ -102,15 +102,15 @@ tierra-viva-public-site/
 
 ### 3.1 Brand Colors (TVI palette)
 
-| Token                | Hex       | Usage                                                                 |
-| -------------------- | --------- | --------------------------------------------------------------------- |
-| **tierra-white**     | `#FFFFFE` | Page and section backgrounds.                                        |
-| **tierra-lime**      | `#98E22E` | CTAs, links, highlights; "VIVA" emphasis. Use sparingly.              |
-| **tierra-mid**       | `#4E9C3D` | Medium green; secondary buttons, hover states.                        |
-| **tierra-forest**    | `#0F7335` | Primary green: headings, nav, primary buttons, key accents.           |
-| **tierra-forest-dark** | `#0B3212` | Dark green: hero/footer backgrounds, hover depth.                     |
-| **tierra-sage**      | `#BCD69A` | Muted light green; subtle backgrounds, highlights.                    |
-| **tierra-neutral**   | `#0B3212` | Dark text, borders; same as forest-dark.                              |
+| Token                  | Hex       | Usage                                                       |
+| ---------------------- | --------- | ----------------------------------------------------------- |
+| **tierra-white**       | `#FFFFFE` | Page and section backgrounds.                               |
+| **tierra-lime**        | `#98E22E` | CTAs, links, highlights; "VIVA" emphasis. Use sparingly.    |
+| **tierra-mid**         | `#4E9C3D` | Medium green; secondary buttons, hover states.              |
+| **tierra-forest**      | `#0F7335` | Primary green: headings, nav, primary buttons, key accents. |
+| **tierra-forest-dark** | `#0B3212` | Dark green: hero/footer backgrounds, hover depth.           |
+| **tierra-sage**        | `#BCD69A` | Muted light green; subtle backgrounds, highlights.          |
+| **tierra-neutral**     | `#0B3212` | Dark text, borders; same as forest-dark.                    |
 
 **Principle:** Lead with forest and neutral for trust; use lime for CTAs and key emphasis only.
 
