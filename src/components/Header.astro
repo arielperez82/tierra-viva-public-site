@@ -1,0 +1,74 @@
+---
+import { SITE_TITLE, CONTACT_EMAIL } from "../consts";
+---
+
+<header class="sticky top-0 z-50 border-b border-tierra-neutral/10 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/80">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a
+      href="/"
+      class="flex items-center focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 rounded"
+      aria-label={`${SITE_TITLE} — home`}
+    >
+      <img
+        src={`${import.meta.env.BASE_URL}tierra-viva-investments-logo-horizontal.png`}
+        alt="Tierra Viva Investments"
+        width="240"
+        height="56"
+        class="h-12 w-auto sm:h-14"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </a>
+    <nav class="flex items-center gap-4" aria-label="Primary">
+      <a
+        href={`mailto:${CONTACT_EMAIL}`}
+        class="hidden rounded bg-tierra-forest px-4 py-2 text-sm font-medium text-white hover:bg-tierra-forest-dark focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 sm:inline-block"
+      >
+        Start a Conversation
+      </a>
+      <button
+        type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded text-tierra-neutral hover:bg-tierra-neutral/10 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 sm:hidden"
+        aria-expanded="false"
+        aria-controls="header-menu"
+        aria-label="Open menu"
+        data-header-toggle
+      >
+        <span class="sr-only">Open menu</span>
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+  <div
+    id="header-menu"
+    class="hidden border-t border-tierra-neutral/10 bg-white px-4 py-3 sm:hidden"
+    aria-hidden="true"
+    data-header-menu
+  >
+    <a
+      href={`mailto:${CONTACT_EMAIL}`}
+      class="block rounded bg-tierra-forest px-4 py-2 text-center text-sm font-medium text-white hover:bg-tierra-forest-dark focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+    >
+      Start a Conversation
+    </a>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    const toggle = document.querySelector("[data-header-toggle]");
+    const menu = document.querySelector("[data-header-menu]");
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      toggle.setAttribute("aria-label", expanded ? "Open menu" : "Close menu");
+      menu.classList.toggle("hidden", expanded);
+      menu.setAttribute("aria-hidden", String(expanded));
+    });
+  }
+  initHeader();
+</script>

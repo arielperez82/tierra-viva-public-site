@@ -185,16 +185,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ## Phase 2 — Iteration 1 (Single-page)
 
-### TV-2.1 — Header with logo and optional CTA
+### TV-2.1 — Header with logo and optional CTA - DONE ✅
 
 **Phase:** 2  
 **Description:** Implement site header with Tierra Viva logo (asset from project). Optional “Start a Conversation” or “Contact” link. Mobile-friendly (e.g. hamburger if needed).
 
 **Acceptance criteria:**
 
-- [ ] Logo displays and links to top of page or home.
-- [ ] Header is responsive; no horizontal overflow on small viewports.
-- [ ] Accessible (focus order, contrast).
+- [x] Logo displays and links to top of page or home.
+- [x] Header is responsive; no horizontal overflow on small viewports.
+- [x] Accessible (focus order, contrast).
 
 ---
 

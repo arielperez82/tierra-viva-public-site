@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { SITE_TITLE } from "../consts";
+import Header from "../components/Header.astro";
 
 type Props = {
   title?: string;
@@ -19,6 +20,15 @@ const { title } = Astro.props;
     <title>{title ?? SITE_TITLE}</title>
   </head>
   <body>
-    <slot />
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-100 focus:rounded focus:bg-tierra-lime focus:px-3 focus:py-2 focus:text-tierra-forest-dark focus:outline-none"
+    >
+      Skip to main content
+    </a>
+    <Header />
+    <main id="main-content" tabindex="-1">
+      <slot />
+    </main>
   </body>
 </html>
