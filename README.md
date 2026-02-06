@@ -48,6 +48,8 @@ Pre-commit (Husky + lint-staged) runs full-project type-check, ESLint fix, Prett
 
 **CI:** On push/PR to `main`, GitHub Actions runs `pnpm check` and `pnpm lint`. Lighthouse can be enabled in `.github/workflows/ci.yml` (optional job commented out).
 
+**Deploy:** `.github/workflows/deploy.yml` builds the site and deploys to GitHub Pages on push to `main` or via **workflow_dispatch**. Enable it in **Settings → Pages → Source**: choose **GitHub Actions**. No secrets are required for the static build; add repository env or secrets only if you add features that need them (e.g. analytics).
+
 ### Lighthouse
 
 `pnpm lighthouse:audit` runs Lighthouse (accessibility, SEO, performance) and writes reports to **`test-reports/`** (gitignored):

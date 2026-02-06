@@ -169,17 +169,17 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-1.4 — Add GitHub Pages deploy workflow
+### TV-1.4 — Add GitHub Pages deploy workflow - DONE ✅
 
 **Phase:** 1  
 **Description:** Add `.github/workflows/deploy.yml`: checkout, pnpm setup, install, build, upload-pages-artifact, deploy-pages. Configure for main branch and relevant paths.
 
 **Acceptance criteria:**
 
-- [ ] Workflow runs on push to main (and optionally workflow_dispatch).
-- [ ] Build produces `dist/`; artifact uploaded; deploy-pages step runs.
+- [x] Workflow runs on push to main (and optionally workflow_dispatch).
+- [x] Build produces `dist/`; artifact uploaded; deploy-pages step runs.
 - [ ] Repo Settings → Pages uses “GitHub Actions” as source.
-- [ ] No secrets required for static build (or document any needed for analytics later).
+- [x] No secrets required for static build (or document any needed for analytics later).
 
 ---
 
