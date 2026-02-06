@@ -145,13 +145,13 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 ### TV-1.2 — Define Tailwind theme and Tierra Viva design tokens - DONE ✅
 
 **Phase:** 1  
-**Description:** Add custom colors (forest, forest-dark, lime, neutral) and any typography/spacing to Tailwind theme. Create or update `src/styles/global.css` with base layer.
+**Description:** Add custom colors (TVI palette), typography/spacing to Tailwind theme. Create or update `src/styles/global.css` with base layer. Theme aligned to TVI brand palette (white, lime, mid, forest, forest-dark, sage, neutral).
 
 **Acceptance criteria:**
 
-- [x] Theme includes: forest `#2E6E30`, forest-dark `#1E4A1F`, lime `#68B62C`, neutral `#262626`.
+- [x] Theme includes TVI palette: white `#FFFFFE`, lime `#98E22E`, mid `#4E9C3D`, forest `#0F7335`, forest-dark `#0B3212`, sage `#BCD69A`, neutral `#0B3212`.
 - [x] Utilities (e.g. `bg-tierra-forest`, `text-tierra-lime`) work in components.
-- [x] Global base styles (e.g. font, scroll-behavior) applied.
+- [x] Global base styles (e.g. font, scroll-behavior, body background) applied.
 
 ---
 

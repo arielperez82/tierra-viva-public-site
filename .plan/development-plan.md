@@ -56,7 +56,7 @@
    - Set `site` (and `base` if project-site GitHub Pages).
 
 2. **Tailwind theme** (see technical-spec §3).
-   - Custom colors: forest `#2E6E30`, forest-dark `#1E4A1F`, lime `#68B62C`, neutral `#262626`.
+   - TVI palette: white `#FFFFFE`, lime `#98E22E`, mid `#4E9C3D`, forest `#0F7335`, forest-dark `#0B3212`, sage `#BCD69A`, neutral `#0B3212`.
    - Optional: typography plugin, `global.css` with `@import tailwind` and base layer.
 
 3. **Project structure** (see technical-spec §2). — **Done**

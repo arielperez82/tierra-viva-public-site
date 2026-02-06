@@ -100,21 +100,23 @@ tierra-viva-public-site/
 
 ## 3. Design System and Theming
 
-### 3.1 Brand Colors (from logo)
+### 3.1 Brand Colors (TVI palette)
 
-| Role                 | Hex                      | Usage                                                          |
-| -------------------- | ------------------------ | -------------------------------------------------------------- |
-| **Forest (primary)** | `#2E6E30`                | Headings, nav, primary buttons, key accents.                   |
-| **Forest dark**      | `#1E4A1F`                | Headers, footer background, hover states (professional depth). |
-| **Lime (accent)**    | `#68B62C`                | CTAs, links, highlights, “VIVA” emphasis. Use sparingly.       |
-| **Neutral / body**   | `#262626` (or `#333333`) | Body text, footer text, “INVESTMENTS” tone.                    |
-| **Background**       | `#FFFFFF`, `#FAFAFA`     | Page and section backgrounds (Bexer-style clean).              |
+| Token                | Hex       | Usage                                                                 |
+| -------------------- | --------- | --------------------------------------------------------------------- |
+| **tierra-white**     | `#FFFFFE` | Page and section backgrounds.                                        |
+| **tierra-lime**      | `#98E22E` | CTAs, links, highlights; "VIVA" emphasis. Use sparingly.              |
+| **tierra-mid**       | `#4E9C3D` | Medium green; secondary buttons, hover states.                        |
+| **tierra-forest**    | `#0F7335` | Primary green: headings, nav, primary buttons, key accents.           |
+| **tierra-forest-dark** | `#0B3212` | Dark green: hero/footer backgrounds, hover depth.                     |
+| **tierra-sage**      | `#BCD69A` | Muted light green; subtle backgrounds, highlights.                    |
+| **tierra-neutral**   | `#0B3212` | Dark text, borders; same as forest-dark.                              |
 
 **Principle:** Lead with forest and neutral for trust; use lime for CTAs and key emphasis only.
 
 ### 3.2 Tailwind Theme
 
-- Extend theme with custom colors (e.g. `tierra-forest`, `tierra-forest-dark`, `tierra-lime`, `tierra-neutral`).
+- Theme defined in `src/styles/global.css` via `@theme`: `tierra-white`, `tierra-lime`, `tierra-mid`, `tierra-forest`, `tierra-forest-dark`, `tierra-sage`, `tierra-neutral`.
 - Typography: sans-serif stack (e.g. system-ui or a single webfont like Inter/Plus Jakarta) for clarity and professionalism.
 - Spacing and breakpoints: Tailwind defaults; match Bexer-Astro section padding and max-width for readability.
 

@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-tierra-forest: #2e6e30;
-  --color-tierra-forest-dark: #1e4a1f;
-  --color-tierra-lime: #68b62c;
-  --color-tierra-neutral: #262626;
+  --color-tierra-white: #fffffe;
+  --color-tierra-lime: #98e22e;
+  --color-tierra-mid: #4e9c3d;
+  --color-tierra-forest: #0f7335;
+  --color-tierra-forest-dark: #0b3212;
+  --color-tierra-sage: #bcd69a;
+  --color-tierra-neutral: #0b3212;
 }
 
 @layer base {
@@ -22,5 +25,6 @@
       "Helvetica Neue",
       Arial,
       sans-serif;
+    background-color: var(--color-tierra-white);
   }
 }
