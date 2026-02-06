@@ -198,16 +198,16 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.2 — Hero section (headline, subhead, CTAs)
+### TV-2.2 — Hero section (headline, subhead, CTAs) - DONE ✅
 
 **Phase:** 2  
 **Description:** Hero with “Living Capital for Living Places,” subhead and supporting line per wireframe. Primary CTA “Start an Introductory Conversation” → mailto:info@tierravivainvest.com; secondary “Explore Our Thesis” (anchor to strategy section).
 
 **Acceptance criteria:**
 
-- [ ] Single H1 = hero headline.
-- [ ] Primary CTA = mailto:info@tierravivainvest.com; secondary scrolls to #value-governance or #strategy anchor.
-- [ ] Copy matches implementation-plan intent (no fund terms).
+- [x] Single H1 = hero headline.
+- [x] Primary CTA = mailto:info@tierravivainvest.com; secondary scrolls to #value-governance or #strategy anchor.
+- [x] Copy matches implementation-plan intent (no fund terms).
 
 ---
 
