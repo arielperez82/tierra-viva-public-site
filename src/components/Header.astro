@@ -1,13 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import { CONTACT_EMAIL, NAV_ITEMS } from "../consts";
+import Link from "./Link.astro";
 import logoHorizontal from "../assets/tierra-viva-investments-logo-horizontal.png";
 ---
 
-<div class="sticky top-0 z-[100] isolate bg-white">
+<div class="sticky top-0 z-100 isolate bg-white">
   <header class="border-b border-tierra-neutral/10">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-      <a
+      <Link
         href="/"
         class="flex items-center rounded focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
       >
@@ -20,15 +21,15 @@ import logoHorizontal from "../assets/tierra-viva-investments-logo-horizontal.pn
           decoding="async"
           fetchpriority="high"
         />
-      </a>
+      </Link>
       <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
         {NAV_ITEMS.map((item) => (
-          <a
+          <Link
             href={item.href}
             class="rounded px-3 py-2 text-sm font-medium text-tierra-forest-dark hover:bg-tierra-sage/20 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
           >
             {item.label}
-          </a>
+          </Link>
         ))}
         <a
           href={`mailto:${CONTACT_EMAIL}`}
@@ -71,12 +72,12 @@ import logoHorizontal from "../assets/tierra-viva-investments-logo-horizontal.pn
       <ul class="flex flex-col gap-1" role="list">
         {NAV_ITEMS.map((item) => (
           <li>
-            <a
+            <Link
               href={item.href}
               class="block rounded px-3 py-2 text-sm font-medium text-tierra-forest-dark hover:bg-tierra-sage/20 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
             >
               {item.label}
-            </a>
+            </Link>
           </li>
         ))}
         <li>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../consts";
+import Link from "../components/Link.astro";
 ---
 
 <BaseLayout
@@ -23,27 +24,27 @@ import { SITE_TITLE } from "../consts";
     </p>
     <p class="mt-6 text-base leading-relaxed text-tierra-forest-dark/95">
       For how we invest and our investment thesis, see our
-      <a
+      <Link
         href="/strategy"
         class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
       >
         Strategy
-      </a>
+      </Link>
       page. For how we build—our development model and four pillars—see
-      <a
+      <Link
         href="/platform"
         class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
       >
         Platform
-      </a>.
+      </Link>.
     </p>
     <p class="mt-10">
-      <a
+      <Link
         href="/"
         class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
       >
         Back to home
-      </a>
+      </Link>
     </p>
   </article>
 </BaseLayout>

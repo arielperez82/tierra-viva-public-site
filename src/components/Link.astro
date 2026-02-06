@@ -1,0 +1,15 @@
+---
+import { isInternalHref, withBase } from "../utils/with-base";
+
+type Props = {
+  href: string;
+  [key: string]: string | undefined;
+};
+
+const { href, ...rest } = Astro.props;
+const resolvedHref = isInternalHref(href) ? withBase(href) : href;
+---
+
+<a href={resolvedHref} {...rest}>
+  <slot />
+</a>

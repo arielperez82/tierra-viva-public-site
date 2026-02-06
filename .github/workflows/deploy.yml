@@ -31,6 +31,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
+        env:
+          ASTRO_SITE: ${{ vars.ASTRO_SITE }}
+          ASTRO_BASE: ${{ vars.ASTRO_BASE }}
         run: pnpm build
 
       - uses: actions/upload-pages-artifact@v4

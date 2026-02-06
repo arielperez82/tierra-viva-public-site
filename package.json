@@ -20,7 +20,9 @@
     "lint:md:fix": "markdownlint --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint:css:fix": "stylelint --fix \"src/**/*.css\"",
-    "lighthouse:audit": "tsx scripts/run-lighthouse.ts"
+    "lighthouse:audit": "tsx scripts/run-lighthouse.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
@@ -50,6 +52,7 @@
     "stylelint-config-tailwindcss": "^1.0.1",
     "tsx": "^4.19.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^4.0.18"
   }
 }

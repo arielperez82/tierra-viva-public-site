@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../../consts";
+import Link from "../../components/Link.astro";
 
 export async function getStaticPaths() {
   const entries = await getCollection("research");
@@ -40,12 +41,12 @@ const { Content } = await render(entry);
       <Content />
     </div>
     <p class="mt-10">
-      <a
+      <Link
         href="/research"
         class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
       >
         Back to Research &amp; Insights
-      </a>
+      </Link>
     </p>
   </article>
 </BaseLayout>

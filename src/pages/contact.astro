@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { CONTACT_EMAIL, SITE_TITLE } from "../consts";
+import Link from "../components/Link.astro";
 ---
 
 <BaseLayout
@@ -40,12 +41,12 @@ import { CONTACT_EMAIL, SITE_TITLE } from "../consts";
       </a>
     </p>
     <p class="mt-10">
-      <a
+      <Link
         href="/"
         class="font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
       >
         Back to home
-      </a>
+      </Link>
     </p>
   </article>
 </BaseLayout>
