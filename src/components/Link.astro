@@ -3,10 +3,11 @@ import { isInternalHref, withBase } from "../utils/with-base";
 
 type Props = {
   href: string;
-  [key: string]: string | undefined;
+  children?: unknown;
+  [key: string]: string | undefined | unknown;
 };
 
-const { href, ...rest } = Astro.props;
+const { href, children: _slot, ...rest } = Astro.props;
 const resolvedHref = isInternalHref(href) ? withBase(href) : href;
 ---
 

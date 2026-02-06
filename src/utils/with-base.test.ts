@@ -17,7 +17,7 @@ describe("withBase", () => {
   it("prefixes path that starts with /", () => {
     expect(withBase("/about")).toBe("/tierra-viva-public-site/about");
     expect(withBase("/research/why-education-anchors-community-value")).toBe(
-      "/tierra-viva-public-site/research/why-education-anchors-community-value",
+      "/tierra-viva-public-site/research/why-education-anchors-community-value"
     );
   });
 

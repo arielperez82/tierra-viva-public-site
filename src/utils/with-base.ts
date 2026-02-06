@@ -16,7 +16,17 @@ export function withBase(path: string): string {
  */
 export function isInternalHref(href: string): boolean {
   const trimmed = href.trim();
-  if (trimmed.startsWith("http://") || trimmed.startsWith("https://") || trimmed.startsWith("//")) return false;
-  if (trimmed.startsWith("mailto:") || trimmed.startsWith("tel:") || trimmed.startsWith("#")) return false;
+  if (
+    trimmed.startsWith("http://") ||
+    trimmed.startsWith("https://") ||
+    trimmed.startsWith("//")
+  )
+    return false;
+  if (
+    trimmed.startsWith("mailto:") ||
+    trimmed.startsWith("tel:") ||
+    trimmed.startsWith("#")
+  )
+    return false;
   return true;
 }
