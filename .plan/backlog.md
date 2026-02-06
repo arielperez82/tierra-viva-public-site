@@ -263,15 +263,15 @@ _Must be done first. All tools runnable via pnpm scripts; pre-commit runs type-c
 
 ---
 
-### TV-2.7 — Team section (founder + supporting line)
+### TV-2.7 — Team section (founder + supporting line) - DONE ✅
 
 **Phase:** 2  
 **Description:** Founder highlight (Ramon Marmolejos, title, one-line credential). One line on advisors and partners. CTA “Meet the Team” (anchor).
 
 **Acceptance criteria:**
 
-- [ ] Section id (e.g. `id="team"`).
-- [ ] Ramon’s name, title, and one-line credential; supporting line; CTA as anchor.
+- [x] Section id (e.g. `id="team"`).
+- [x] Ramon’s name, title, and one-line credential; supporting line; CTA as anchor.
 
 ---
 
