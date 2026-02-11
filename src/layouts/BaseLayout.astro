@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { SITE_TITLE } from "../consts";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 const DEFAULT_DESCRIPTION =
   "Tierra Viva builds education-anchored communities across Latin America—where learning, enterprise, and long-term investment create shared prosperity.";
@@ -22,6 +23,13 @@ const { title, description = DEFAULT_DESCRIPTION } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <!-- Google Fonts: DM Serif Display, Inter, IBM Plex Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>{title ?? SITE_TITLE}</title>
   </head>
   <body>
@@ -35,5 +43,7 @@ const { title, description = DEFAULT_DESCRIPTION } = Astro.props;
     <main id="main-content" tabindex="-1" class="relative z-0">
       <slot />
     </main>
+    <Footer />
+    <script src="../scripts/scroll-reveal.ts" />
   </body>
 </html>

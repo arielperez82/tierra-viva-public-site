@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Brand greens */
   --color-tierra-white: #fffffe;
   --color-tierra-lime: #98e22e;
   --color-tierra-mid: #4e9c3d;
@@ -8,6 +9,18 @@
   --color-tierra-forest-dark: #0b3212;
   --color-tierra-sage: #bcd69a;
   --color-tierra-neutral: #0b3212;
+
+  /* Warm neutrals */
+  --color-tierra-cream: #faf8f5;
+  --color-tierra-sand: #f0ebe3;
+  --color-tierra-stone: #d4cdc4;
+  --color-tierra-graphite: #3d3833;
+  --color-tierra-ink: #1a1714;
+
+  /* Font family tokens */
+  --font-display: "DM Serif Display", georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", monospace;
 }
 
 @layer base {
@@ -22,15 +35,38 @@
   }
 
   body {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      "Helvetica Neue",
-      Arial,
-      sans-serif;
-    background-color: var(--color-tierra-white);
+    font-family: var(--font-body);
+    background-color: var(--color-tierra-cream);
+    color: var(--color-tierra-graphite);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    color: var(--color-tierra-ink);
+  }
+}
+
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

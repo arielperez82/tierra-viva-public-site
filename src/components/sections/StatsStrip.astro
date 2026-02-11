@@ -1,0 +1,31 @@
+---
+import { STATS } from "../../data/stats";
+---
+
+<section
+  class="bg-tierra-forest-dark px-4 py-12 sm:px-6 sm:py-16"
+  aria-label="Key statistics"
+>
+  <div class="mx-auto max-w-5xl">
+    <dl class="grid grid-cols-2 gap-8 sm:gap-12 lg:grid-cols-4">
+      {
+        STATS.map((stat) => (
+          <div class="reveal text-center">
+            <dt class="text-sm tracking-wide text-white/60">{stat.label}</dt>
+            <dd
+              class="mt-2 font-mono text-3xl font-semibold text-tierra-lime sm:text-4xl"
+              data-count-target={stat.value}
+              data-count-value={String(stat.numericValue)}
+              data-count-prefix={stat.prefix}
+              data-count-suffix={stat.suffix}
+            >
+              {stat.value}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</section>
+
+<script src="../../scripts/count-up.ts" />

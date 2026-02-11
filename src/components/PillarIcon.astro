@@ -1,0 +1,28 @@
+---
+type Props = {
+  icon: "learning" | "homes" | "enterprise" | "stewardship";
+};
+
+const { icon } = Astro.props;
+
+const paths: Record<string, string> = {
+  learning:
+    "M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z",
+  homes: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z",
+  enterprise:
+    "M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z",
+  stewardship:
+    "M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z",
+};
+---
+
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-tierra-forest/10 p-3">
+  <svg
+    class="h-6 w-6 text-tierra-forest"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d={paths[icon]} />
+  </svg>
+</div>

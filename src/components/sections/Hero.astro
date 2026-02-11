@@ -3,33 +3,49 @@ import { CONTACT_EMAIL } from "../../consts";
 import Link from "../Link.astro";
 ---
 
-<section class="bg-tierra-forest-dark px-4 py-16 text-white sm:px-6 sm:py-24">
-  <div class="mx-auto max-w-3xl text-center">
-    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-      Living Capital for Living Places
-    </h1>
-    <p class="mt-6 text-lg leading-relaxed sm:text-xl">
-      We build education-anchored communities across Latin America—where learning,
-      enterprise, and long-term investment come together to create shared prosperity.
-    </p>
-    <p class="mt-4 text-base text-white sm:text-lg">
-      Tierra Viva is a regenerative real-estate development platform, built with
-      institutional discipline, focused on transforming land into enduring ecosystems
-      for families, talent, and capital.
-    </p>
-    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-      <a
-        href={`mailto:${CONTACT_EMAIL}`}
-        class="inline-flex w-full items-center justify-center rounded bg-tierra-lime px-6 py-3 text-base font-medium text-tierra-forest-dark hover:bg-tierra-lime/90 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 focus:ring-offset-tierra-forest-dark sm:w-auto"
-      >
-        Start an Introductory Conversation
-      </a>
-      <Link
-        href="/strategy"
-        class="inline-flex w-full items-center justify-center rounded border-2 border-white/80 px-6 py-3 text-base font-medium text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-tierra-forest-dark sm:w-auto"
-      >
-        Explore Our Thesis
-      </Link>
+<section class="overflow-hidden bg-tierra-cream px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[55%_45%]">
+    <div>
+      <h1 class="text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+        Living Capital for Living Places
+      </h1>
+      <p class="mt-6 text-lg leading-relaxed sm:text-xl">
+        We build education-anchored communities across Latin America—where
+        learning, enterprise, and long-term investment come together to create
+        shared prosperity.
+      </p>
+      <p class="mt-4 text-base leading-relaxed text-tierra-graphite/80">
+        Tierra Viva is a regenerative real-estate development platform, built
+        with institutional discipline, focused on transforming land into
+        enduring ecosystems for families, talent, and capital.
+      </p>
+      <div class="mt-10 flex flex-col items-start gap-4 sm:flex-row">
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          class="inline-flex items-center justify-center rounded-lg bg-tierra-lime px-8 py-3.5 text-base font-semibold text-tierra-forest-dark shadow-sm transition hover:bg-tierra-lime/90 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+        >
+          Start a Conversation
+        </a>
+        <Link
+          href="/strategy"
+          class="inline-flex items-center justify-center rounded-lg border-2 border-tierra-stone px-8 py-3.5 text-base font-semibold text-tierra-ink transition hover:border-tierra-forest hover:text-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-forest focus:ring-offset-2"
+        >
+          Explore Our Thesis
+        </Link>
+      </div>
+    </div>
+    <div class="relative mx-auto aspect-square w-full max-w-md lg:mx-0" aria-hidden="true">
+      <div class="absolute inset-0 rounded-full border-[3px] border-tierra-forest/15"></div>
+      <div class="absolute inset-[12%] rounded-full border-[3px] border-tierra-mid/25"></div>
+      <div class="absolute inset-[24%] rounded-full border-[3px] border-tierra-forest/35"></div>
+      <div class="absolute inset-[36%] rounded-full bg-tierra-lime/15"></div>
+      <div class="absolute inset-[45%] rounded-full bg-tierra-forest/20"></div>
+      <div
+        class="absolute -right-4 -top-4 h-32 w-32 rounded-full border-[2px] border-tierra-sage/40 sm:h-40 sm:w-40"
+      ></div>
+      <div
+        class="absolute -bottom-2 -left-6 h-20 w-20 rounded-full bg-tierra-sage/20 sm:h-24 sm:w-24"
+      ></div>
     </div>
   </div>
 </section>
