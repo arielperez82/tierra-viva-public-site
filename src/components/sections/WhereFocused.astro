@@ -7,60 +7,99 @@ import Link from "../Link.astro";
   aria-labelledby="where-focused-heading"
   class="bg-tierra-sand px-4 py-16 sm:px-6 sm:py-24"
 >
-  <div class="mx-auto max-w-5xl">
-    <h2
-      id="where-focused-heading"
-      class="text-center text-2xl tracking-tight sm:text-3xl"
-    >
-      Focused Where Long-Term Fundamentals Align
-    </h2>
-    <p
-      class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg"
-    >
-      Tierra Viva is currently exploring its first flagship concept in the
-      Dominican Republic—one of the fastest-growing economies in Latin America,
-      supported by a vibrant diaspora, an expanding professional class, and
-      strong long-term demographic and economic fundamentals.
-    </p>
-    <p
-      class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg"
-    >
-      Shifting demographics, rising professional demand, and a structural
-      undersupply of education-anchored communities create a unique window for
-      integrated, long-term development.
-    </p>
-    <p class="mt-6 text-center">
-      <Link
-        href="/projects"
-        class="inline-flex items-center font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+  <div class="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+    <!-- Text — LEFT on desktop -->
+    <div>
+      <h2
+        id="where-focused-heading"
+        class="text-center text-2xl tracking-tight sm:text-3xl lg:text-left"
       >
-        Projects &amp; Focus
-      </Link>
-    </p>
-    <div
-      class="reveal mx-auto mt-10 max-w-2xl rounded-xl border border-tierra-stone/40 bg-white p-8 shadow-sm"
-    >
-      <h3 class="text-lg font-semibold text-tierra-ink">
-        Preliminary planning envisions:
-      </h3>
-      <ul class="mt-4 space-y-3 text-sm leading-relaxed text-tierra-graphite/90" role="list">
-        <li class="flex items-start gap-3">
-          <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
-          Approximately 150–200 residential units
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
-          A high-quality international-curriculum school
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
-          Community amenities, green corridors, and mixed commercial space
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
-          Sustainable infrastructure systems designed for resilience and efficiency
-        </li>
-      </ul>
+        Focused Where Long-Term Fundamentals Align
+      </h2>
+      <p
+        class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left"
+      >
+        Tierra Viva is currently exploring its first flagship concept in the
+        Dominican Republic—one of the fastest-growing economies in Latin America,
+        supported by a vibrant diaspora, an expanding professional class, and
+        strong long-term demographic and economic fundamentals.
+      </p>
+      <p
+        class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left"
+      >
+        Shifting demographics, rising professional demand, and a structural
+        undersupply of education-anchored communities create a unique window for
+        integrated, long-term development.
+      </p>
+      <p class="mt-6 text-center lg:text-left">
+        <Link
+          href="/projects"
+          class="inline-flex items-center font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+        >
+          Projects &amp; Focus
+        </Link>
+      </p>
+      <div
+        class="mt-10 rounded-xl border border-tierra-stone/40 bg-white p-8 shadow-sm"
+      >
+        <h3 class="text-lg font-semibold text-tierra-ink">
+          Preliminary planning envisions:
+        </h3>
+        <ul class="mt-4 space-y-3 text-sm leading-relaxed text-tierra-graphite/90" role="list">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
+            Approximately 150–200 residential units
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
+            A high-quality international-curriculum school
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
+            Community amenities, green corridors, and mixed commercial space
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 block h-1.5 w-1.5 shrink-0 rounded-full bg-tierra-forest"></span>
+            Sustainable infrastructure systems designed for resilience and efficiency
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Visual — RIGHT on desktop: Location Pin Map -->
+    <div class="reveal flex items-center justify-center" aria-hidden="true">
+      <svg viewBox="0 0 320 360" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs">
+        <!-- Concentric radiating rings -->
+        <circle cx="160" cy="140" r="120" stroke="#bcd69a" stroke-width="1" stroke-dasharray="6 4" opacity="0.4" />
+        <circle cx="160" cy="140" r="90" stroke="#4e9c3d" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.5" />
+        <circle cx="160" cy="140" r="60" stroke="#0f7335" stroke-width="1.5" opacity="0.3" />
+
+        <!-- Simplified island silhouette -->
+        <path
+          d="M80 240 C90 230, 110 225, 140 222 C160 220, 190 218, 220 225 C240 230, 250 238, 240 242 C230 248, 200 252, 170 250 C140 248, 100 248, 80 240Z"
+          fill="#bcd69a"
+          opacity="0.35"
+        />
+        <path
+          d="M100 236 C110 230, 130 226, 155 224 C175 222, 200 222, 220 228 C230 232, 230 238, 220 240 C200 244, 170 246, 145 244 C120 242, 105 240, 100 236Z"
+          fill="#4e9c3d"
+          opacity="0.2"
+        />
+
+        <!-- Map pin body -->
+        <path
+          d="M160 60 C133 60, 112 81, 112 108 C112 143, 160 195, 160 195 C160 195, 208 143, 208 108 C208 81, 187 60, 160 60Z"
+          fill="#0f7335"
+          opacity="0.9"
+        />
+        <!-- Pin inner circle -->
+        <circle cx="160" cy="105" r="22" fill="#faf8f5" opacity="0.95" />
+        <!-- Pin center dot -->
+        <circle cx="160" cy="105" r="8" fill="#0f7335" />
+
+        <!-- Pin shadow -->
+        <ellipse cx="160" cy="200" rx="18" ry="5" fill="#0b3212" opacity="0.12" />
+      </svg>
     </div>
   </div>
 </section>

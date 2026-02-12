@@ -5,49 +5,97 @@ import Link from "../Link.astro";
 <section
   id="value-governance"
   aria-labelledby="value-governance-heading"
-  class="bg-tierra-sand px-4 py-16 sm:px-6 sm:py-24"
+  class="bg-tierra-cream px-4 py-16 sm:px-6 sm:py-24"
 >
-  <div class="mx-auto max-w-5xl">
-    <h2
-      id="value-governance-heading"
-      class="text-center text-2xl tracking-tight sm:text-3xl"
-    >
-      A Platform Built for Enduring Value — Governed with Discipline
-    </h2>
-    <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
-      Tierra Viva is building a long-term real-estate development platform,
-      beginning with a pre-development and flagship community phase, and
-      designed to scale through disciplined, institutionally aligned
-      structures.
-    </p>
-    <p class="mt-4 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
-      Our approach emphasizes:
-    </p>
-    <ul
-      class="reveal mx-auto mt-6 max-w-2xl list-disc space-y-3 pl-6 text-base leading-relaxed text-tierra-graphite/90 sm:text-lg"
-      role="list"
-    >
-      <li>A phased development horizon aligned with community building</li>
-      <li>
-        Multiple, complementary value and revenue components across
-        residential, educational, and commercial uses
-      </li>
-      <li>
-        Clear decision-making processes, independent oversight, and transparent
-        reporting
-      </li>
-      <li>
-        International-standard operational controls and risk management
-        frameworks
-      </li>
-    </ul>
-    <p class="mt-10 text-center">
-      <Link
-        href="/strategy"
-        class="inline-flex items-center font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+  <div class="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+    <!-- Visual — LEFT on desktop: Governance Nodes -->
+    <div class="reveal flex items-center justify-center lg:order-1" aria-hidden="true">
+      <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs">
+        <!-- Connection lines -->
+        <line x1="150" y1="150" x2="150" y2="55" stroke="#d4cdc4" stroke-width="1.5" />
+        <line x1="150" y1="150" x2="245" y2="150" stroke="#d4cdc4" stroke-width="1.5" />
+        <line x1="150" y1="150" x2="150" y2="245" stroke="#d4cdc4" stroke-width="1.5" />
+        <line x1="150" y1="150" x2="55" y2="150" stroke="#d4cdc4" stroke-width="1.5" />
+
+        <!-- Subtle diamond connecting lines -->
+        <line x1="150" y1="55" x2="245" y2="150" stroke="#d4cdc4" stroke-width="0.75" stroke-dasharray="4 4" />
+        <line x1="245" y1="150" x2="150" y2="245" stroke="#d4cdc4" stroke-width="0.75" stroke-dasharray="4 4" />
+        <line x1="150" y1="245" x2="55" y2="150" stroke="#d4cdc4" stroke-width="0.75" stroke-dasharray="4 4" />
+        <line x1="55" y1="150" x2="150" y2="55" stroke="#d4cdc4" stroke-width="0.75" stroke-dasharray="4 4" />
+
+        <!-- Central hub -->
+        <circle cx="150" cy="150" r="28" fill="#0f7335" opacity="0.9" />
+        <circle cx="150" cy="150" r="16" fill="#faf8f5" opacity="0.2" />
+        <!-- Hub icon: interconnected lines -->
+        <path d="M142 150 L150 142 L158 150 L150 158Z" fill="#faf8f5" opacity="0.9" />
+
+        <!-- Top node — Phased development -->
+        <circle cx="150" cy="55" r="22" fill="#faf8f5" stroke="#0f7335" stroke-width="2" />
+        <rect x="143" y="46" width="14" height="3" rx="1" fill="#4e9c3d" />
+        <rect x="143" y="52" width="14" height="3" rx="1" fill="#4e9c3d" />
+        <rect x="143" y="58" width="10" height="3" rx="1" fill="#4e9c3d" />
+
+        <!-- Right node — Multiple revenue streams -->
+        <circle cx="245" cy="150" r="22" fill="#faf8f5" stroke="#0f7335" stroke-width="2" />
+        <rect x="236" y="141" width="6" height="16" rx="1" fill="#4e9c3d" />
+        <rect x="244" y="145" width="6" height="12" rx="1" fill="#4e9c3d" />
+        <rect x="252" y="148" width="6" height="9" rx="1" fill="#bcd69a" />
+
+        <!-- Bottom node — Transparent reporting -->
+        <circle cx="150" cy="245" r="22" fill="#faf8f5" stroke="#0f7335" stroke-width="2" />
+        <circle cx="150" cy="243" r="8" fill="none" stroke="#4e9c3d" stroke-width="2" />
+        <line x1="150" y1="251" x2="150" y2="256" stroke="#4e9c3d" stroke-width="2" />
+
+        <!-- Left node — Risk management -->
+        <circle cx="55" cy="150" r="22" fill="#faf8f5" stroke="#0f7335" stroke-width="2" />
+        <path d="M48 157 L55 140 L62 157Z" fill="none" stroke="#4e9c3d" stroke-width="2" stroke-linejoin="round" />
+        <line x1="55" y1="149" x2="55" y2="154" stroke="#4e9c3d" stroke-width="2" />
+      </svg>
+    </div>
+
+    <!-- Text — RIGHT on desktop -->
+    <div class="lg:order-2">
+      <h2
+        id="value-governance-heading"
+        class="text-center text-2xl tracking-tight sm:text-3xl lg:text-left"
       >
-        Learn About Our Strategy
-      </Link>
-    </p>
+        A Platform Built for Enduring Value — Governed with Discipline
+      </h2>
+      <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left">
+        Tierra Viva is building a long-term real-estate development platform,
+        beginning with a pre-development and flagship community phase, and
+        designed to scale through disciplined, institutionally aligned
+        structures.
+      </p>
+      <p class="mt-4 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left">
+        Our approach emphasizes:
+      </p>
+      <ul
+        class="mt-6 max-w-2xl list-disc space-y-3 pl-6 text-base leading-relaxed text-tierra-graphite/90 sm:text-lg"
+        role="list"
+      >
+        <li>A phased development horizon aligned with community building</li>
+        <li>
+          Multiple, complementary value and revenue components across
+          residential, educational, and commercial uses
+        </li>
+        <li>
+          Clear decision-making processes, independent oversight, and transparent
+          reporting
+        </li>
+        <li>
+          International-standard operational controls and risk management
+          frameworks
+        </li>
+      </ul>
+      <p class="mt-10 text-center lg:text-left">
+        <Link
+          href="/strategy"
+          class="inline-flex items-center font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+        >
+          Learn About Our Strategy
+        </Link>
+      </p>
+    </div>
   </div>
 </section>

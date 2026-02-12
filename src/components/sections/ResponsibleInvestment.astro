@@ -5,63 +5,101 @@ import Link from "../Link.astro";
 <section
   id="responsible-investment"
   aria-labelledby="responsible-investment-heading"
-  class="bg-tierra-cream px-4 py-16 sm:px-6 sm:py-24"
+  class="bg-tierra-sand px-4 py-16 sm:px-6 sm:py-24"
 >
-  <div class="mx-auto max-w-5xl">
-    <h2
-      id="responsible-investment-heading"
-      class="text-center text-2xl tracking-tight sm:text-3xl"
-    >
-      Responsible Investment as a Source of Resilience
-    </h2>
-    <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
-      For Tierra Viva, responsible investment is not a separate objective—it
-      is integral to how long-term value is protected and compounded.
-    </p>
-    <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
-      We approach responsibility through a pragmatic, governance-led lens,
-      focusing on the factors most material to durable real-asset performance
-      in emerging markets.
-    </p>
-    <p class="mt-4 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
-      Our approach emphasizes:
-    </p>
-    <ul
-      class="reveal mx-auto mt-6 max-w-2xl list-disc space-y-3 pl-6 text-base leading-relaxed text-tierra-graphite/90 sm:text-lg"
-      role="list"
-    >
-      <li>
-        <strong>Governance & Transparency:</strong> Clear oversight structures,
-        disciplined capital allocation, and transparent reporting aligned with
-        international best practices.
-      </li>
-      <li>
-        <strong>Environmental Resilience:</strong> Infrastructure, energy,
-        and water systems designed to reduce operating risk, enhance
-        efficiency, and support long-term asset durability.
-      </li>
-      <li>
-        <strong>Social Foundations:</strong> Education access, local
-        employment pathways, and community integration that strengthen demand
-        stability and long-term occupancy.
-      </li>
-      <li>
-        <strong>Stewardship Orientation:</strong> Development decisions
-        evaluated not only on near-term returns, but on their ability to
-        sustain value across economic cycles.
-      </li>
-    </ul>
-    <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
-      We intend to report on selected, material indicators over time as
-      projects advance, with a focus on substance over signaling.
-    </p>
-    <p class="mt-10 text-center">
-      <Link
-        href="/responsible-investment"
-        class="inline-flex items-center font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+  <div class="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+    <!-- Text — LEFT on desktop -->
+    <div>
+      <h2
+        id="responsible-investment-heading"
+        class="text-center text-2xl tracking-tight sm:text-3xl lg:text-left"
       >
-        Our Responsible Investment Principles
-      </Link>
-    </p>
+        Responsible Investment as a Source of Resilience
+      </h2>
+      <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left">
+        For Tierra Viva, responsible investment is not a separate objective—it
+        is integral to how long-term value is protected and compounded.
+      </p>
+      <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left">
+        We approach responsibility through a pragmatic, governance-led lens,
+        focusing on the factors most material to durable real-asset performance
+        in emerging markets.
+      </p>
+      <p class="mt-4 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left">
+        Our approach emphasizes:
+      </p>
+      <ul
+        class="mt-6 max-w-2xl list-disc space-y-3 pl-6 text-base leading-relaxed text-tierra-graphite/90 sm:text-lg"
+        role="list"
+      >
+        <li>
+          <strong>Governance & Transparency:</strong> Clear oversight structures,
+          disciplined capital allocation, and transparent reporting aligned with
+          international best practices.
+        </li>
+        <li>
+          <strong>Environmental Resilience:</strong> Infrastructure, energy,
+          and water systems designed to reduce operating risk, enhance
+          efficiency, and support long-term asset durability.
+        </li>
+        <li>
+          <strong>Social Foundations:</strong> Education access, local
+          employment pathways, and community integration that strengthen demand
+          stability and long-term occupancy.
+        </li>
+        <li>
+          <strong>Stewardship Orientation:</strong> Development decisions
+          evaluated not only on near-term returns, but on their ability to
+          sustain value across economic cycles.
+        </li>
+      </ul>
+      <p class="mt-6 text-center text-base leading-relaxed text-tierra-graphite/90 sm:text-lg lg:text-left">
+        We intend to report on selected, material indicators over time as
+        projects advance, with a focus on substance over signaling.
+      </p>
+      <p class="mt-10 text-center lg:text-left">
+        <Link
+          href="/responsible-investment"
+          class="inline-flex items-center font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
+        >
+          Our Responsible Investment Principles
+        </Link>
+      </p>
+    </div>
+
+    <!-- Visual — RIGHT on desktop: Growth Shield -->
+    <div class="reveal flex items-center justify-center" aria-hidden="true">
+      <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs">
+        <!-- Outer concentric rings -->
+        <circle cx="150" cy="170" r="130" stroke="#bcd69a" stroke-width="1" opacity="0.3" />
+        <circle cx="150" cy="170" r="105" stroke="#4e9c3d" stroke-width="1" opacity="0.25" />
+        <circle cx="150" cy="170" r="80" stroke="#0f7335" stroke-width="1.5" opacity="0.2" />
+
+        <!-- Semi-transparent filled rings for depth -->
+        <circle cx="150" cy="170" r="105" fill="#bcd69a" opacity="0.08" />
+        <circle cx="150" cy="170" r="80" fill="#4e9c3d" opacity="0.08" />
+        <circle cx="150" cy="170" r="55" fill="#0f7335" opacity="0.06" />
+
+        <!-- Plant stem -->
+        <path d="M150 280 C150 260, 150 220, 150 170 C150 140, 148 110, 150 80" stroke="#0f7335" stroke-width="3" stroke-linecap="round" />
+
+        <!-- Left leaves -->
+        <path d="M150 230 C130 225, 105 215, 95 195 C115 195, 135 205, 150 220" fill="#4e9c3d" opacity="0.7" />
+        <path d="M150 180 C125 170, 100 150, 92 130 C115 132, 135 150, 150 170" fill="#0f7335" opacity="0.6" />
+
+        <!-- Right leaves -->
+        <path d="M150 205 C170 198, 195 185, 205 165 C185 167, 165 180, 150 195" fill="#4e9c3d" opacity="0.7" />
+        <path d="M150 150 C175 142, 200 125, 210 105 C190 108, 170 125, 150 142" fill="#0f7335" opacity="0.6" />
+
+        <!-- Top unfurling leaf -->
+        <path d="M150 80 C145 70, 135 50, 125 40 C140 45, 148 60, 150 75" fill="#bcd69a" opacity="0.8" />
+        <path d="M150 80 C155 70, 165 50, 175 40 C160 45, 152 60, 150 75" fill="#98e22e" opacity="0.5" />
+
+        <!-- Root base -->
+        <path d="M150 280 C140 290, 128 300, 120 310" stroke="#d4cdc4" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+        <path d="M150 280 C155 292, 165 302, 175 308" stroke="#d4cdc4" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+        <path d="M150 280 C150 295, 150 305, 148 315" stroke="#d4cdc4" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+      </svg>
+    </div>
   </div>
 </section>
