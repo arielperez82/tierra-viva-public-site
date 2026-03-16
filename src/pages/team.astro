@@ -5,6 +5,7 @@ import { SITE_TITLE } from "../consts";
 import Link from "../components/Link.astro";
 import ramonPhoto from "../assets/ramon-marmolejos.png";
 import ranjanPhoto from "../assets/ranjan-khan-profile.jpg";
+import josePhoto from "../assets/jose-l-zardoya-profile.jpg";
 ---
 
 <BaseLayout
@@ -74,6 +75,34 @@ import ranjanPhoto from "../assets/ranjan-khan-profile.jpg";
           client outcomes. Leads business strategy, capital investments, and
           portfolio growth—bridging finance, operations, and technology for
           integrated execution.
+        </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-start gap-6 sm:flex-row">
+        <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full border-2 border-tierra-stone/40">
+          <Image
+            src={josePhoto}
+            alt="Jose Luis Zardoya"
+            width={96}
+            height={96}
+            class="h-full w-full object-cover object-top"
+          />
+        </div>
+        <div>
+        <h3 class="font-semibold text-tierra-forest-dark">
+          Jose Luis Zardoya — Managing Director, Investment Committee
+        </h3>
+        <p class="mt-2 text-base leading-relaxed text-tierra-graphite/90">
+          Based in San Juan, Puerto Rico. Columbia Business School MBA and
+          University of Pennsylvania graduate with more than two decades in
+          capital markets and asset management. Currently Managing Director at
+          Aragon Asset Management; previously held senior roles at
+          Oppenheimer &amp; Co., CIBC World Markets, Cowen &amp; Company, and
+          Caspian Securities. Proven track record running principal investments
+          and client franchises across multiple market cycles—bringing deep
+          institutional expertise and capital-raising relationships to the
+          platform.
         </p>
         </div>
       </section>
