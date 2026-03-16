@@ -1,7 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../consts";
 import Link from "../components/Link.astro";
+import ramonPhoto from "../assets/ramon-marmolejos.png";
+import ranjanPhoto from "../assets/ranjan-khan-profile.jpg";
 ---
 
 <BaseLayout
@@ -22,7 +25,17 @@ import Link from "../components/Link.astro";
       Managing Partner &amp; Directors
     </h2>
     <div class="mt-6 space-y-8">
-      <section>
+      <section class="flex flex-col items-start gap-6 sm:flex-row">
+        <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full border-2 border-tierra-stone/40">
+          <Image
+            src={ramonPhoto}
+            alt="Ramon Marmolejos"
+            width={96}
+            height={96}
+            class="h-full w-full object-cover object-top"
+          />
+        </div>
+        <div>
         <h3 class="font-semibold text-tierra-forest-dark">
           Ramon Marmolejos — Managing Partner
         </h3>
@@ -34,6 +47,35 @@ import Link from "../components/Link.astro";
           stakeholder trust, and navigating complex systems. Brings authentic
           narrative and long-term impact focus to each development phase.
         </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-start gap-6 sm:flex-row">
+        <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full border-2 border-tierra-stone/40">
+          <Image
+            src={ranjanPhoto}
+            alt="Ranjan Khan"
+            width={96}
+            height={96}
+            class="h-full w-full object-cover object-top"
+          />
+        </div>
+        <div>
+        <h3 class="font-semibold text-tierra-forest-dark">
+          Ranjan Khan — Managing Director, Investment Committee
+        </h3>
+        <p class="mt-2 text-base leading-relaxed text-tierra-graphite/90">
+          Penn Computer Science graduate with two decades delivering
+          cross-functional programs in highly regulated environments. Former
+          Director at Dun &amp; Bradstreet's Office of the CTO; led Volcker Rule
+          reporting, global supervisory controls, and large-scale client
+          onboarding at Credit Suisse and Morgan Stanley. Additional experience
+          at Goldman Sachs, eGain, and IBM spanning operations, technology, and
+          client outcomes. Leads business strategy, capital investments, and
+          portfolio growth—bridging finance, operations, and technology for
+          integrated execution.
+        </p>
+        </div>
       </section>
     </div>
 
