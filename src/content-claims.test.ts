@@ -15,6 +15,8 @@ const PREMATURE_CLAIMS: readonly RegExp[] = [
   /approximately 15 minutes/i,
   /world-class/i,
   /infrastructure and amenities first/i,
+  /\bIB school\b/i,
+  /scholarship seats/i,
 ];
 
 const listSourceFiles = (dir: string): readonly string[] =>
@@ -38,9 +40,10 @@ describe("public site content", () => {
     }
   );
 
-  it("navigates by approach and team only", () => {
+  it("navigates by approach, education and team", () => {
     expect(NAV_ITEMS.map((item) => item.label)).toEqual([
       "Our Approach",
+      "Education & Impact",
       "Team",
     ]);
   });

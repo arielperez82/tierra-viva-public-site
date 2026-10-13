@@ -3,6 +3,7 @@ export const CONTACT_EMAIL = "info@tierravivainvest.com";
 
 export const NAV_ITEMS: readonly { label: string; href: string }[] = [
   { label: "Our Approach", href: "/approach" },
+  { label: "Education & Impact", href: "/education-impact" },
   { label: "Team", href: "/team" },
 ];
 

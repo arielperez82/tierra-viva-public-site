@@ -15,6 +15,7 @@ export default defineConfig({
   integrations: [sitemap()],
   redirects: {
     "/about": "/",
+    "/responsible-investment": "/education-impact",
     "/strategy": "/approach",
     "/platform": "/approach",
     "/projects": "/#santiago",

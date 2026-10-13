@@ -1,0 +1,265 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, contactHref } from "../consts";
+import schoolConcept from "../assets/concepts/school-concept.jpg";
+
+const SCHOOL_PRIORITIES: readonly {
+  readonly title: string;
+  readonly body: string;
+}[] = [
+  {
+    title: "Learning quality",
+    body: "An internationally oriented education that prepares students to thrive locally and globally.",
+  },
+  {
+    title: "Great educators",
+    body: "Strong school leadership and continuous professional growth for teachers.",
+  },
+  {
+    title: "Access",
+    body: "Financial-assistance pathways that widen access for families.",
+  },
+  {
+    title: "Rooted in place",
+    body: "A school designed with families, educators and local stakeholders, and open to the wider community.",
+  },
+];
+
+const BEYOND_THE_SCHOOL: readonly {
+  readonly title: string;
+  readonly body: string;
+}[] = [
+  {
+    title: "Educator development",
+    body: "Professional development for teachers and school leaders, extending beyond the school's own staff to educators in the surrounding area.",
+  },
+  {
+    title: "Community learning",
+    body: "Learning programs for children, young people and adults, shaped with local partners around what the community needs.",
+  },
+  {
+    title: "Financial assistance",
+    body: "Support that widens access to the school, designed as part of its economics and funded deliberately rather than left to chance.",
+  },
+  {
+    title: "Local opportunity",
+    body: "Local hiring, enterprise space and partnerships that let more people take part in what the community creates.",
+  },
+];
+
+const FIRST_STEPS: readonly { readonly title: string; readonly body: string }[] = [
+  {
+    title: "Listen",
+    body: "Begin with a community needs assessment alongside local partners.",
+  },
+  {
+    title: "Partner",
+    body: "Build relationships with educators, schools, employers and community organizations.",
+  },
+  {
+    title: "Pilot",
+    body: "Co-design a small learning pilot that responds to what we hear.",
+  },
+  {
+    title: "Learn",
+    body: "Assess what the pilot achieves, then adapt and expand what works.",
+  },
+];
+
+const MEASURES: readonly string[] = [
+  "Participation and access",
+  "Learning and wellbeing",
+  "Educator development",
+  "Local hiring and enterprise",
+  "Community use of shared spaces",
+  "Environmental performance",
+];
+
+const sectionHeading = "text-2xl tracking-tight sm:text-3xl";
+const bodyText = "text-base leading-relaxed text-tierra-graphite/90 sm:text-lg";
+---
+
+<BaseLayout
+  title={`Education & Impact | ${SITE_TITLE}`}
+  description="Education is at the heart of every Tierra Viva community: the schools we plan, the educators we support, wider access to learning, and how we will assess progress."
+>
+  <article class="bg-tierra-cream px-4 py-16 sm:px-6 sm:py-24">
+    <div class="mx-auto max-w-5xl">
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h1 class="text-3xl tracking-tight sm:text-4xl lg:text-5xl">
+            Education &amp; Impact
+          </h1>
+          <p class="mt-6 text-lg leading-relaxed">
+            Education is where every Tierra Viva community begins. A great school
+            can shape where families choose to live, and a community designed
+            around learning can open opportunity well beyond its own residents.
+          </p>
+          <p class="mt-4 text-base leading-relaxed text-tierra-graphite/80">
+            This page describes our educational ambition and the work we plan to
+            do. In Santiago, the school concept and these programs are in
+            development with educators and local partners.
+          </p>
+        </div>
+        <figure>
+          <Image
+            src={schoolConcept}
+            alt="Aerial concept rendering of a school campus with shaded walkways, gardens and playing fields set among trees and mountains."
+            widths={[640, 960, 1536]}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            class="w-full rounded-xl object-cover shadow-md"
+            loading="eager"
+          />
+          <figcaption class="mt-3 text-xs leading-relaxed text-tierra-graphite/70">
+            Illustrative school concept. Design and program are subject to
+            development and approvals.
+          </figcaption>
+        </figure>
+      </div>
+
+      <section aria-labelledby="school-heading" class="mt-20">
+        <h2 id="school-heading" class={sectionHeading}>
+          Schools planned with the community
+        </h2>
+        <p class={`mt-6 max-w-3xl ${bodyText}`}>
+          Each community is planned around an internationally oriented school.
+          In Santiago, we are developing the school concept with experienced
+          educators, prospective operators, families and local stakeholders. The
+          work covers the learning approach, leadership and staffing, operating
+          economics and access for families.
+        </p>
+        <ul class="mt-8 grid gap-6 sm:grid-cols-2" role="list">
+          {
+            SCHOOL_PRIORITIES.map((priority) => (
+              <li class="rounded-xl border border-tierra-stone/40 bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-tierra-forest">
+                  {priority.title}
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-tierra-graphite/90">
+                  {priority.body}
+                </p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="beyond-heading" class="mt-20">
+        <h2 id="beyond-heading" class={sectionHeading}>
+          Learning that reaches beyond the school
+        </h2>
+        <p class={`mt-6 max-w-3xl ${bodyText}`}>
+          We want Tierra Viva's educational contribution to extend beyond the
+          families who live in the community. These are the areas of work we
+          plan to develop.
+        </p>
+        <ul class="mt-8 grid gap-6 sm:grid-cols-2" role="list">
+          {
+            BEYOND_THE_SCHOOL.map((area) => (
+              <li class="rounded-xl border border-tierra-stone/40 bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-tierra-forest">
+                  {area.title}
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-tierra-graphite/90">
+                  {area.body}
+                </p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="mt-20">
+        <h2 id="steps-heading" class={sectionHeading}>
+          How we will begin
+        </h2>
+        <p class={`mt-6 max-w-3xl ${bodyText}`}>
+          Rather than arriving with a finished program, we will start small and
+          build on what works.
+        </p>
+        <ol class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
+          {
+            FIRST_STEPS.map((step, index) => (
+              <li class="rounded-xl border border-tierra-stone/40 bg-white p-6 shadow-sm">
+                <span class="text-sm font-semibold text-tierra-mid">
+                  {index + 1}
+                </span>
+                <h3 class="mt-1 text-base font-semibold text-tierra-forest">
+                  {step.title}
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-tierra-graphite/90">
+                  {step.body}
+                </p>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section
+        aria-labelledby="measures-heading"
+        class="mt-20 grid gap-10 lg:grid-cols-2"
+      >
+        <div>
+          <h2 id="measures-heading" class={sectionHeading}>
+            How we will know it is working
+          </h2>
+          <p class={`mt-6 ${bodyText}`}>
+            We plan to establish a baseline with local partners and assess
+            progress against it. The measures will evolve as the programs and
+            the community take shape.
+          </p>
+        </div>
+        <ul class="grid gap-3 self-center sm:grid-cols-2" role="list">
+          {
+            MEASURES.map((measure) => (
+              <li class="rounded-lg border border-tierra-stone/40 bg-white px-4 py-3 text-sm font-medium text-tierra-ink">
+                {measure}
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="foundation-heading" class="mt-20 max-w-3xl">
+        <h2 id="foundation-heading" class={sectionHeading}>
+          A foundation for public-benefit work
+        </h2>
+        <p class={`mt-6 ${bodyText}`}>
+          We are exploring a foundation to carry the work that benefits the wider
+          community, such as financial assistance, educator development and
+          community learning. It would have its own funding and governance, so
+          that this work is accountable on its own terms.
+        </p>
+        <p class={`mt-4 ${bodyText}`}>
+          Our aim is to establish institutions and governance strong enough to
+          serve the community for the long term, including as ownership of
+          individual assets changes over time.
+        </p>
+      </section>
+
+      <section
+        aria-labelledby="education-connect-heading"
+        class="mt-20 rounded-xl bg-tierra-forest-dark px-8 py-12 text-center text-white"
+      >
+        <h2
+          id="education-connect-heading"
+          class="text-2xl tracking-tight text-white sm:text-3xl"
+        >
+          Shape this work with us
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/80">
+          We would like to hear from educators, school operators, researchers,
+          funders and community organizations who share this ambition.
+        </p>
+        <a
+          href={contactHref("Education or community partnership")}
+          class="mt-8 inline-flex items-center justify-center rounded-lg bg-tierra-lime px-8 py-3.5 font-semibold text-tierra-forest-dark shadow-sm transition hover:bg-tierra-lime/90 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 focus:ring-offset-tierra-forest-dark"
+        >
+          Start a conversation
+        </a>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
