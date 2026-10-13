@@ -13,6 +13,14 @@ export default defineConfig({
   site: getSite(),
   base: getBase(),
   integrations: [sitemap()],
+  redirects: {
+    "/about": "/",
+    "/strategy": "/approach",
+    "/platform": "/approach",
+    "/projects": "/#santiago",
+    "/research": "/",
+    "/research/why-education-anchors-community-value": "/",
+  },
   build: {
     inlineStylesheets: "always",
   },

@@ -1,0 +1,169 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, contactHref } from "../consts";
+import { PILLARS } from "../data/pillars";
+import PillarIcon from "../components/PillarIcon.astro";
+import commercialConcept from "../assets/concepts/commercial-village-concept.jpg";
+
+const VALUE_SOURCES: readonly { readonly title: string; readonly body: string }[] = [
+  {
+    title: "Homes",
+    body: "Residential sales are intended to provide the main source of development margin and capital recovery, delivered in phases as demand is proven.",
+  },
+  {
+    title: "Neighborhood commerce",
+    body: "Retail, health services and workspace can generate ongoing lease income while giving residents everyday services close to home.",
+  },
+  {
+    title: "The school",
+    body: "The school needs its own credible educational and operating model, including a clear approach to financing access for families.",
+  },
+];
+
+const MILESTONES: readonly { readonly title: string; readonly body: string }[] = [
+  {
+    title: "Land control",
+    body: "A signed agreement with a protected diligence period and access.",
+  },
+  {
+    title: "Title and survey",
+    body: "Ownership, boundaries and encumbrances resolved.",
+  },
+  {
+    title: "Buildability",
+    body: "Engineering, utilities and the environmental and permitting pathway validated.",
+  },
+  {
+    title: "Costed delivery plan",
+    body: "Design, phasing, cost contingency and financing aligned.",
+  },
+  {
+    title: "Commercial readiness",
+    body: "A school operating pathway and household demand validated.",
+  },
+];
+
+const linkClass =
+  "font-medium text-tierra-forest underline decoration-tierra-mid underline-offset-4 transition hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2";
+---
+
+<BaseLayout
+  title={`Our Approach | ${SITE_TITLE}`}
+  description="How Tierra Viva plans schools, homes and local enterprise together, how the model creates value, and how we advance development as evidence strengthens."
+>
+  <article class="bg-tierra-cream px-4 py-16 sm:px-6 sm:py-24">
+    <div class="mx-auto max-w-5xl">
+      <h1 class="text-3xl tracking-tight sm:text-4xl lg:text-5xl">Our Approach</h1>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed">
+        Most developments treat schools, homes and shops as separate projects.
+        Tierra Viva plans them as one community, so that design, demand and
+        operating decisions reinforce each other.
+      </p>
+
+      <section aria-labelledby="model-heading" class="mt-16">
+        <h2 id="model-heading" class="text-2xl tracking-tight sm:text-3xl">
+          One community, four connected elements
+        </h2>
+        <ul class="mt-8 grid gap-6 sm:grid-cols-2" role="list">
+          {
+            PILLARS.map((pillar) => (
+              <li class="flex gap-4 rounded-xl border border-tierra-stone/40 bg-white p-6 shadow-sm">
+                <PillarIcon icon={pillar.icon} />
+                <div>
+                  <h3 class="text-lg font-semibold text-tierra-forest">
+                    {pillar.title}
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-tierra-graphite/90">
+                    {pillar.description}
+                  </p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="value-heading" class="mt-20 grid items-start gap-10 lg:grid-cols-2">
+        <div>
+          <h2 id="value-heading" class="text-2xl tracking-tight sm:text-3xl">
+            How the business creates value
+          </h2>
+          <dl class="mt-8 space-y-6">
+            {
+              VALUE_SOURCES.map((source) => (
+                <div>
+                  <dt class="text-lg font-semibold text-tierra-ink">
+                    {source.title}
+                  </dt>
+                  <dd class="mt-1 text-base leading-relaxed text-tierra-graphite/90">
+                    {source.body}
+                  </dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+        <figure>
+          <Image
+            src={commercialConcept}
+            alt="Concept rendering of a neighborhood commercial street at dusk with cafés, shops and outdoor seating."
+            widths={[640, 960, 1536]}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            class="w-full rounded-xl object-cover shadow-md"
+          />
+          <figcaption class="mt-3 text-xs leading-relaxed text-tierra-graphite/70">
+            Illustrative commercial-village concept. Design and program are
+            subject to development and approvals.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="evidence-heading" class="mt-20">
+        <h2 id="evidence-heading" class="text-2xl tracking-tight sm:text-3xl">
+          Evidence before scale
+        </h2>
+        <p class="mt-6 max-w-3xl text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
+          We increase commitments as the evidence strengthens. In each
+          community, these milestones come before larger commitments.
+        </p>
+        <ol class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5" role="list">
+          {
+            MILESTONES.map((milestone, index) => (
+              <li class="rounded-xl border border-tierra-stone/40 bg-white p-6 shadow-sm">
+                <span class="text-sm font-semibold text-tierra-mid">
+                  {String.fromCharCode(65 + index)}
+                </span>
+                <h3 class="mt-1 text-base font-semibold text-tierra-forest">
+                  {milestone.title}
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-tierra-graphite/90">
+                  {milestone.body}
+                </p>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section aria-labelledby="partners-heading" class="mt-20 max-w-3xl">
+        <h2 id="partners-heading" class="text-2xl tracking-tight sm:text-3xl">
+          Built with local partners
+        </h2>
+        <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
+          Local relationships matter. We work with experienced counsel,
+          developers, engineers, educators and community stakeholders in each
+          market, and we are building that execution network in the Dominican
+          Republic now.
+        </p>
+        <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90">
+          Interested in working with us?{" "}
+          <a href={contactHref("Development or operating partnership")} class={linkClass}>
+            Start a conversation
+          </a>
+          .
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

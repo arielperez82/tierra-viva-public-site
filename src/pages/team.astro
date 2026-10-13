@@ -6,24 +6,24 @@ import Link from "../components/Link.astro";
 import ramonPhoto from "../assets/ramon-marmolejos.png";
 import ranjanPhoto from "../assets/ranjan-khan-profile.jpg";
 import josePhoto from "../assets/jose-l-zardoya-profile.jpg";
+import henryPhoto from "../assets/henry-gonzalez-profile.png";
 ---
 
 <BaseLayout
-  title={`Team & Governance | ${SITE_TITLE}`}
-  description="Tierra Viva leadership: Managing Partner, Directors, Investment Committee, and key development partner."
+  title={`Team | ${SITE_TITLE}`}
+  description="The Tierra Viva team: education, capital markets, operations and governance, and local market execution in the Dominican Republic."
 >
   <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
     <h1 class="text-2xl tracking-tight sm:text-3xl">
-      Team &amp; Governance
+      Team
     </h1>
     <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90">
-      Experienced leadership and structured governance support Tierra Viva's
-      platform. The team brings decades of experience across capital markets,
-      development, operations, and governance.
+      Our team combines education, capital markets, regulated-finance controls
+      and local real estate execution in the Dominican Republic.
     </p>
 
     <h2 class="mt-10 text-xl font-semibold tracking-tight">
-      Managing Partner &amp; Directors
+      Leadership
     </h2>
     <div class="mt-6 space-y-8">
       <section class="flex flex-col items-start gap-6 sm:flex-row">
@@ -38,15 +38,13 @@ import josePhoto from "../assets/jose-l-zardoya-profile.jpg";
         </div>
         <div>
         <h3 class="font-semibold text-tierra-forest-dark">
-          Ramon Marmolejos — Managing Partner
+          Ramon Marmolejos — Founder &amp; Managing Partner
         </h3>
         <p class="mt-2 text-base leading-relaxed text-tierra-graphite/90">
-          Born in the Dominican Republic, educated in the U.S. and Europe
-          (Wharton, IE Business School). Over 20 years leading transformational
-          initiatives across business, education, and impact. Co-founder of
-          Alkimia Learning; expertise in aligning diverse teams, building
-          stakeholder trust, and navigating complex systems. Brings authentic
-          narrative and long-term impact focus to each development phase.
+          Leads the platform and its education vision. Born in the Dominican
+          Republic, Ramon brings more than 20 years in education, leadership
+          development and impact, including co-founding Alkimia Learning.
+          Wharton, IE Business School MBA and Harvard Ed.M.
         </p>
         </div>
       </section>
@@ -103,6 +101,28 @@ import josePhoto from "../assets/jose-l-zardoya-profile.jpg";
           and client franchises across multiple market cycles—bringing deep
           institutional expertise and capital-raising relationships to the
           platform.
+        </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-start gap-6 sm:flex-row">
+        <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full border-2 border-tierra-stone/40">
+          <Image
+            src={henryPhoto}
+            alt="Henry González"
+            width={96}
+            height={96}
+            class="h-full w-full object-cover object-top"
+          />
+        </div>
+        <div>
+        <h3 class="font-semibold text-tierra-forest-dark">
+          Henry González — Local Market Execution
+        </h3>
+        <p class="mt-2 text-base leading-relaxed text-tierra-graphite/90">
+          More than 13 years in Dominican real estate, including work with
+          Espejo y Asociados, and founder of HG International. Focuses on
+          local market execution in the Dominican Republic.
         </p>
         </div>
       </section>

@@ -6,27 +6,27 @@ export type Pillar = {
 
 export const PILLARS: readonly Pillar[] = [
   {
-    title: "Learning as the Catalyst",
+    title: "Learning",
     description:
-      "A high-quality school with an international curriculum anchors each community—attracting families, cultivating talent, and supporting long-term social mobility.",
+      "An internationally oriented school planned alongside the community, with a focus on educational quality, teacher development and wider access.",
     icon: "learning",
   },
   {
-    title: "Homes that Regenerate Place",
+    title: "Homes",
     description:
-      "Thoughtfully designed residences aligned with global sustainability standards, resilient infrastructure, and long-term stewardship of land and resources.",
+      "Well-designed residences with shared spaces, walkable green areas and everyday services that support family life.",
     icon: "homes",
   },
   {
-    title: "Enterprise that Multiplies Opportunity",
+    title: "Enterprise",
     description:
-      "Mixed-use and commercial spaces that support entrepreneurship, local businesses, and returning diaspora professionals.",
+      "Neighborhood businesses, health services and workspace that create room for local employment and entrepreneurship.",
     icon: "enterprise",
   },
   {
-    title: "Stewardship for the Long Term",
+    title: "Stewardship",
     description:
-      "Transparent governance, local hiring pathways, and regenerative land management practices that strengthen communities and protect value over time.",
+      "Responsible land use, resilient shared infrastructure and clear arrangements for caring for common places.",
     icon: "stewardship",
   },
 ];
