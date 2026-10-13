@@ -1,30 +1,54 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../consts";
-import Link from "../components/Link.astro";
+
+const SECTIONS: readonly { readonly heading: string; readonly body: string }[] = [
+  {
+    heading: "No offer of securities",
+    body: "Nothing on this website is an offer to sell or a solicitation of an offer to buy securities. No securities have been registered under the U.S. Securities Act of 1933, or with any U.S. state, Puerto Rico, the Dominican Republic's Superintendencia del Mercado de Valores, or any other regulator. Any offering would rely on available exemptions and would be limited to eligible investors through definitive offering documents. No regulator has reviewed or approved the contents of this website.",
+  },
+  {
+    heading: "No offer of real estate or enrollment",
+    body: "Nothing on this website is an offer to sell or reserve property, or an offer of school enrollment. Any such offer would be made separately, under documentation that complies with applicable local law.",
+  },
+  {
+    heading: "No advice",
+    body: "Nothing on this website is investment, legal, tax or other professional advice. You should consult your own advisers.",
+  },
+  {
+    heading: "Information as of its date",
+    body: "Information on this website reflects our plans as of the date it was published, may be incomplete, and may change without notice. Renderings and concepts are illustrative only.",
+  },
+  {
+    heading: "Language",
+    body: "If this website is translated, the English version prevails.",
+  },
+];
 ---
 
-<BaseLayout title={`Jurisdiction Notice | ${SITE_TITLE}`} description="Jurisdiction notice for Tierra Viva.">
+<BaseLayout
+  title={`Jurisdiction Notice | ${SITE_TITLE}`}
+  description="Legal notices about the information on the Tierra Viva Investments website."
+>
   <article class="mx-auto max-w-3xl px-4 py-16 text-tierra-forest-dark sm:px-6 sm:py-24">
     <h1 class="text-2xl tracking-tight sm:text-3xl">Jurisdiction Notice</h1>
     <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90">
-      This page will be updated with jurisdiction and legal notices. For
-      questions, contact us at{" "}
-      <a
-        href="mailto:info@tierravivainvest.com"
-        class="font-medium text-tierra-forest underline decoration-tierra-stone underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
-      >
-        info@tierravivainvest.com
-      </a>
-      .
+      This website is operated by Tierra Viva Investments from the United
+      States. It is provided for general information only and is not directed
+      at any person in any jurisdiction where its publication or availability
+      would be unlawful or would require registration or licensing.
     </p>
-    <p class="mt-6">
-      <Link
-        href="/"
-        class="font-medium text-tierra-forest underline decoration-tierra-stone underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
-      >
-        Back to home
-      </Link>
-    </p>
+    {
+      SECTIONS.map((section) => (
+        <section>
+          <h2 class="mt-10 text-xl font-semibold tracking-tight">
+            {section.heading}
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-tierra-graphite/90">
+            {section.body}
+          </p>
+        </section>
+      ))
+    }
   </article>
 </BaseLayout>

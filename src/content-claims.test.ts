@@ -23,6 +23,9 @@ const PREMATURE_CLAIMS: readonly RegExp[] = [
   /\bIB school\b/i,
   /scholarship seats/i,
   /investment case/i,
+  /qualified individuals/i,
+  /offering, if pursued/i,
+  /will be updated with jurisdiction/i,
   /will be updated with our privacy policy/i,
   /fonts\.googleapis\.com/,
 ];
