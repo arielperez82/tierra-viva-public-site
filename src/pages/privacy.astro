@@ -1,30 +1,106 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE } from "../consts";
-import Link from "../components/Link.astro";
+import { CONTACT_EMAIL, SITE_TITLE } from "../consts";
+
+const EFFECTIVE_DATE = "13 October 2026";
+
+const linkClass =
+  "font-medium text-tierra-forest underline decoration-tierra-stone underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2";
+const headingClass = "mt-10 text-xl font-semibold tracking-tight";
+const bodyClass = "mt-4 text-base leading-relaxed text-tierra-graphite/90";
+const listClass =
+  "mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed text-tierra-graphite/90";
 ---
 
-<BaseLayout title={`Privacy Policy | ${SITE_TITLE}`} description="Privacy Policy for Tierra Viva.">
+<BaseLayout
+  title={`Privacy Policy | ${SITE_TITLE}`}
+  description="How Tierra Viva Investments handles information when you visit this website or contact us."
+>
   <article class="mx-auto max-w-3xl px-4 py-16 text-tierra-forest-dark sm:px-6 sm:py-24">
     <h1 class="text-2xl tracking-tight sm:text-3xl">Privacy Policy</h1>
-    <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90">
-      This page will be updated with our privacy policy. For questions, contact
-      us at{" "}
-      <a
-        href="mailto:info@tierravivainvest.com"
-        class="font-medium text-tierra-forest underline decoration-tierra-stone underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
-      >
-        info@tierravivainvest.com
-      </a>
-      .
+    <p class="mt-2 text-sm text-tierra-graphite/70">Effective {EFFECTIVE_DATE}</p>
+
+    <p class={bodyClass}>
+      This policy explains how Tierra Viva Investments ("Tierra Viva", "we",
+      "us") handles information when you visit this website or contact us. We
+      keep this website simple and collect as little information as we can.
     </p>
-    <p class="mt-6">
-      <Link
-        href="/"
-        class="font-medium text-tierra-forest underline decoration-tierra-stone underline-offset-4 hover:decoration-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2"
-      >
-        Back to home
-      </Link>
+
+    <h2 class={headingClass}>What this website collects</h2>
+    <p class={bodyClass}>
+      This website has no forms, accounts, advertising or analytics tools, and
+      we do not set cookies. Our fonts and images are served from this website
+      rather than from third parties.
+    </p>
+    <p class={bodyClass}>
+      The website is hosted by GitHub Pages. Like most hosting providers,
+      GitHub may record technical information such as your IP address when you
+      visit, for security and operational purposes. GitHub handles that
+      information under its own{" "}
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" class={linkClass}>
+        privacy statement
+      </a>
+      . We do not receive or use that information to identify visitors.
+    </p>
+
+    <h2 class={headingClass}>When you contact us</h2>
+    <p class={bodyClass}>
+      If you email us, we receive the information you choose to share, such as
+      your name, email address, organization and the contents of your message.
+      We use it to:
+    </p>
+    <ul class={listClass} role="list">
+      <li>respond to you and continue the conversation you started;</li>
+      <li>keep a record of our correspondence; and</li>
+      <li>meet legal, regulatory or record-keeping obligations that apply to us.</li>
+    </ul>
+    <p class={bodyClass}>
+      Please do not send sensitive personal information or financial account
+      details by email.
+    </p>
+
+    <h2 class={headingClass}>Who we share it with</h2>
+    <p class={bodyClass}>
+      We do not sell your personal information. We share it only as needed with
+      members of our team, with service providers that help us operate (such as
+      our email provider), with professional advisers such as lawyers and
+      accountants, and where the law requires it.
+    </p>
+
+    <h2 class={headingClass}>Where it is processed and how long we keep it</h2>
+    <p class={bodyClass}>
+      Our team and service providers work in the United States, the Dominican
+      Republic and other countries, so your information may be processed
+      outside the country where you live. We keep correspondence for as long as
+      it is needed for the purposes above, including any legal obligations, and
+      then delete it.
+    </p>
+
+    <h2 class={headingClass}>Your choices</h2>
+    <p class={bodyClass}>
+      You can ask us to tell you what information we hold about you, to correct
+      it, or to delete it. Depending on where you live, you may have additional
+      rights under local law. We will respond to requests as required by the
+      laws that apply to us.
+    </p>
+
+    <h2 class={headingClass}>Children</h2>
+    <p class={bodyClass}>
+      This website is not directed to children, and we do not knowingly collect
+      information from them.
+    </p>
+
+    <h2 class={headingClass}>Changes to this policy</h2>
+    <p class={bodyClass}>
+      We will update this policy as our website and activities change, for
+      example if we add a contact form. The effective date above shows when it
+      last changed.
+    </p>
+
+    <h2 class={headingClass}>Contact</h2>
+    <p class={bodyClass}>
+      For questions or requests about this policy, email{" "}
+      <a href={`mailto:${CONTACT_EMAIL}`} class={linkClass}>{CONTACT_EMAIL}</a>.
     </p>
   </article>
 </BaseLayout>

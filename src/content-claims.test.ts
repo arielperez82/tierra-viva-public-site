@@ -3,7 +3,12 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { NAV_ITEMS } from "./consts";
 
-const PUBLIC_SOURCE_DIRS = ["src/pages", "src/components", "src/data"];
+const PUBLIC_SOURCE_DIRS = [
+  "src/pages",
+  "src/components",
+  "src/data",
+  "src/layouts",
+];
 
 const PREMATURE_CLAIMS: readonly RegExp[] = [
   /\bIRR\b/,
@@ -17,6 +22,9 @@ const PREMATURE_CLAIMS: readonly RegExp[] = [
   /infrastructure and amenities first/i,
   /\bIB school\b/i,
   /scholarship seats/i,
+  /investment case/i,
+  /will be updated with our privacy policy/i,
+  /fonts\.googleapis\.com/,
 ];
 
 const listSourceFiles = (dir: string): readonly string[] =>

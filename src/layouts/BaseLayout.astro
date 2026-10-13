@@ -1,4 +1,9 @@
 ---
+import "@fontsource/dm-serif-display/400.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
 import "../styles/global.css";
 import { getImage } from "astro:assets";
 import schoolConcept from "../assets/concepts/school-concept.jpg";
@@ -32,13 +37,6 @@ const socialImageUrl = new URL(socialImage.src, Astro.site ?? Astro.url).href;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <!-- Google Fonts: DM Serif Display, Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Tierra Viva Investments" />
     <meta property="og:title" content={pageTitle} />
