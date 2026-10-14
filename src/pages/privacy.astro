@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { CONTACT_EMAIL, SITE_TITLE } from "../consts";
+import { LEAD_FORM_ENABLED } from "../lib/lead-form-config";
 
 const EFFECTIVE_DATE = "13 October 2026";
 
@@ -27,11 +28,23 @@ const listClass =
     </p>
 
     <h2 class={headingClass}>What this website collects</h2>
-    <p class={bodyClass}>
-      This website has no forms, accounts, advertising or analytics tools, and
-      we do not set cookies. Our fonts and images are served from this website
-      rather than from third parties.
-    </p>
+    {
+      LEAD_FORM_ENABLED ? (
+        <p class={bodyClass}>
+          This website has no accounts, advertising or analytics tools, and we
+          do not set cookies. Our fonts and images are served from this website
+          rather than from third parties. The only information we collect
+          through the website is what you choose to send us through our
+          contact form, described below.
+        </p>
+      ) : (
+        <p class={bodyClass}>
+          This website has no forms, accounts, advertising or analytics tools,
+          and we do not set cookies. Our fonts and images are served from this
+          website rather than from third parties.
+        </p>
+      )
+    }
     <p class={bodyClass}>
       The website is hosted by GitHub Pages. Like most hosting providers,
       GitHub may record technical information such as your IP address when you
@@ -42,6 +55,35 @@ const listClass =
       </a>
       . We do not receive or use that information to identify visitors.
     </p>
+
+    {
+      LEAD_FORM_ENABLED && (
+        <>
+          <h2 class={headingClass}>When you use our contact form</h2>
+          <p class={bodyClass}>
+            Our contact form asks for your name, work email, company, and what
+            you are interested in, and you may add your role and a message. We
+            also record how you reached the form, such as the link or campaign
+            you followed (for example, a QR code from one of our materials),
+            the page where you arrived and the referring website. While you
+            browse, this is kept in your browser's session storage and is
+            cleared when you close the tab.
+          </p>
+          <p class={bodyClass}>
+            When you submit the form, your information is sent to HubSpot, the
+            service we use to manage our contacts and correspondence, and
+            handled under HubSpot's{" "}
+            <a href="https://legal.hubspot.com/privacy-policy" class={linkClass}>
+              privacy policy
+            </a>
+            . We use it for the purposes described in the next section. If you
+            opt in to updates, we will also send you occasional news about
+            Tierra Viva, and you can unsubscribe at any time using the link in
+            any email.
+          </p>
+        </>
+      )
+    }
 
     <h2 class={headingClass}>When you contact us</h2>
     <p class={bodyClass}>

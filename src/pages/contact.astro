@@ -1,13 +1,46 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE } from "../consts";
+import { CONTACT_EMAIL, SITE_TITLE } from "../consts";
 import PartnerWithUs from "../components/sections/PartnerWithUs.astro";
+import LeadForm from "../components/LeadForm.astro";
+import { HUBSPOT } from "../lib/lead-form-config";
 ---
 
 <BaseLayout
   title={`Connect | ${SITE_TITLE}`}
   description="Start a conversation with Tierra Viva as a capital partner, development or operating partner, or education and community partner."
 >
-  <h1 class="sr-only">Connect with Tierra Viva</h1>
-  <PartnerWithUs />
+  {
+    HUBSPOT ? (
+      <section class="bg-tierra-cream px-4 py-16 sm:px-6 sm:py-24">
+        <div class="mx-auto max-w-3xl">
+          <h1 class="text-3xl tracking-tight sm:text-4xl">
+            Start a conversation
+          </h1>
+          <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90 sm:text-lg">
+            We welcome conversations with capital partners, development and
+            operating partners, educators and community organizations. Tell us
+            a little about yourself and what interests you about Tierra Viva.
+          </p>
+          <div class="mt-10">
+            <LeadForm config={HUBSPOT} />
+          </div>
+          <p class="mt-8 text-center text-sm text-tierra-graphite/80">
+            Prefer email? Write to us at{" "}
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              class="font-medium text-tierra-forest underline underline-offset-4"
+            >
+              {CONTACT_EMAIL}
+            </a>
+          </p>
+        </div>
+      </section>
+    ) : (
+      <>
+        <h1 class="sr-only">Connect with Tierra Viva</h1>
+        <PartnerWithUs />
+      </>
+    )
+  }
 </BaseLayout>

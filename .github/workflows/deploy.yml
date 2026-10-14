@@ -36,6 +36,10 @@ jobs:
         env:
           ASTRO_SITE: ${{ vars.ASTRO_SITE }}
           ASTRO_BASE: ${{ vars.ASTRO_BASE }}
+          PUBLIC_HUBSPOT_PORTAL_ID: ${{ vars.PUBLIC_HUBSPOT_PORTAL_ID }}
+          PUBLIC_HUBSPOT_FORM_ID: ${{ vars.PUBLIC_HUBSPOT_FORM_ID }}
+          PUBLIC_HUBSPOT_REGION: ${{ vars.PUBLIC_HUBSPOT_REGION }}
+          PUBLIC_HUBSPOT_SUBSCRIPTION_TYPE_ID: ${{ vars.PUBLIC_HUBSPOT_SUBSCRIPTION_TYPE_ID }}
         run: pnpm build
 
       - uses: actions/upload-pages-artifact@v4

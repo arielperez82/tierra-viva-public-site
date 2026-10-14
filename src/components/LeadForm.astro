@@ -1,0 +1,175 @@
+---
+import { CONTACT_EMAIL } from "../consts";
+import { NAA_PATH } from "../data/naa";
+import {
+  INTERESTS,
+  PROCESSING_CONSENT_TEXT,
+  UPDATES_CONSENT_TEXT,
+  type HubSpotConfig,
+} from "../lib/lead-form";
+import { withBase } from "../utils/with-base";
+
+type Props = {
+  config: HubSpotConfig;
+};
+
+const { config } = Astro.props;
+
+const labelClass = "block text-sm font-medium text-tierra-forest-dark";
+const inputClass =
+  "mt-2 block w-full rounded-lg border border-tierra-stone/60 bg-white px-4 py-3 text-base text-tierra-ink shadow-sm focus:border-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-lime aria-[invalid=true]:border-red-700";
+const errorClass = "mt-2 text-sm text-red-700";
+const linkClass = "font-medium text-tierra-forest underline underline-offset-4";
+
+const TEXT_FIELDS: readonly {
+  readonly name: string;
+  readonly label: string;
+  readonly type: "text" | "email";
+  readonly autocomplete: string;
+  readonly required: boolean;
+}[] = [
+  { name: "firstName", label: "First name", type: "text", autocomplete: "given-name", required: true },
+  { name: "lastName", label: "Last name", type: "text", autocomplete: "family-name", required: true },
+  { name: "email", label: "Work email", type: "email", autocomplete: "email", required: true },
+  { name: "company", label: "Company or firm", type: "text", autocomplete: "organization", required: true },
+  { name: "role", label: "Role", type: "text", autocomplete: "organization-title", required: false },
+];
+---
+
+<div data-lead-form class="rounded-xl border border-tierra-stone/40 bg-white p-6 shadow-sm sm:p-10">
+  <form
+    novalidate
+    data-portal-id={config.portalId}
+    data-form-id={config.formId}
+    data-region={config.region}
+    data-subscription-type-id={config.subscriptionTypeId?.toString() ?? ""}
+  >
+    <div class="grid gap-6 sm:grid-cols-2">
+      {
+        TEXT_FIELDS.map((field) => (
+          <div class={field.name === "role" ? "sm:col-span-2" : ""}>
+            <label for={`lead-${field.name}`} class={labelClass}>
+              {field.label}
+              {!field.required && (
+                <span class="font-normal text-tierra-graphite/70"> (optional)</span>
+              )}
+            </label>
+            <input
+              id={`lead-${field.name}`}
+              name={field.name}
+              type={field.type}
+              autocomplete={field.autocomplete}
+              required={field.required}
+              maxlength="255"
+              aria-describedby={`lead-${field.name}-error`}
+              class={inputClass}
+            />
+            <p
+              id={`lead-${field.name}-error`}
+              data-error-for={field.name}
+              class={errorClass}
+              hidden
+            />
+          </div>
+        ))
+      }
+
+      <div class="sm:col-span-2">
+        <label for="lead-interest" class={labelClass}>I'm interested in</label>
+        <select
+          id="lead-interest"
+          name="interest"
+          required
+          aria-describedby="lead-interest-error"
+          class={inputClass}
+        >
+          <option value="">Choose one</option>
+          {
+            INTERESTS.map((interest) => (
+              <option value={interest.value}>{interest.label}</option>
+            ))
+          }
+        </select>
+        <p id="lead-interest-error" data-error-for="interest" class={errorClass} hidden />
+      </div>
+
+      <div class="sm:col-span-2">
+        <label for="lead-message" class={labelClass}>
+          What fits your mandate?
+          <span class="font-normal text-tierra-graphite/70"> (optional)</span>
+        </label>
+        <textarea
+          id="lead-message"
+          name="message"
+          rows="4"
+          maxlength="2000"
+          class={inputClass}
+        />
+      </div>
+
+      <div class="absolute -left-[9999px]" aria-hidden="true">
+        <label for="lead-website">Leave this field empty</label>
+        <input id="lead-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
+
+      {
+        config.subscriptionTypeId !== undefined && (
+          <div class="flex items-start gap-3 sm:col-span-2">
+            <input
+              id="lead-updates"
+              name="wantsUpdates"
+              type="checkbox"
+              class="mt-1 size-4 rounded border-tierra-stone text-tierra-forest focus:ring-tierra-lime"
+            />
+            <label for="lead-updates" class="text-sm text-tierra-graphite/90">
+              {UPDATES_CONSENT_TEXT}
+            </label>
+          </div>
+        )
+      }
+    </div>
+
+    <button
+      type="submit"
+      data-submit
+      class="mt-8 inline-flex w-full items-center justify-center rounded-lg bg-tierra-lime px-8 py-3.5 font-semibold text-tierra-forest-dark shadow-sm transition hover:bg-tierra-lime/90 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 disabled:opacity-60 sm:w-auto"
+    >
+      Send
+    </button>
+    <p class="mt-4 text-xs leading-relaxed text-tierra-graphite/70">
+      {PROCESSING_CONSENT_TEXT.replace(" Privacy Policy.", "")}{" "}
+      <a href={withBase("/privacy")} class={linkClass}>Privacy Policy</a>.
+    </p>
+  </form>
+
+  <div data-lead-success tabindex="-1" role="status" hidden>
+    <h2 class="text-2xl tracking-tight">Thank you. We'll be in touch.</h2>
+    <p class="mt-4 text-base leading-relaxed text-tierra-graphite/90">
+      A member of our team will reply within two business days.
+    </p>
+    <p data-event-only class="mt-4 text-base leading-relaxed text-tierra-graphite/90" hidden>
+      In the meantime, you can{" "}
+      <a href={withBase(`${NAA_PATH}/`)} class={linkClass}>
+        download our overview and presentation
+      </a>
+      .
+    </p>
+  </div>
+
+  <div data-lead-error tabindex="-1" role="alert" class="mt-6 rounded-lg bg-red-50 p-4" hidden>
+    <p class="text-sm text-red-800">
+      Something went wrong sending your message. Please try again, or email us
+      at{" "}
+      <a href={`mailto:${CONTACT_EMAIL}`} class={linkClass}>{CONTACT_EMAIL}</a>.
+    </p>
+  </div>
+
+  <noscript>
+    <p class="mt-6 text-sm text-tierra-graphite/90">
+      This form needs JavaScript. You can also email us at{" "}
+      <a href={`mailto:${CONTACT_EMAIL}`} class={linkClass}>{CONTACT_EMAIL}</a>.
+    </p>
+  </noscript>
+</div>
+
+<script src="../scripts/lead-form.ts"></script>

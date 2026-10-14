@@ -10,6 +10,8 @@ import schoolConcept from "../assets/concepts/school-concept.jpg";
 import { SITE_TITLE } from "../consts";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import AttributionCapture from "../components/AttributionCapture.astro";
+import { LEAD_FORM_ENABLED } from "../lib/lead-form-config";
 
 const DEFAULT_DESCRIPTION =
   "Tierra Viva is an investment and development platform bringing schools, homes and local enterprise together in Latin America and the Caribbean, beginning in Santiago, Dominican Republic.";
@@ -62,5 +64,6 @@ const socialImageUrl = new URL(socialImage.src, Astro.site ?? Astro.url).href;
     </main>
     <Footer />
     <script src="../scripts/scroll-reveal.ts" />
+    {LEAD_FORM_ENABLED && <AttributionCapture />}
   </body>
 </html>
