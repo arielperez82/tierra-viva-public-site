@@ -1,5 +1,6 @@
 ---
 import Link from "./Link.astro";
+import { LEAD_FORM_ENABLED } from "../lib/lead-form-config";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -41,6 +42,15 @@ const currentYear = new Date().getFullYear();
               Team
             </Link>
           </li>
+          {
+            LEAD_FORM_ENABLED && (
+              <li>
+                <Link href="/contact" class="text-sm text-white/60 transition hover:text-tierra-lime focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 focus:ring-offset-tierra-forest-dark">
+                  Contact
+                </Link>
+              </li>
+            )
+          }
         </ul>
       </div>
 

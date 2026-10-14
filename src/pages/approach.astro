@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE, contactHref } from "../consts";
+import { SITE_TITLE } from "../consts";
+import { conversationHref } from "../lib/lead-form-config";
 import { PILLARS } from "../data/pillars";
 import PillarIcon from "../components/PillarIcon.astro";
 import commercialConcept from "../assets/concepts/commercial-village-concept.jpg";
@@ -166,7 +167,7 @@ const linkClass =
         </p>
         <p class="mt-6 text-base leading-relaxed text-tierra-graphite/90">
           Interested in working with us?{" "}
-          <a href={contactHref("Development or operating partnership")} class={linkClass}>
+          <a href={conversationHref("development", "Development or operating partnership")} class={linkClass}>
             Start a conversation
           </a>
           .

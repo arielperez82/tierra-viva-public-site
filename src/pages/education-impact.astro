@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE, contactHref } from "../consts";
+import { SITE_TITLE } from "../consts";
+import { conversationHref } from "../lib/lead-form-config";
 import schoolConcept from "../assets/concepts/school-concept.jpg";
 
 const SCHOOL_PRIORITIES: readonly {
@@ -254,7 +255,7 @@ const bodyText = "text-base leading-relaxed text-tierra-graphite/90 sm:text-lg";
           funders and community organizations who share this ambition.
         </p>
         <a
-          href={contactHref("Education or community partnership")}
+          href={conversationHref("education", "Education or community partnership")}
           class="mt-8 inline-flex items-center justify-center rounded-lg bg-tierra-lime px-8 py-3.5 font-semibold text-tierra-forest-dark shadow-sm transition hover:bg-tierra-lime/90 focus:outline-none focus:ring-2 focus:ring-tierra-lime focus:ring-offset-2 focus:ring-offset-tierra-forest-dark"
         >
           Start a conversation

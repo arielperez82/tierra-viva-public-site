@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { contactHref } from "../../consts";
+import { conversationHref } from "../../lib/lead-form-config";
 import Link from "../Link.astro";
 import schoolConcept from "../../assets/concepts/school-concept.jpg";
 ---
@@ -27,7 +27,7 @@ import schoolConcept from "../../assets/concepts/school-concept.jpg";
           Explore Our Approach
         </Link>
         <a
-          href={contactHref("Starting a conversation with Tierra Viva")}
+          href={conversationHref("other", "Starting a conversation with Tierra Viva")}
           class="inline-flex items-center justify-center rounded-lg border-2 border-tierra-stone px-8 py-3.5 text-base font-semibold text-tierra-ink transition hover:border-tierra-forest hover:text-tierra-forest focus:outline-none focus:ring-2 focus:ring-tierra-forest focus:ring-offset-2"
         >
           Start a Conversation

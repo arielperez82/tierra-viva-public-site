@@ -5,6 +5,10 @@ import Link from "../components/Link.astro";
 import { SITE_TITLE } from "../consts";
 import { NAA_DOWNLOADS, NAA_NEXT_STEPS } from "../data/naa";
 import { withBase } from "../utils/with-base";
+import {
+  LEAD_FORM_ENABLED,
+  conversationHref,
+} from "../lib/lead-form-config";
 import schoolConcept from "../assets/concepts/school-concept.jpg";
 
 const RAMON_EMAIL = "ramon@tierravivainvest.com";
@@ -24,8 +28,17 @@ const THEMES: readonly { readonly title: string; readonly body: string }[] = [
   },
 ];
 
+const NAA_TRACKING = {
+  utm_source: "naa-2026",
+  utm_medium: "web",
+  utm_campaign: "naa-miami-2026",
+  utm_content: "follow-up-page",
+};
+
 const ramonHref = (subject: string): string =>
-  `mailto:${RAMON_EMAIL}?subject=${encodeURIComponent(subject)}`;
+  LEAD_FORM_ENABLED
+    ? conversationHref("event", subject, NAA_TRACKING)
+    : `mailto:${RAMON_EMAIL}?subject=${encodeURIComponent(subject)}`;
 
 const sectionHeading = "text-2xl tracking-tight sm:text-3xl";
 const bodyText = "text-base leading-relaxed text-tierra-graphite/90 sm:text-lg";
