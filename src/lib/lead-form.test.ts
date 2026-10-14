@@ -238,7 +238,7 @@ describe("buildSubmission", () => {
       { objectTypeId: "0-1", name: "email", value: "ana@example.com" },
       { objectTypeId: "0-1", name: "company", value: "Example Family Office" },
       { objectTypeId: "0-1", name: "jobtitle", value: "CIO" },
-      { objectTypeId: "0-1", name: "tv_interest", value: "capital" },
+      { objectTypeId: "0-1", name: "tvi_interest", value: "capital" },
       { objectTypeId: "0-1", name: "message", value: "Tell me more" },
       { objectTypeId: "0-1", name: "utm_source", value: "naa-2026" },
       { objectTypeId: "0-1", name: "utm_medium", value: "print" },
@@ -246,7 +246,7 @@ describe("buildSubmission", () => {
       { objectTypeId: "0-1", name: "utm_content", value: "deck" },
       {
         objectTypeId: "0-1",
-        name: "tv_landing_page",
+        name: "tvi_landing_page",
         value: "https://tierravivainvestments.com/contact",
       },
     ]);

@@ -260,11 +260,11 @@ export const buildSubmission = (options: {
     ["email", values.email],
     ["company", values.company],
     ["jobtitle", values.role],
-    ["tv_interest", values.interest],
+    ["tvi_interest", values.interest],
     ["message", values.message],
     ...UTM_KEYS.map((key) => [key, attribution[key]] as const),
-    ["tv_landing_page", attribution.landingPage],
-    ["tv_referrer", attribution.referrer],
+    ["tvi_landing_page", attribution.landingPage],
+    ["tvi_referrer", attribution.referrer],
   ];
   const fields = entries
     .map(([name, value]) => contactField(name, value.trim()))
