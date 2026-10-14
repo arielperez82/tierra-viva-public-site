@@ -4,6 +4,7 @@ import {
   captureAttribution,
   interestFromQuery,
   leadHref,
+  parseStoredAttribution,
   readHubSpotConfig,
   submissionEndpoint,
   validateLead,
@@ -264,5 +265,25 @@ describe("buildSubmission", () => {
       expect.objectContaining({ value: true, subscriptionTypeId: 987654 }),
     ]);
     expect(submission.legalConsentOptions?.consent.consentToProcess).toBe(true);
+  });
+});
+
+describe("parseStoredAttribution", () => {
+  it("restores a stored first touch", () => {
+    const stored = attribution();
+    expect(parseStoredAttribution(JSON.stringify(stored))).toEqual(stored);
+  });
+
+  it("ignores missing, corrupt or tampered storage", () => {
+    expect(parseStoredAttribution(null)).toBeUndefined();
+    expect(parseStoredAttribution("{not json")).toBeUndefined();
+    expect(
+      parseStoredAttribution(
+        JSON.stringify({ ...attribution(), utm_source: 42 })
+      )
+    ).toBeUndefined();
+    expect(
+      parseStoredAttribution(JSON.stringify(["utm_source"]))
+    ).toBeUndefined();
   });
 });

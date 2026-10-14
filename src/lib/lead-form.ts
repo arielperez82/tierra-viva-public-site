@@ -163,6 +163,42 @@ export const captureAttribution = (visit: {
   };
 };
 
+const ATTRIBUTION_KEYS: readonly (keyof Attribution)[] = [
+  ...UTM_KEYS,
+  "landingPage",
+  "referrer",
+];
+
+const parseJson = (raw: string): unknown => {
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return undefined;
+  }
+};
+
+export const parseStoredAttribution = (
+  raw: string | null
+): Attribution | undefined => {
+  const parsed = raw === null ? undefined : parseJson(raw);
+  if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed))
+    return undefined;
+  const value = (key: keyof Attribution): unknown =>
+    Object.getOwnPropertyDescriptor(parsed, key)?.value;
+  if (!ATTRIBUTION_KEYS.every((key) => typeof value(key) === "string"))
+    return undefined;
+  const text = (key: keyof Attribution): string => clip(String(value(key)));
+  return {
+    utm_source: text("utm_source"),
+    utm_medium: text("utm_medium"),
+    utm_campaign: text("utm_campaign"),
+    utm_content: text("utm_content"),
+    utm_term: text("utm_term"),
+    landingPage: text("landingPage"),
+    referrer: text("referrer"),
+  };
+};
+
 type LeadCheck = {
   readonly field: keyof LeadErrors;
   readonly message: string;
