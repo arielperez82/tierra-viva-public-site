@@ -17,9 +17,10 @@ const DEFAULT_DESCRIPTION =
 type Props = {
   title?: string;
   description?: string;
+  noindex?: boolean;
 };
 
-const { title, description = DEFAULT_DESCRIPTION } = Astro.props;
+const { title, description = DEFAULT_DESCRIPTION, noindex = false } = Astro.props;
 const pageTitle = title ?? `${SITE_TITLE} | Schools and communities, designed together`;
 const socialImage = await getImage({
   src: schoolConcept,
@@ -36,6 +37,7 @@ const socialImageUrl = new URL(socialImage.src, Astro.site ?? Astro.url).href;
     <link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL}apple-touch-icon.png`} />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow, noarchive" />}
     <meta name="generator" content={Astro.generator} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Tierra Viva Investments" />
